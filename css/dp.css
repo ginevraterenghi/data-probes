@@ -1,0 +1,282 @@
+.tag {
+    margin-top: auto;
+    margin-left: 1rem;
+    align-self: flex-start;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1rem;
+  }
+
+  .tag-left {
+    margin-left: 0rem;
+  }
+
+  .tag-text {
+    font-family: SuisseIntl-Regular, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: .8rem;
+    line-height: 0;
+  }
+
+  .tag-text-long {
+    font-family: SuisseIntl-Regular, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: .8rem;
+    line-height: 1.4;
+  }
+
+.written-description {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left:0rem;
+  }
+  
+  .oral-description {
+    font-family: SuisseIntl-Regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left:1rem;
+  }
+
+  .head-left, .head-central {
+      width: 19%;
+      padding: 0;
+      border-bottom: 0;
+    }
+
+.head-central-long {
+        width: 60%;
+        padding: 0;
+        border-bottom: 0;
+      }
+
+    .alternative-remedies {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #0040FF;;
+        background-color: white;
+      }
+
+  
+      .alternative-remedies.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #0040FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .image-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+  
+      .base-image,
+      .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0.2;
+        width: 100%;
+      }
+  
+      .overlay-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+      }
+  
+      .overlay-image.hidden {
+        display: none; 
+      }
+
+  
+
+
+      .recurrencies {
+        width: 20px;
+        height: 20px;
+        background-color: #FF7800;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .recurrencies.selected {
+        border: 1px solid #FF7800;
+        background-color: white;
+      }
+
+
+      .button-to-select-text {
+        font-family: SuisseIntl-Regular, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: .8rem;
+    line-height: 0;
+    padding:0;
+    align-items: flex-end;
+      }
+
+
+      .interactive-legend-section {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-end;
+      }
+      
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .page-wrapper {
+        min-height: calc(100vh - 4rem); /* Adjust based on footer height */
+        display: flex;
+        flex-direction: column;
+
+      }
+      
+      .bottom-section {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      
+      .bottom {
+        display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(43, 43, 43, 1);
+      }
+
+      .bottom-left, .bottom-central, .bottom-right {
+        flex: 1;
+      }
+
+      .bottom-left {
+        text-align: left;
+      }
+
+      .bottom-central {
+        text-align: center;
+      }
+
+      .bottom-right {
+        text-align: right;
+        padding-right: 1rem;
+      }
+
+      .bottom-tag {
+        margin-top: auto;
+        margin-left: 1rem;
+        align-self: flex-start;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1rem;
+      }
+    
+   
+      .remedies {
+        color: #0040FF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .remedies.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+  
+
+
+
+
+
+
+
+
+
+      
+      .complexity {
+        color: #239857;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .complexity.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+  
+
+
+
+      .complexity {
+        width: 20px;
+        height: 20px;
+        background-color: #239857;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+    
+      .complexity-remedies.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #239857;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+  /*! ------------------------------------------
+      MEDIA QUERIES
+  ------------------------------------------ */
+  
+  @media (min-width: 900px) {
+    .bottom {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+}
