@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Shape your symptoms: workshop</title>
+
+  <!-- Meta Tags for SEO and Social Sharing -->
+  <meta name="description" content="PhD research to promote women's agency in healthcare through data" />
+  <meta name="image" content="thumbnail image of your work" />
+  <meta itemprop="name" content="Shape your symptoms" />
+  <meta itemprop="description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta itemprop="image" content="img-here" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Shape your symptoms" />
+  <meta name="twitter:description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta name="twitter:site" content="@name" />
+  <meta name="twitter:creator" content="your twitter handles here, if any" />
+  <meta name="twitter:image:src" content="thumbnail image of your work" />
+  <meta property="og:title" content="Shape your symptoms" />
+  <meta property="og:description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta property="og:image" content="thumbnail image of your work" />
+  <meta property="og:url" content="url to this page" />
+  <meta property="og:site_name" content="Shape your symptoms" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/fav-s.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/shape-your-symptoms.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/dp.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+  <!-- 3D model viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+</head>
+
+<body>
+
+	<div class="page-wrapper">
+
+	
+  <div id="header-fixed-top">
+    <nav id="main-nav-menu">
+      <div id="hamburger-menu"></div>
+      <div class="nav-tag-first nav-element">
+        <a href="index.html" id="textlocation" class="text-menu-special">Data-probes:</a>
+      </div>
+      <div id="menu-elements-toggle" class="hidden-nav-menu">
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">physicalizations</a></div>
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">methodology</a></div>
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">sources</a></div>
+        <div class="nav-tag-last nav-element"><a href="https://spearhead-project.ch/">about</a></div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="workshops" class="anchors"></div>
+  <section id="workshops-main">
+
+    <!-- Workshop Info -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Data-probe 2</p>
+          </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">23 October 2023 (WS1)</p>
+          </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">Mendrisio (CH)</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Participant Description -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Participant 2</p>
+          </div>
+        </div>
+        <div class="head-central-long">
+          <div class="tag">
+            <p class="tag-text-long">She is a research fellow and a lecturer in data visualization, with a professional focus on this field. Throughout her career, she has collaborated with various experts and institutions, enriching her expertise. She is excited to participate in the project, motivated by both her professional interest in data visualization and her personal experience of dealing with long-term urinary tract infections.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Legend -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <section class="interactive-legend-section">
+          <div class="legend-item">
+            <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
+            <p class="button-to-select-text">need to urinate</p>
+          </div>
+          <div class="legend-item">
+            <button class="lower-abdomen-button selected" onclick="toggleOverlay(this, 'overlayLowerAbdomen', 'lower-abdomen')"></button>
+            <p class="button-to-select-text">lower abdomen</p>
+          </div>
+          <div class="legend-item">
+            <button class="fever-button selected" onclick="toggleOverlay(this, 'overlayFever', 'fever')"></button>
+            <p class="button-to-select-text">fever</p>
+          </div>
+          <div class="legend-item">
+            <button class="back-pain-button selected" onclick="toggleOverlay(this, 'overlayBackPain', 'back-pain')"></button>
+            <p class="button-to-select-text">lower back pain</p>
+          </div>
+          <div class="legend-item">
+            <button class="discomfort-button selected" onclick="toggleOverlay(this, 'overlayDiscomfort', 'discomfort')"></button>
+            <p class="button-to-select-text">discomfort</p>
+          </div>
+          <div class="legend-item">
+            <button class="recurrences-button selected" onclick="toggleOverlay(this, 'overlayRecurrences', 'recurrences')"></button>
+            <p class="button-to-select-text">recurrences / correlations</p>
+          </div>
+          <div class="legend-item">
+            <button class="pain-button selected" onclick="toggleOverlay(this, 'overlayPain', 'pain')"></button>
+            <p class="button-to-select-text">pain</p>
+          </div>
+          <div class="legend-item">
+            <button class="infection-button selected" onclick="toggleOverlay(this, 'overlayInfection', 'infection')"></button>
+            <p class="button-to-select-text">infection</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- Data Probe Details -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <!-- Written Description -->
+        <div class="workshops-card-1-left">
+          <div class="tag-left">
+            <p class="tag-text">Written description:</p>
+          </div>
+          <section class="workshops-text">
+            <p class="written-description">
+                I have suffered from urinary tract diseases for about 15 years. I still remember the first cystitis (or at least the first one I can remember because of the pain): I was on the ***, on holiday with my first boyfriend, and I had attributed all that pain to excessive sexual activity. Cystitis (or maybe something else because I also remember whitish discharge) had ruined my first elopement: 
+                <span class="urine">after two days I could barely pee, and having intercourse was impossible.</span> 
+              
+                I also remember the feeling of guilt I had — I kept apologising to ***, as if it was my fault. From that time on, 
+                <span class="recurrences">I started suffering from mild cystitis almost once a month.</span> 
+              
+                I had talked it over with my gynaecologist at the time, and she had given me sachets of cranberry supplements to take the week before my period every month. 
+                <span class="recurrences">I had noticed that the cystitis mostly occurred in the pre-menstruation period,</span> and with the sachets it seemed to get a little better.
+              
+                At the time, I didn't talk about it with my boyfriend — I was ashamed, as if I felt that something in my body wasn't working right, as if I wasn't made right, not fit for penetration.
+              
+                I have to admit that 
+                <span class="recurrences">once this relationship was over the cystitis became rarer (but not completely gone!)</span>, 
+                so I started to think the problem could not just be physical — there had to be some other factor.
+              
+                For at least a couple of years, I did not talk to the gynaecologist about it in depth. As soon as I felt that 
+                <span class="lower-abdomen">my lower abdomen started to tense up</span> and 
+                <span class="urine">the desire to pee was more frequent,</span> 
+                I bought two bottles of low fixed residue water, ate a box of blueberries (so I had read on the internet), and the symptoms improved after a couple of days.
+              
+                The most painful episode, however, was about eight years ago, when the cystitis became haemorrhagic and I had a 
+                <span class="fever">fever of 38°C.</span> 
+              
+                I remember 
+                <span class="fever">the heat and the cold,</span> 
+                <span class="lower-abdomen">the pain of almost not being able to walk.</span> 
+                I remember I felt like crying. While I was waiting for the metro at ***, 
+                <span class="lower-abdomen">I wanted to scream because of the very strong burning I felt starting from my urethra and radiating down to my lower abdomen.</span> 
+              
+                And then the 
+                <span class="urine">blood, bright red, different from that of a normal menstruation.</span> 
+                That evening I told my mum about my cystitis for the first time, and I also told my new boyfriend — without shame. I ran to the first pharmacy on duty and with tears in my eyes I asked them to help me get better, and they gave me Monuril.
+              
+                The day after that night, I did not sleep. I did not go to university. 
+                <span class="fever">My body was numb, tired,</span> and 
+                <span class="lower-abdomen">I felt like a giant bruise in place of what I think is the bladder.</span> 
+              
+                However, the antibiotic seemed to have worked: within 24 hours I was as good as new. Since that night, I started to take the matter more seriously and told myself, “If it happens again, I will go to the gynaecologist.”
+              
+                Shortly afterwards, I went on holiday with my boyfriend and some friends. Again, like a few years before, I suffered from cystitis. I remember begging a pharmacist in *** to give me something to make me feel better (Cys-Control Canneberge). Only after four or five days without intercourse did the pain go away completely.
+              
+                After this experience, I really began to think that my life could never be the same again, especially in the sexual sphere. Shortly afterwards, in fact, I took the decision to have more in-depth analyses, requesting urine and blood tests on the advice of the gynaecologist. I tested positive for Escherichia coli and was diagnosed with very strong bacterial cystitis, probably due to an existing chronic cystitis.
+              
+                I did an initial one-month treatment — taking antibiotic tablets by mouth, vaginal ova and douches, combined with a diet low in fat, refined flours, dairy products and irritating foods.
+              
+                Although it has been many years now, I remember this episode as the last truly traumatic one. 
+                <span class="alternatives">I still often suffer from ailments such as cystitis,</span> but I have learnt to recognise 
+                <span class="alternatives">the first symptoms, which in my case correspond to a sensation of pain and swelling in the bladder</span> 
+                <span class="alternatives">that is relieved as soon as I contract my pelvis as if I wanted to pee.</span> 
+              
+                As soon as I realise this, for three days I avoid alcohol, fizzy drinks, spicy food, fat, dairy products... in short, for three days I eat courgettes, chard and brown rice.
+              
+                If the cystitis comes anyway, I immediately do a course of Monuril. I tried to keep a diary to mark when it would occur and 
+                <span class="alternatives">I noticed that in addition to occurring before my period, it also preceded my liver pains (I suffer from gallbladder sludge).</span> 
+              
+                Sometimes, when the pain was very strong and I did not have Monuril with me, I took the anti-inflammatory (OKI) to get some relief.
+              
+                Ever since I started listening to my body and realising that this pain was not only due to sexual activity, I have less pain and I have discovered that, in my case, a correct and balanced diet and hydration are my way of preventing very painful cystitis.
+              
+                If I suffer from dysentery or constipation, I take all the necessary precautions. I am very careful how I wash myself, and I only eat “safe” food.
+              
+                My sex life has changed: I pee and wash myself immediately after every intercourse. However, just in case, I always take two sachets of Monuril if I go away for two days.
+              </p>
+          </section>
+        </div>
+
+        <!-- Picture -->
+        <div class="workshops-card-1-central">
+          <div class="tag">
+            <p class="tag-text">Picture of the artefact:</p>
+          </div>
+
+		  <div class="image-container">
+        <img src="./probes-img/dp2/dp2.png" alt="Base Image" class="base-image">
+        <img src="./probes-img/dp2/dp2-infection.png" alt="Infection Overlay" class="overlay-image" id="overlayInfection">
+        <img src="./probes-img/dp2/dp2-urine.png" alt="Urine Overlay" class="overlay-image" id="overlayUrine">
+        <img src="./probes-img/dp2/dp2-recurrences.png" alt="recurrences Overlay" class="overlay-image" id="overlayRecurrences">
+        <img src="./probes-img/dp2/dp2-back-pain.png" alt="BackPain Overlay" class="overlay-image" id="overlayBackPain">
+		  </div>
+      
+
+        </div>
+
+        <!-- Oral Description -->
+        <div class="workshops-card-1-right-3x-horizontal">
+          <div class="tag">
+            <p class="tag-text">Oral description:</p>
+          </div>
+          <section class="workshops-text">
+			<p class="oral-description">
+				"<span class="urine">Let's say that the shape is primarily meant to represent a flow that is actually both temporal and metaphorical of peeing. Then perhaps this murky yellow helps</span>. Actually here I have tried to represent what more or less are the <span class="recurrences">usual symptoms of my cystitis, I have cystitis now less than once a month, so every two months at least once, not very serious</span>. The last very serious episode of cystitis in salt this summer <span class="fever">I had a fever and everything, there's very serious... in the sense that it really destabilised me</span>. But, well, this is more or less an attempt to represent temporally what happens to my body as if it were a totem I keep there and I remember where I am, so <span class="urine">at the beginning what happens is that I notice a frequent urination, darker and darker</span>, you can't see it (from the artefact) but the idea was more or less that, <span class="lower-abdomen">that it is followed by a swelling and the swelling in the lower abdomen then</span> <span class="discomfort">becomes a discomfort</span>. <span class="urine">A difficulty in the note, in going to the bathroom</span>. So, a first difficulty, combined with <span class="lower-abdomen">pins and little balls that represent the roughness of that sensation of pins in the urethra, which is what this thing is for me. Then even more swelling follows. That is, for me, I really feel</span> <span class="pain">this very strong pain of swelling behind the bladder</span>, and for me, that is, it is what is also telling me: the worst is yet to come. And indeed, <span class="alternatives">the worst is this sandpaper that is thin but red</span>. And then nothing, well, this is a bit too long (ref. thread), but it was more to give the idea of this thing. And I thought about it mainly because sometimes he might look at it like this, no? That is, think, OK, <span class="alternatives">this is where I start, that is, this is the worst symptom that has happened to me. Like, and it is a path that I have also tried to follow over time</span>, like, how did I get to this point? <span class="lower-abdomen">But there is always this swelling first</span>, so then over time, I have learned a little to recognise the pre-pre-symptoms. And so, actually, after taking a lot of antibiotics and drinking cranberries in abundance, I discovered that diet is what helps me the most. That is, as soon as I feel that something might happen, for three days I eat brown rice and things… a diet as low as possible in fats, in inflammatory things. And that's it, this is my story and memory, I don’t know how to do it here... with the tail.”
+			  </p>
+          </section>
+        </div>
+
+
+      </section>
+    </section>
+
+	
+  </section>
+</div>
+
+  <!-- Bottom -->
+  <section class="bottom-section">
+
+	<section class="bottom">
+	  <div class="bottom-left">
+		<button id="randomButton" class="read-more-button">
+			<a href="dp-1.html">< previous probe</a> 
+		</button>
+	  </div>
+	  <div class="bottom-central">
+		<button id="randomButton" class="read-more-button">
+			<a href="index.html">< back to album ></a> 
+		</button>
+	  </div>
+	  <div class="bottom-right">
+		<button id="randomButton" class="read-more-button">
+			<a href="dp-3.html">next probe ></a> 
+		</button>
+	  </div>
+	</section>
+  </section>
+
+  <script src="main.js"></script>
+
+
+
+</body>
+
+</html>

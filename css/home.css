@@ -128,7 +128,19 @@ html, body {
     src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-bold.woff);
   }
 
-  /*! ------------------- IBM Plex */
+    /*! ------------------- GT-Maru round */
+    
+    @font-face {
+      font-family: 'GT Maru Regular';
+      src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff') format('woff');
+      src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.otf') format('otf');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+
+    /*! ------------------- IBM Plex */
 
   .ibm-plex-serif-light {
     font-family: "IBM Plex Serif", serif;

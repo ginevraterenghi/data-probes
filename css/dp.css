@@ -19,6 +19,50 @@
     line-height: 0;
   }
 
+      /*! ------------------- GT-Maru round - does not work */ 
+    
+  
+      @font-face {
+        font-family: 'GT-Maru-Regular';
+        src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2') format('woff2');
+      }
+
+      .kosugi-maru-regular {
+        font-family: "Kosugi Maru", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .m-plus-rounded-1c-light {
+        font-family: "M PLUS Rounded Light", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .m-plus-rounded-1c-regular {
+        font-family: "M PLUS Rounded Regular", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .m-plus-rounded-1c-bold {
+        font-family: "M PLUS Rounded Bold", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+  .component-list {
+    width: 57%;
+  top: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  z-index: 1;
+  pointer-events: none; /* Prevent clicks from affecting this layer */
+}
+
+
+
+
+
   .tag-text-long {
     font-family: SuisseIntl-Regular, sans-serif;
     text-decoration: none;
@@ -59,10 +103,9 @@
 
 
       .image-container {
-        position: relative;
-        width: 100%;
-        height: auto;
-      }
+        position: relative; /* Enables stacking */
+  z-index: 2;
+}
   
       .base-image,
       .overlay-image {
@@ -155,6 +198,20 @@
         line-height: 1rem;
       }
     
+      /* The middle section with vertical layout */
+.vertical-section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* spacing between vertical subsections */
+}
+
+.vertical-subsection {
+  flex: 1;
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+
    
       /*! ------------------------------------------
       Legend toggles
@@ -196,6 +253,8 @@
       }
 
 
+    
+      
       .complexity {
         color: #239857;
         display: inline;
@@ -231,18 +290,18 @@
 
 
 
-      .recurrencies {
+      .recurrences {
         color: #FF7800;
         display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
       }
 
-      .recurrencies.active {
+      .recurrences.active {
         color: black; /* Makes the text blue */
         font-family: "SuisseIntl-Regular", sans-serif;
       }
 
-      .recurrencies-button {
+      .recurrences-button {
         width: 20px;
         height: 20px;
         margin-right: 0.7rem;
@@ -253,10 +312,375 @@
         background-color: white;
       }
 
-      .recurrencies-button.selected {
+      .recurrences-button.selected {
         width: 20px;
         height: 20px;
         background-color: #FF7800;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .urine {
+        color: #C5C500;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .urine.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .urine-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #C5C500;
+        background-color: white;
+      }
+
+      .urine-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #C5C500;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .lower-abdomen {
+        color: #AE00FF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .lower-abdomen.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .lower-abdomen-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #AE00FF;
+        background-color: white;
+      }
+
+      .lower-abdomen-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #AE00FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .fever {
+        color: #00C6D4;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .fever.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .fever-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #00C6D4;
+        background-color: white;
+      }
+
+      .fever-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #00C6D4;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .discomfort {
+        color: #9CF7FF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .discomfort.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .discomfort-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #9CF7FF;
+        background-color: white;
+      }
+
+      .discomfort-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #9CF7FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .pain {
+        color: #FFCE9C;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .pain.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .pain-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FFCE9C;
+        background-color: white;
+      }
+
+      .pain-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FFCE9C;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+
+      .infection {
+        color: #7B7B7B;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .infection.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .infection-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #7B7B7B;
+        background-color: white;
+      }
+
+      .infection-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #7B7B7B;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .back-pain {
+        color: #FF00E5;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .back-pain.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .back-pain-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FF00E5;
+        background-color: white;
+      }
+
+      .back-pain-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FF00E5;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .anxiety {
+        color: #00FF99;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .anxiety.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .anxiety-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #00FF99;
+        background-color: white;
+      }
+
+      .anxiety-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #00FF99;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .vomiting {
+        color: #FFCC00;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .vomiting.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .vomiting-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FFCC00;
+        background-color: white;
+      }
+
+      .vomiting-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FFCC00;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .nausea {
+        color: #F6DBFF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .nausea.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .nausea-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #F6DBFF;
+        background-color: white;
+      }
+
+      .nausea-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #F6DBFF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+
+      .leaks {
+        color: #9A5F28;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .leaks.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .leaks-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #9A5F28;
+        background-color: white;
+      }
+
+      .leaks-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #9A5F28;
         margin-right: 0.7rem;
         border: 1px solid transparent;
         padding: 0;
@@ -289,5 +713,17 @@
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
+
+    .probe-card-central {
+      width: 30%;
+      padding: 0;
+      border-bottom: 0;
+      border-right: 1px solid rgba(43, 43, 43, 1);
+    }
+  
+    .probe-card-rights {
+      width: 57%;
+    }
+
 
 }

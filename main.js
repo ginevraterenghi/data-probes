@@ -121,13 +121,35 @@ textElements.forEach(el => el.classList.toggle('active'));
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.alternatives-button').classList.add('selected');
     document.querySelector('.complexity-button').classList.add('selected');
-    document.querySelector('.recurrencies-button').classList.add('selected');
+    document.querySelector('.recurrences-button').classList.add('selected');
+    document.querySelector('.urine-button').classList.add('selected');
+    document.querySelector('.lower-abdomen-button').classList.add('selected');
+    document.querySelector('.fever-button').classList.add('selected');
+    document.querySelector('.back-pain-button').classList.add('selected');
+    document.querySelector('.discomfort-button').classList.add('selected');
+    document.querySelector('.pain-button').classList.add('selected');
+    document.querySelector('.infection-button').classList.add('selected');
   
     document.getElementById('overlayAlternatives').style.display = 'block';
     document.getElementById('overlayComplexity').style.display = 'block';
-    document.getElementById('overlayRecurrencies').style.display = 'block';
+    document.getElementById('overlayRecurrences').style.display = 'block';
+    document.getElementById('overlayUrine').style.display = 'block';
+    document.getElementById('overlayLowerAbdomen').style.display = 'block';
+    document.getElementById('overlayFever').style.display = 'block';
+    document.getElementById('overlayBackPain').style.display = 'block';
+    document.getElementById('overlayDiscomfort').style.display = 'block';
+    document.getElementById('overlayPain').style.display = 'block';
+    document.getElementById('overlayInfection').style.display = 'block';
   
     document.querySelector('.alternatives').classList.remove('active');
     document.querySelector('.complexity').classList.remove('active');
-    document.querySelector('.recurrencies').classList.remove('active');
+    document.querySelector('.recurrences').classList.remove('active');
+    document.querySelector('.urine').classList.remove('active');
+    document.querySelector('.lower-abdomen').classList.remove('active');
+    document.querySelector('.fever').classList.remove('active');
+    document.querySelector('.back-pain').classList.remove('active');
+    document.querySelector('.discomfort').classList.remove('active');
+    document.querySelector('.pain').classList.remove('active');
+    document.querySelector('.infection').classList.remove('active');
+
   });
