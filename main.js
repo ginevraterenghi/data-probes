@@ -63,36 +63,71 @@ window.addEventListener('scroll', function() {
 
 
 
-  function toggleOverlay(button) {
-    const image = document.getElementById('overlayImg'); // Get the image
-    const remediesText = document.querySelector('.remedies'); // Get the remedies text
+  // function toggleOverlay(button) {
+  //   const image = document.getElementById('overlayAlternative'); // Get the image
+  //   const remediesText = document.querySelector('.alternatives'); // Get the remedies text
   
-    // Toggle the 'selected' class on the button to change its appearance
+  //   // Toggle the 'selected' class on the button to change its appearance
+  //   button.classList.toggle('selected');
+  
+  //   // Toggle visibility of the image (dp1-alternative.png)
+  //   if (image.style.display === 'none') {
+  //     image.style.display = 'block'; // Show the image if it's hidden
+  //   } else {
+  //     image.style.display = 'none'; // Hide the image if it's visible
+  //   }
+  
+  //   // Toggle the 'active' class on the remedies text to turn it blue
+  //   remediesText.classList.toggle('active');
+  // }
+  
+  // // Make sure the button is selected and the image is visible by default when the page loads
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   const button = document.querySelector('.alternatives-button');
+  //   const image = document.getElementById('overlayImg');
+  //   const remediesText = document.querySelector('.alternatives');
+  
+  //   // Ensure the button is selected by default (filled in blue)
+  //   button.classList.add('selected');
+  
+  //   // Ensure the image is visible by default
+  //   image.style.display = 'block';
+  
+  //   // Ensure the remedies text is black by default
+  //   remediesText.classList.remove('active');
+  // });
+
+
+  function toggleOverlay(button, imageId, textClass) {
+    const image = document.getElementById(imageId);
+    const textElements = document.querySelectorAll(`.${textClass}`);
+textElements.forEach(el => el.classList.toggle('active'));
+  
+    // Toggle button appearance
     button.classList.toggle('selected');
   
-    // Toggle visibility of the image (dp1-alternative.png)
+    // Toggle image visibility
     if (image.style.display === 'none') {
-      image.style.display = 'block'; // Show the image if it's hidden
+      image.style.display = 'block';
     } else {
-      image.style.display = 'none'; // Hide the image if it's visible
+      image.style.display = 'none';
     }
   
-    // Toggle the 'active' class on the remedies text to turn it blue
-    remediesText.classList.toggle('active');
+    // Toggle text color class
+    textElement.classList.toggle('active');
   }
   
-  // Make sure the button is selected and the image is visible by default when the page loads
-  document.addEventListener("DOMContentLoaded", function() {
-    const button = document.querySelector('.alternative-remedies');
-    const image = document.getElementById('overlayImg');
-    const remediesText = document.querySelector('.remedies');
+  // Initialize default state on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('.alternatives-button').classList.add('selected');
+    document.querySelector('.complexity-button').classList.add('selected');
+    document.querySelector('.recurrencies-button').classList.add('selected');
   
-    // Ensure the button is selected by default (filled in blue)
-    button.classList.add('selected');
+    document.getElementById('overlayAlternatives').style.display = 'block';
+    document.getElementById('overlayComplexity').style.display = 'block';
+    document.getElementById('overlayRecurrencies').style.display = 'block';
   
-    // Ensure the image is visible by default
-    image.style.display = 'block';
-  
-    // Ensure the remedies text is black by default
-    remediesText.classList.remove('active');
+    document.querySelector('.alternatives').classList.remove('active');
+    document.querySelector('.complexity').classList.remove('active');
+    document.querySelector('.recurrencies').classList.remove('active');
   });

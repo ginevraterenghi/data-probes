@@ -110,15 +110,15 @@
       <section class="workshops-sub-section">
         <section class="interactive-legend-section">
           <div class="legend-item">
-            <button class="alternative-remedies" onclick="toggleOverlay(this)"></button>
+            <button class="alternatives-button selected" onclick="toggleOverlay(this, 'overlayAlternatives', 'alternatives')"></button>
             <p class="button-to-select-text">alternative remedies</p>
           </div>
           <div class="legend-item">
-            <button class="complexity" onclick="toggleSelected(this)"></button>
+            <button class="complexity-button selected" onclick="toggleOverlay(this, 'overlayComplexity', 'complexity')"></button>
             <p class="button-to-select-text">complexity / multiple factors</p>
           </div>
           <div class="legend-item">
-            <button class="recurrencies" onclick="toggleSelected(this)"></button>
+            <button class="recurrencies-button selected" onclick="toggleOverlay(this, 'overlayRecurrencies', 'recurrencies')"></button>
             <p class="button-to-select-text">disease recurrences / correlations</p>
           </div>
         </section>
@@ -144,9 +144,11 @@
             <p class="tag-text">Picture of the artefact:</p>
           </div>
 		  <div class="image-container">
-			<img src="/probes-img/DP1/dp1.png" alt="Base Image" class="base-image">
-			<img src="/probes-img/DP1/dp1-alternative.png" alt="Overlay Image" class="overlay-image" id="overlayImg">
-			
+			<img src="./probes-img/DP1/dp1.png" alt="Base Image" class="base-image">
+      <img src="./probes-img/DP1/dp1-alternatives.png" alt="Alternatives Overlay" class="overlay-image" id="overlayAlternatives">
+			<img src="./probes-img/DP1/dp1-complexity.png" alt="Complexity Overlay" class="overlay-image" id="overlayComplexity">
+      <img src="./probes-img/DP1/dp1-recurrencies.png" alt="Recurrencies Overlay" class="overlay-image" id="overlayRecurrencies">
+
 		  </div>
         </div>
 
@@ -157,8 +159,8 @@
           </div>
           <section class="workshops-text">
 			<p class="oral-description">
-				“So, well, as you know, I have never had any personal experience, but I treat, I have treated many patients, so I put the rough paper underneath to demonstrate the fact that the world is not smooth, in the sense that some veins always happen. In short, so it's something that some people have certain problems, and others have these problems... well, that's how it is now. The colours because, well, I don't have, I mean, not in the sense that I never see life only with dull colours, but in any case with vivid colours, and I wanted to say that in any case, in the end, in all this problem here, it's not that there's no remedy, even if they are chronic things that, however, even with the passing of time, even with ageing, however, less badly, pass or transform. And then there, I put the ball with the wire not to give you a sense of cage constraint, but simply that in any case every situation is complex and must be taken individually. So even though we've tried to find a common definition here, in the end everyone has their own definition anyway, and unfortunately I admit it, it's that in the health world this thing here, if you always try to standardise, but 
-				<span class="remedies">in the end you don't... every situation is its own and then in the end the lighter one of ball for anyway. That's how you also mentioned some of you that in the end let's say antibiotics or at least strong therapies, so they are not always a solution many times it's enough...I have friends who have brought cystitis with acupuncture and well, there are those who actually believe in it. Then there are so many things, even lighter things [alternative solutions to antibiotics].”
+				“So, well, as you know, I have never had any personal experience, but I treat, I have treated many patients, so <span class="complexity">I put the rough paper underneath to demonstrate the fact that the world is not smooth, in the sense that some veins always happen. In short, so it's something that some people have certain problems, and others have these problems...</span> well, that's how it is now. <span class="recurrencies">The colours because, well, I don't have, I mean, not in the sense that I never see life only with dull colours, but in any case with vivid colours, and I wanted to say that in any case, in the end, in all this problem here, it's not that there's no remedy, even if they are chronic things that, however, even with the passing of time, even with ageing, however, less badly, pass or transform.</span> And then there, <span class="complexity">I put the ball with the wire not to give you a sense of cage constraint, but simply that in any case every situation is complex and must be taken individually. </span>So even though we've tried to find a common definition here, in the end everyone has their own definition anyway, and unfortunately I admit it, it's that in the health world this thing here, if you always try to standardise, but 
+				<span class="alternatives">in the end you don't... every situation is its own and then in the end the lighter one of ball for anyway. That's how you also mentioned some of you that in the end let's say antibiotics or at least strong therapies, so they are not always a solution many times it's enough...I have friends who have brought cystitis with acupuncture and well, there are those who actually believe in it. Then there are so many things, even lighter things [alternative solutions to antibiotics].”
 				</span>
 			  </p>
           </section>

@@ -57,28 +57,6 @@
         border-bottom: 0;
       }
 
-    .alternative-remedies {
-        width: 20px;
-        height: 20px;
-        margin-right: 0.7rem;
-        padding: 0;
-        margin: 5px;
-        cursor: pointer;
-        border: 1px solid #0040FF;;
-        background-color: white;
-      }
-
-  
-      .alternative-remedies.selected {
-        width: 20px;
-        height: 20px;
-        background-color: #0040FF;
-        margin-right: 0.7rem;
-        border: 1px solid transparent;
-        padding: 0;
-        margin: 5px;
-        cursor: pointer;
-      }
 
       .image-container {
         position: relative;
@@ -107,24 +85,6 @@
         display: none; 
       }
 
-  
-
-
-      .recurrencies {
-        width: 20px;
-        height: 20px;
-        background-color: #FF7800;
-        margin-right: 0.7rem;
-        border: 1px solid transparent;
-        padding: 0;
-        margin: 5px;
-        cursor: pointer;
-      }
-
-      .recurrencies.selected {
-        border: 1px solid #FF7800;
-        background-color: white;
-      }
 
 
       .button-to-select-text {
@@ -196,28 +156,46 @@
       }
     
    
-      .remedies {
+      /*! ------------------------------------------
+      Legend toggles
+  ------------------------------------------ */
+
+  
+      .alternatives {
         color: #0040FF;
         display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
       }
 
-      .remedies.active {
+      .alternatives.active {
         color: black; /* Makes the text blue */
         font-family: "SuisseIntl-Regular", sans-serif;
       }
+      
+      .alternatives-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #0040FF;
+        background-color: white;
+      }
 
   
+      .alternatives-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #0040FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
 
 
-
-
-
-
-
-
-
-      
       .complexity {
         color: #239857;
         display: inline;
@@ -228,11 +206,19 @@
         color: black; /* Makes the text blue */
         font-family: "SuisseIntl-Regular", sans-serif;
       }
-  
 
+      .complexity-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #239857;
+        background-color: white;
+      }
 
-
-      .complexity {
+      .complexity-button.selected {
         width: 20px;
         height: 20px;
         background-color: #239857;
@@ -243,11 +229,34 @@
         cursor: pointer;
       }
 
-    
-      .complexity-remedies.selected {
+
+
+      .recurrencies {
+        color: #FF7800;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .recurrencies.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .recurrencies-button {
         width: 20px;
         height: 20px;
-        background-color: #239857;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FF7800;
+        background-color: white;
+      }
+
+      .recurrencies-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FF7800;
         margin-right: 0.7rem;
         border: 1px solid transparent;
         padding: 0;
@@ -255,6 +264,10 @@
         cursor: pointer;
       }
 
+
+
+
+     
 
 
 
@@ -269,9 +282,7 @@
 
    
     
-  /*! ------------------------------------------
-      MEDIA QUERIES
-  ------------------------------------------ */
+
   
   @media (min-width: 900px) {
     .bottom {
