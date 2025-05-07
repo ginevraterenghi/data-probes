@@ -291,14 +291,18 @@
 
 
       .recurrences {
-        color: #FF7800;
+        /* color: #FF7800; */
         display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-color: #FF7800;
+  border-radius: 1rem;
+  padding: 1px 2px;
       }
 
       .recurrences.active {
         color: black; /* Makes the text blue */
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-color: white;   
       }
 
       .recurrences-button {
@@ -681,6 +685,107 @@
         width: 20px;
         height: 20px;
         background-color: #9A5F28;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .cramps {
+        color: #763267;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .cramps.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .cramps-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #763267;
+        background-color: white;
+      }
+
+      .cramps-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #763267;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .causes {
+        color: #FF0066;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .causes.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .causes-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FF0066;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .causes-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FF0066;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .doctor {
+        color: #FFCC00;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .doctor.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .doctor-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FFCC00;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .doctor-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FFCC00;
         margin-right: 0.7rem;
         border: 1px solid transparent;
         padding: 0;

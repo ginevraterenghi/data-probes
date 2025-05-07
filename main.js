@@ -129,6 +129,8 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.querySelector('.discomfort-button').classList.add('selected');
     document.querySelector('.pain-button').classList.add('selected');
     document.querySelector('.infection-button').classList.add('selected');
+    document.querySelector('.causes-button').classList.add('selected');
+    document.querySelector('.doctor-button').classList.add('selected');
   
     document.getElementById('overlayAlternatives').style.display = 'block';
     document.getElementById('overlayComplexity').style.display = 'block';
@@ -140,6 +142,8 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.getElementById('overlayDiscomfort').style.display = 'block';
     document.getElementById('overlayPain').style.display = 'block';
     document.getElementById('overlayInfection').style.display = 'block';
+    document.getElementById('overlayCauses').style.display = 'block';
+    document.getElementById('overlayDoctor').style.display = 'block';
   
     document.querySelector('.alternatives').classList.remove('active');
     document.querySelector('.complexity').classList.remove('active');
@@ -151,5 +155,7 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.querySelector('.discomfort').classList.remove('active');
     document.querySelector('.pain').classList.remove('active');
     document.querySelector('.infection').classList.remove('active');
+    document.querySelector('.causes').classList.remove('active');
+    document.querySelector('.doctor').classList.remove('active');
 
   });
