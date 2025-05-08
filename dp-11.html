@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Shape your symptoms: workshop</title>
+
+  <!-- Meta Tags for SEO and Social Sharing -->
+  <meta name="description" content="PhD research to promote women's agency in healthcare through data" />
+  <meta name="image" content="thumbnail image of your work" />
+  <meta itemprop="name" content="Shape your symptoms" />
+  <meta itemprop="description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta itemprop="image" content="img-here" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Shape your symptoms" />
+  <meta name="twitter:description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta name="twitter:site" content="@name" />
+  <meta name="twitter:creator" content="your twitter handles here, if any" />
+  <meta name="twitter:image:src" content="thumbnail image of your work" />
+  <meta property="og:title" content="Shape your symptoms" />
+  <meta property="og:description" content="PhD research to promote women’s agency in healthcare through data" />
+  <meta property="og:image" content="thumbnail image of your work" />
+  <meta property="og:url" content="url to this page" />
+  <meta property="og:site_name" content="Shape your symptoms" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/fav-s.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/shape-your-symptoms.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/dp.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+  <!-- 3D model viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+</head>
+
+<body>
+
+	<div class="page-wrapper">
+
+	
+  <div id="header-fixed-top">
+    <nav id="main-nav-menu">
+      <div id="hamburger-menu"></div>
+      <div class="nav-tag-first nav-element">
+        <a href="index.html" id="textlocation" class="text-menu-special">Data-probes:</a>
+      </div>
+      <div id="menu-elements-toggle" class="hidden-nav-menu">
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">physicalizations</a></div>
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">methodology</a></div>
+        <div class="nav-tag nav-element"><a href="#" class="text-menu">sources</a></div>
+        <div class="nav-tag-last nav-element"><a href="https://spearhead-project.ch/">about</a></div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="workshops" class="anchors"></div>
+  <section id="workshops-main">
+
+    <!-- Workshop Info -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Data-probe 11</p>
+          </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">02 May 2024 (WS2)</p>
+          </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">London (UK)</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Participant Description -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Participant 11</p>
+          </div>
+        </div>
+        <div class="head-central-long">
+          <div class="tag">
+            <p class="tag-text-long">She is a service designer working for a consultancy agency. She suffers chronically from cystitis and has experienced a severe episode in the past, which led her to hospitalisation.
+              </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Legend -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <section class="interactive-legend-section">
+          <div class="legend-item">
+            <div class="legend-item">
+              <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
+              <p class="button-to-select-text">urine</p>
+            </div>
+             <button class="anxiety-button selected" onclick="toggleOverlay(this, 'overlayAnxiety', 'anxiety')"></button>
+            <p class="button-to-select-text">anxiety</p>
+          </div>
+          <div class="legend-item">
+            <button class="discomfort-button selected" onclick="toggleOverlay(this, 'overlayDiscomfort', 'discomfort')"></button>
+            <p class="button-to-select-text">discomfort</p>
+          </div>
+          <div class="legend-item">
+            <button class="recurrences-button selected" onclick="toggleOverlay(this, 'overlayRecurrences', 'recurrences')"></button>
+            <p class="button-to-select-text">recurrences</p>
+          </div>
+          <div class="legend-item">
+            <button class="cramps-button selected" onclick="toggleOverlay(this, 'overlayCramps', 'cramps')"></button>
+            <p class="button-to-select-text">cramps</p>
+          </div>
+          <div class="legend-item">
+            <button class="treatments-button selected" onclick="toggleOverlay(this, 'overlayTreatments', 'treatments')"></button>
+            <p class="button-to-select-text">treatments / cures</p>
+          </div>
+          <div class="legend-item">
+            <button class="causes-button selected" onclick="toggleOverlay(this, 'overlayCauses', 'causes')"></button>
+            <p class="button-to-select-text">causes</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- Data Probe Details -->
+    <section class="workshops-section">
+      <section class="workshops-sub-section">
+        <!-- Written Description -->
+        <div class="workshops-card-1-left">
+          <div class="tag-left">
+            <p class="tag-text">Written description:</p>
+          </div>
+          <section class="workshops-text">
+            <p class="written-description">
+              <span class="recurrences">I have suffered from cystitis in a few episodes in my life</span>. Specifically I was at home in Italy and I happened to be in pain. It was not a sharp pain but I had a <span class="discomfort">strong feeling of discomfort</span>. I contacted the doctor and he suggested I take <span class=".treatments">the antibiotic (Monuril) before bedtime and blueberry supplements for an extended period of time</span>. I noticed that <span class="causes">diet impacts my physical condition a lot. For example, intake of too much coffee (e.g., American Coffee) and fried foods do not help. I also do not usually hydrate</span> and I know that this is something I should pay attention to.
+            </p>
+          </section>
+        </div>
+
+        <!-- Picture -->
+        <div class="workshops-card-1-central">
+          <div class="tag">
+            <p class="tag-text">Picture of the artefact:</p>
+          </div>
+
+		  <div class="image-container">
+        <img src="./probes-img/dp10/dp10.png" alt="Base Image" class="base-image">
+        <img src="./probes-img/dp10/dp10-anxiety.png" alt="Anxiety Overlay" class="overlay-image" id="overlayAnxiety">
+        <img src="./probes-img/dp10/dp10-cramps.png" alt="Cramps Overlay" class="overlay-image" id="overlayCramps">
+        <img src="./probes-img/dp10/dp10-urine.png" alt="Urine Overlay" class="overlay-image" id="overlayUrine">
+		  </div>
+      
+
+        </div>
+
+        <!-- Oral Description -->
+        <div class="workshops-card-1-right-3x-horizontal">
+          <div class="tag">
+            <p class="tag-text">Oral description:</p>
+          </div>
+          <section class="workshops-text">
+			<p class="oral-description">
+        “I had one time cystitis, so I had one experience. <span class="urine">I started with the cube, the wood cube to represent the weigh so the pain of peeing</span> and I associate <span class="urine">the ball [sphere] for timing, so the urgency to go to the bathroom, so it is biggest one</span>. And the time that is not that urgent, it's happened the time that the feeling advanced it went away, so it didn't become a cystitis. It's out, but I have also put over the ball so, the idea of the need of peeing, <span class="anxiety">the triangle to represent the anxious</span>. So the pattern and the texture, because when you need to pee, sometimes you just start to be anxious because you don't want to feel the pain</span>. I’ve also associated <span class="discomfort">the wood for the pain in general</span>, so there's <span class="cramps">more cube is for durability for suffering of cramping</span> and <span class="cramps">the triangle is also for lower abdominal cramp. Also <span class="discomfort">the orientation and the position that all the angles of the triangle can represent the pain of the situation</span>. That’s it.”
+         </p>
+          </section>
+        </div>
+
+
+      </section>
+    </section>
+
+	
+  </section>
+</div>
+
+  <!-- Bottom -->
+  <section class="bottom-section">
+
+	<section class="bottom">
+	  <div class="bottom-left">
+		<button id="randomButton" class="read-more-button">
+			<a href="dp-10.html">< previous probe</a> 
+		</button>
+	  </div>
+	  <div class="bottom-central">
+		<button id="randomButton" class="read-more-button">
+			<a href="index.html">< back to album ></a> 
+		</button>
+	  </div>
+	  <div class="bottom-right">
+		<button id="randomButton" class="read-more-button">
+			<a href="dp-12.html">next probe ></a> 
+		</button>
+	  </div>
+	</section>
+  </section>
+
+  <script src="main.js"></script>
+
+
+
+</body>
+
+</html>

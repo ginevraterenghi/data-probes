@@ -10,7 +10,7 @@ var text = textElement.innerText;
 var html = text.split('').map(function(letter) {
   var randomColor = colors[Math.floor(Math.random() * colors.length)];
   return '<font color="' + randomColor + '">' + letter + '</font>';
-}).join('');
+}).joint('');
 
 textElement.innerHTML = html;
 
@@ -65,7 +65,7 @@ window.addEventListener('scroll', function() {
 
   // function toggleOverlay(button) {
   //   const image = document.getElementById('overlayAlternative'); // Get the image
-  //   const remediesText = document.querySelector('.alternatives'); // Get the remedies text
+  //   const remediesText = document.querySelector('..treatments'); // Get the remedies text
   
   //   // Toggle the 'selected' class on the button to change its appearance
   //   button.classList.toggle('selected');
@@ -83,9 +83,9 @@ window.addEventListener('scroll', function() {
   
   // // Make sure the button is selected and the image is visible by default when the page loads
   // document.addEventListener("DOMContentLoaded", function() {
-  //   const button = document.querySelector('.alternatives-button');
+  //   const button = document.querySelector('..treatments-button');
   //   const image = document.getElementById('overlayImg');
-  //   const remediesText = document.querySelector('.alternatives');
+  //   const remediesText = document.querySelector('..treatments');
   
   //   // Ensure the button is selected by default (filled in blue)
   //   button.classList.add('selected');
@@ -119,7 +119,7 @@ textElements.forEach(el => el.classList.toggle('active'));
   
   // Initialize default state on page load
   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector('.alternatives-button').classList.add('selected');
+    document.querySelector('.treatments-button').classList.add('selected');
     document.querySelector('.complexity-button').classList.add('selected');
     document.querySelector('.recurrences-button').classList.add('selected');
     document.querySelector('.urine-button').classList.add('selected');
@@ -131,8 +131,21 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.querySelector('.infection-button').classList.add('selected');
     document.querySelector('.causes-button').classList.add('selected');
     document.querySelector('.doctor-button').classList.add('selected');
+    document.querySelector('.nose-button').classList.add('selected');
+    document.querySelector('.throat-button').classList.add('selected');
+    document.querySelector('.joint-pain-button').classList.add('selected');
+    document.querySelector('.neck-pain-button').classList.add('selected');
+    document.querySelector('.shoulder-pain-button').classList.add('selected');
+    document.querySelector('.headache-button').classList.add('selected');
+    document.querySelector('.bellyache-button').classList.add('selected');
+    document.querySelector('.constipation-button').classList.add('selected');
+    document.querySelector('.fatigue-button').classList.add('selected');
+    document.querySelector('.isolation-button').classList.add('selected');
+    document.querySelector('.insomnia-button').classList.add('selected');
+    document.querySelector('.normality-button').classList.add('selected');
+    document.querySelector('.bloated-stomach-button').classList.add('selected');
   
-    document.getElementById('overlayAlternatives').style.display = 'block';
+    document.getElementById('overlay.treatments').style.display = 'block';
     document.getElementById('overlayComplexity').style.display = 'block';
     document.getElementById('overlayRecurrences').style.display = 'block';
     document.getElementById('overlayUrine').style.display = 'block';
@@ -144,8 +157,21 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.getElementById('overlayInfection').style.display = 'block';
     document.getElementById('overlayCauses').style.display = 'block';
     document.getElementById('overlayDoctor').style.display = 'block';
+    document.getElementById('overlayNose').style.display = 'block';
+    document.getElementById('overlayThroat').style.display = 'block';
+    document.getElementById('overlayjointPain').style.display = 'block';
+    document.getElementById('overlayNeckPain').style.display = 'block';
+    document.getElementById('overlayShoulderPain').style.display = 'block';
+    document.getElementById('overlayHeadache').style.display = 'block';
+    document.getElementById('overlayBellyache').style.display = 'block';
+    document.getElementById('overlayConstipation').style.display = 'block';
+    document.getElementById('overlayFatigue').style.display = 'block';
+    document.getElementById('overlayIsolation').style.display = 'block';
+    document.getElementById('overlayInsomnia').style.display = 'block';
+    document.getElementById('overlayNormality').style.display = 'block';
+    document.getElementById('overlayBloatedStomach').style.display = 'block';
   
-    document.querySelector('.alternatives').classList.remove('active');
+    document.querySelector('.treatments').classList.remove('active');
     document.querySelector('.complexity').classList.remove('active');
     document.querySelector('.recurrences').classList.remove('active');
     document.querySelector('.urine').classList.remove('active');
@@ -157,5 +183,18 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.querySelector('.infection').classList.remove('active');
     document.querySelector('.causes').classList.remove('active');
     document.querySelector('.doctor').classList.remove('active');
+    document.querySelector('.nose').classList.remove('active');
+    document.querySelector('.throat').classList.remove('active');
+    document.querySelector('.joint-pain').classList.remove('active');
+    document.querySelector('.neck-pain').classList.remove('active');
+    document.querySelector('.shoulder-pain').classList.remove('active');
+    document.querySelector('.headache').classList.remove('active');
+    document.querySelector('.bellyache').classList.remove('active');
+    document.querySelector('.constipation').classList.remove('active');
+    document.querySelector('.fatigue').classList.remove('active');
+    document.querySelector('.isolation').classList.remove('active');
+    document.querySelector('.insomnia').classList.remove('active');
+    document.querySelector('.normality').classList.remove('active');
+    document.querySelector('.bloated-stomach').classList.remove('active');
 
   });

@@ -218,18 +218,18 @@
   ------------------------------------------ */
 
   
-      .alternatives {
+      .treatments {
         color: #0040FF;
         display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
       }
 
-      .alternatives.active {
+      .treatments.active {
         color: black; /* Makes the text blue */
         font-family: "SuisseIntl-Regular", sans-serif;
       }
       
-      .alternatives-button {
+      .treatments-button {
         width: 20px;
         height: 20px;
         margin-right: 0.7rem;
@@ -238,10 +238,10 @@
         cursor: pointer;
         border: 1px solid #0040FF;
         background-color: white;
+        border-radius: 50%;
       }
-
   
-      .alternatives-button.selected {
+      .treatments-button.selected {
         width: 20px;
         height: 20px;
         background-color: #0040FF;
@@ -251,8 +251,6 @@
         margin: 5px;
         cursor: pointer;
       }
-
-
     
       
       .complexity {
@@ -275,6 +273,7 @@
         cursor: pointer;
         border: 1px solid #239857;
         background-color: white;
+        border-radius: 50%;
       }
 
       .complexity-button.selected {
@@ -559,6 +558,39 @@
         cursor: pointer;
       }
 
+      .bloated-stomach {
+        color: #007BFF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .bloated-stomach.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .bloated-stomach-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #007BFF;
+        background-color: white;
+      }
+
+      .bloated-stomach-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #007BFF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
       .anxiety {
         color: #00FF99;
         display: inline;
@@ -760,7 +792,7 @@
       }
 
       .doctor {
-        color: #FFCC00;
+        color: #8052EB;
         display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
       }
@@ -777,7 +809,7 @@
         padding: 0;
         margin: 5px;
         cursor: pointer;
-        border: 1px solid #FFCC00;
+        border: 1px solid #8052EB;
         background-color: white;
         border-radius: 50%;
       }
@@ -785,7 +817,40 @@
       .doctor-button.selected {
         width: 20px;
         height: 20px;
-        background-color: #FFCC00;
+        background-color: #8052EB;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+      
+      .nose {
+        color: #F78DFF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .nose.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .nose-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #F78DFF;
+        background-color: white;
+      }
+
+      .nose-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #F78DFF;
         margin-right: 0.7rem;
         border: 1px solid transparent;
         padding: 0;
@@ -793,6 +858,372 @@
         cursor: pointer;
       }
 
+      .throat {
+        color: #5AEEE0;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .throat.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .throat-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #5AEEE0;
+        background-color: white;
+      }
+
+      .throat-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #5AEEE0;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .joint-pain {
+        color: #B6B622;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .joint-pain.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .joint-pain-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #B6B622;
+        background-color: white;
+      }
+
+      .joint-pain-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #B6B622;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .neck-pain {
+        color: #9B84FF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .neck-pain.active {
+        color: black; /* Makes the text blue */
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .neck-pain-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #9B84FF;
+        background-color: white;
+      }
+
+      .neck-pain-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #9B84FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .shoulder-pain {
+        color: #FFA6D6;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .shoulder-pain.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .shoulder-pain-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #FFA6D6;
+        background-color: white;
+      }
+
+      .shoulder-pain-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #FFA6D6;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .headache {
+        color: #6C7196;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .headache.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .headache-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #6C7196;
+        background-color: white;
+      }
+
+      .headache-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #6C7196;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .bellyache {
+        color: #55C131;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .bellyache.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .bellyache-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #55C131;
+        background-color: white;
+      }
+
+      .bellyache-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #55C131;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+
+      .constipation {
+        color: #67673C;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .constipation.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .constipation-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #67673C;
+        background-color: white;
+      }
+
+      .constipation-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #67673C;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .fatigue {
+        color: #00D0FF;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .fatigue.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .fatigue-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #00D0FF;
+        background-color: white;
+      }
+
+      .fatigue-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #00D0FF;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .isolation {
+        color: #1F77B4;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .isolation.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .isolation-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #1F77B4;
+        background-color: white;
+      }
+
+      .isolation-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #1F77B4;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+
+      .insomnia {
+        color: #F67375;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .insomnia.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .insomnia-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #F67375;
+        background-color: white;
+      }
+
+      .insomnia-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #F67375;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .normality {
+        color: #ACAC84;
+        display: inline;
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .normality.active {
+        color: black; 
+        font-family: "SuisseIntl-Regular", sans-serif;
+      }
+
+      .normality-button {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.7rem;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #ACAC84;
+        background-color: white;
+      }
+
+      .normality-button.selected {
+        width: 20px;
+        height: 20px;
+        background-color: #ACAC84;
+        margin-right: 0.7rem;
+        border: 1px solid transparent;
+        padding: 0;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      
 
 
 
