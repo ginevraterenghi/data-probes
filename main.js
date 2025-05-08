@@ -10,7 +10,7 @@ var text = textElement.innerText;
 var html = text.split('').map(function(letter) {
   var randomColor = colors[Math.floor(Math.random() * colors.length)];
   return '<font color="' + randomColor + '">' + letter + '</font>';
-}).joint('');
+}).join('');
 
 textElement.innerHTML = html;
 
@@ -60,42 +60,6 @@ window.addEventListener('scroll', function() {
   function toggleSelected(btn) {
     btn.classList.toggle('selected');
   }
-
-
-
-  // function toggleOverlay(button) {
-  //   const image = document.getElementById('overlayAlternative'); // Get the image
-  //   const remediesText = document.querySelector('..treatments'); // Get the remedies text
-  
-  //   // Toggle the 'selected' class on the button to change its appearance
-  //   button.classList.toggle('selected');
-  
-  //   // Toggle visibility of the image (dp1-alternative.png)
-  //   if (image.style.display === 'none') {
-  //     image.style.display = 'block'; // Show the image if it's hidden
-  //   } else {
-  //     image.style.display = 'none'; // Hide the image if it's visible
-  //   }
-  
-  //   // Toggle the 'active' class on the remedies text to turn it blue
-  //   remediesText.classList.toggle('active');
-  // }
-  
-  // // Make sure the button is selected and the image is visible by default when the page loads
-  // document.addEventListener("DOMContentLoaded", function() {
-  //   const button = document.querySelector('..treatments-button');
-  //   const image = document.getElementById('overlayImg');
-  //   const remediesText = document.querySelector('..treatments');
-  
-  //   // Ensure the button is selected by default (filled in blue)
-  //   button.classList.add('selected');
-  
-  //   // Ensure the image is visible by default
-  //   image.style.display = 'block';
-  
-  //   // Ensure the remedies text is black by default
-  //   remediesText.classList.remove('active');
-  // });
 
 
   function toggleOverlay(button, imageId, textClass) {
