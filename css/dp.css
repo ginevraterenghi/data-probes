@@ -19,6 +19,8 @@
     line-height: 0;
   }
 
+  
+
       /*! ------------------- GT-Maru round - does not work */ 
     
   
@@ -81,12 +83,14 @@
   }
   
   .oral-description {
-    font-family: SuisseIntl-Regular, sans-serif;
+    font-family: "SuisseIntl-Regular", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
     line-height: 1.5rem;
     padding-left:1rem;
+    color: black;
+    opacity:1;
   }
 
   .head-left, .head-central {
@@ -107,17 +111,23 @@
   z-index: 2;
 }
   
-      .base-image,
-      .overlay-image {
+      .base-image {
         position: absolute;
         top: 0;
         left: 0.2;
         width: 100%;
       }
+
+      .full-width-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
   
       .overlay-image {
-        display: block;
-        position: absolute;
+        /* display: block;
+        position: absolute; */
+
         top: 0;
         left: 0;
         width: 100%;
@@ -128,7 +138,11 @@
         display: none; 
       }
 
-
+      .full-width-image-container {
+        width: 100%;
+        overflow: hidden;
+      }
+      
 
       .button-to-select-text {
         font-family: SuisseIntl-Regular, sans-serif;
@@ -167,6 +181,8 @@
       
       .bottom {
         display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(43, 43, 43, 1);
@@ -219,14 +235,18 @@
 
   
       .treatments {
-        color: #0040FF;
-        display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-clip: padding-box;
+        border-radius: 50px;
+        background-color: #0040FF;
+        padding: 1px;
+        display: inline;
       }
 
       .treatments.active {
-        color: black; /* Makes the text blue */
+        color: black;
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-color: white;
       }
       
       .treatments-button {
@@ -254,14 +274,19 @@
     
       
       .complexity {
-        color: #239857;
-        display: inline;
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-clip: padding-box;
+        border-radius: 50px;
+        background-color: #239857;
+        color: #000000;
+        padding: 1px;
+        display: inline;
       }
 
       .complexity.active {
-        color: black; /* Makes the text blue */
+        color: black; 
         font-family: "SuisseIntl-Regular", sans-serif;
+        background-color: white; 
       }
 
       .complexity-button {
@@ -288,15 +313,17 @@
       }
 
 
+     
+
+
 
       .recurrences {
-        /* color: #FF7800; */
-        display: inline;
-        font-family: "SuisseIntl-Regular", sans-serif;
+        background-clip: padding-box;
+        border-radius: 50px;
         background-color: #FF7800;
-  border-radius: 1rem;
-  padding: 1px 2px;
-      }
+        padding: 1px;
+        display: inline;
+      } 
 
       .recurrences.active {
         color: black; /* Makes the text blue */

@@ -9,7 +9,7 @@ html, body {
 
   
 /* Main container */
-#workshops-main {
+#probes-main {
     padding: 1rem;
     padding-top: 10rem;
     border-top: 0 solid #000;
@@ -21,20 +21,7 @@ html, body {
     z-index: 999;
   }
   
-  /* Hamburger menu */
-  #hamburger-menu {
-    width: 1rem;
-    height: 1rem;
-    padding: 1rem;
-    background-image: url(https://ginevraterenghi.github.io/data-probes/img/hamburger.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    right: 1rem;
-    top: .5rem;
-    cursor: pointer;
-  }
+  
   
   /*! ------------------------------------------
       NAVIGATION
@@ -200,18 +187,18 @@ html, body {
   }
   
   /*! ------------------------------------------
-      WORKSHOPS LAYOUT
+      probes LAYOUT
   ------------------------------------------ */
   
-  .workshops-sub-section,
-  .workshops-sub-section-second-line {
+  .probes-sub-section,
+  .probes-sub-section-second-line {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 0;
-    border-top: 1px solid rgba(43, 43, 43, 1);
+    /* border-top: 1px solid rgba(43, 43, 43, 1); */
   }
   
-  .workshops-sub-section-second-line {
+  .probes-sub-section-second-line {
     padding-top: 1rem;
   }
   
@@ -223,6 +210,7 @@ html, body {
     padding: 1rem;
     box-sizing: border-box;
     position: relative;
+    border-top: 1px solid rgba(43, 43, 43, 1);
   }
   
   .workshop-card + .workshop-card {
@@ -242,80 +230,88 @@ html, body {
   }
   
   /*! ------------------------------------------
-      WORKSHOPS CONTENT STYLES
+      probes CONTENT STYLES
   ------------------------------------------ */
   
-  .workshops-text,
-  .workshops-button {
+  .probes-text,
+  .probes-button {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
   }
-  
-  .workshops-button {
+
+  .probes-button {
     padding-bottom: 1rem;
   }
+
+ .probes-button {
+    padding-bottom: 1rem;
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+} 
   
-  .workshops-tag,
-  .workshops-tag-title,
-  .workshops-left,
-  .workshops-right {
+  .probes-tag,
+  .probes-tag-title,
+  .probes-left,
+  .probes-right {
     padding: 0;
     margin: 0;
   }
   
-  .workshops-right {
+  .probes-right {
     text-align: right;
     padding-top: 1rem;
   }
   
-  .workshops-tag-big,
-  .workshops-tag-name,
-  .workshops-tag-last,
-  .workshops-tag-little,
-  .workshops-tag-little-2,
-  .workshops-tag-description {
+  .probes-tag-big,
+  .probes-tag-name,
+  .probes-tag-last,
+  .probes-tag-little,
+  .probes-tag-little-2,
+  .probes-tag-description {
     font-family: SuisseIntl-Light, sans-serif;
     color: #2a2a2a;
   }
   
-  .workshops-tag-big {
+  .probes-tag-big {
     font-family: SuisseIntl-Book;
     font-size: 1.1rem;
     padding-top: 1rem;
   }
   
-  .workshops-tag-name,
-  .workshops-tag-last {
+  .probes-tag-name,
+  .probes-tag-last {
     font-family: SuisseIntl-Book;
     font-size: 1.3rem;
     color: #ff46ec;
     display: inline-block;
   }
   
-  .workshops-tag-name {
+  .probes-tag-name {
     margin-top: 1rem;
     line-height: 1.7rem;
   }
   
-  .workshops-tag-last {
+  .probes-tag-last {
     margin-top: 0;
     line-height: 1.3rem;
   }
   
-  .workshops-tag-little {
+  .probes-tag-little {
     font-size: 1.1rem;
     line-height: 1.9rem;
   }
   
-  .workshops-tag-little-2 {
+  .probes-tag-little-2 {
     font-size: 1rem;
     text-align: right;
     line-height: 1rem;
     padding-top: 1.3rem;
   }
   
-  .workshops-tag-description {
+  .probes-tag-description {
     font-size: 1rem;
     line-height: 1.3rem;
     white-space: break-spaces;
@@ -327,7 +323,7 @@ html, body {
       MEDIA CONTENT
   ------------------------------------------ */
   
-  .workshops-pic,
+  .probes-pic,
   .dp-3d,
   .final-event-pic {
     width: 100%;
@@ -372,53 +368,67 @@ html, body {
   .read-more-button:hover a {
     color: #000;
   }
+
+  .probes-card-1-left, .probes-card-1-central, .probes-card-1-right, .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
+      border-bottom: 1px solid rgba(43, 43, 43, 1);
+    }
   
   /*! ------------------------------------------
       MEDIA QUERIES
   ------------------------------------------ */
   
   @media (min-width: 900px) {
-    .workshops-card-1 {
+    .probes-card-1 {
       width: 33%;
       padding: 0 3.5% 0 12.5%;
       border-right: 1px solid rgba(43, 43, 43, 1);
     }
   
-    .workshops-card-2 {
+    .probes-card-2 {
       width: 33%;
       padding: 0 12.5% 0 3.5%;
     }
   
-    .workshops-card-3 {
+    .probes-sub-section,
+  .probes-sub-section-second-line {
+     border-top: 1px solid rgba(43, 43, 43, 1); 
+  }
+
+    .probes-card-3 {
       width: 33%;
       padding-left: 3.5%;
     }
   
-    .workshops-card-1-left,
-    .workshops-card-1-central,
-    .workshops-card-1-right {
+    .probes-card-1-left,
+    .probes-card-1-central,
+    .probes-card-1-right {
       width: 19%;
       padding: 0;
       border-bottom: 0;
     }
+
+    .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
+      border-bottom: 0px solid rgba(43, 43, 43, 1);
+    }
+
   
-    .workshops-card-1-left,
-    .workshops-card-1-central {
+    .probes-card-1-left,
+    .probes-card-1-central {
       border-right: 1px solid rgba(43, 43, 43, 1);
     }
   
-    .workshops-card-1-right-3x-horizontal {
+    .probes-card-1-right-3x-horizontal {
       width: 57%;
     }
   
-    .workshops-card-1-right-2x-horizontal,
-    .workshops-card-1-central-2x-horizontal,
-    .workshops-card-1-left-2x-horizontal {
+    .probes-card-1-right-2x-horizontal,
+    .probes-card-1-central-2x-horizontal,
+    .probes-card-1-left-2x-horizontal {
       width: 38%;
     }
   
-    .workshops-card-1-central-2x-horizontal,
-    .workshops-card-1-left-2x-horizontal {
+    .probes-card-1-central-2x-horizontal,
+    .probes-card-1-left-2x-horizontal {
       border-right: 1px solid rgba(43, 43, 43, 1);
     }
   
@@ -430,24 +440,24 @@ html, body {
       margin-top: 0;
     }
   
-    .workshops-tag {
+    .probes-tag {
       width: 50%;
     }
   
-    .workshops-tag-special {
+    .probes-tag-special {
       width: 90%;
     }
   
-    .workshops-tag-last {
+    .probes-tag-last {
       font-size: 1.1rem;
     }
   
-    .workshops-tag-little-2 {
+    .probes-tag-little-2 {
       font-size: .7rem;
     }
   
-    .workshops-sub-section,
-    .workshops-sub-section-second-line {
+    .probes-sub-section,
+    .probes-sub-section-second-line {
       padding: 1.3rem 0;
     }
   
@@ -474,4 +484,26 @@ html, body {
       text-align: right;
       margin: auto 0;
     }
+
+    
+    /* 3 vertical sections data-probe single pages */
+    .single-probe-written {
+      width: 33%;
+      padding: 0;
+      border-bottom: 0;
+      border-right: 1px solid rgba(43, 43, 43, 1);
+    }
+
+    .single-probe-pic {
+      width: 33%;
+      padding: 0;
+      border-bottom: 0;
+      border-right: 1px solid rgba(43, 43, 43, 1);
+    }
+
+    .single-probe-oral {
+      width: 33%;
+    }
+
+
   }

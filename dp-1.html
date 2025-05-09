@@ -68,12 +68,12 @@
     </nav>
   </div>
 
-  <div id="workshops" class="anchors"></div>
-  <section id="workshops-main">
+  <div id="probes" class="anchors"></div>
+  <section id="probes-main">
 
     <!-- Workshop Info -->
-    <section class="workshops-section">
-      <section class="workshops-sub-section">
+    <section class="probes-section">
+      <section class="probes-sub-section">
         <div class="head-left">
           <div class="tag-left">
             <p class="tag-text">Data-probe 1</p>
@@ -93,8 +93,8 @@
     </section>
 
     <!-- Participant Description -->
-    <section class="workshops-section">
-      <section class="workshops-sub-section">
+    <section class="probes-section">
+      <section class="probes-sub-section">
         <div class="head-left">
           <div class="tag-left">
             <p class="tag-text">Participant 1</p>
@@ -109,8 +109,8 @@
     </section>
 
     <!-- Legend -->
-    <section class="workshops-section">
-      <section class="workshops-sub-section">
+    <section class="probes-section">
+      <section class="probes-sub-section">
         <section class="interactive-legend-section">
           <div class="legend-item">
             <button class="treatments-button selected" onclick="toggleOverlay(this, 'overlayTreatments', 'treatments')"></button>
@@ -129,40 +129,62 @@
     </section>
 
     <!-- Data Probe Details -->
-    <section class="workshops-section">
-      <section class="workshops-sub-section">
+    <section class="probes-section">
+      <section class="probes-sub-section">
         <!-- Written Description -->
-        <div class="workshops-card-1-left">
+        <div class="single-probe-written">
           <div class="tag-left">
             <p class="tag-text">Written description:</p>
           </div>
-          <section class="workshops-text">
+          <section class="probes-text">
             <p class="written-description">Not provided</p>
           </section>
         </div>
 
-        <!-- Picture -->
-        <div class="workshops-card-1-central">
+         <!-- Picture -->
+         <div class="single-probe-pic">
           <div class="tag">
-            <p class="tag-text">Picture of the artefact:</p>
+            <p class="tag-text">Picture of the probe:</p>
+          </div>
+          <div class="full-width-image-container">
+            <img src="./probes-img/DP1/dp1.png" alt="Base Image" class="full-width-image">
+            <img src="./probes-img/DP1/dp1-treatments.png" alt="treatments Overlay" class="overlay-image" id="overlayTreatments">
+            <img src="./probes-img/DP1/dp1-complexity.png" alt="Complexity Overlay" class="overlay-image" id="overlayComplexity">
+        <img src="./probes-img/DP1/dp1-recurrences.png" alt="Recurrences Overlay" class="overlay-image" id="overlayRecurrences">
           </div>
 
-		  <div class="image-container">
-        <img src="./probes-img/DP1/dp1.png" alt="Base Image" class="base-image">
-        <img src="./probes-img/DP1/dp1-treatments.png" alt="treatments Overlay" class="overlay-image" id="overlayTreatments">
-        <img src="./probes-img/DP1/dp1-complexity.png" alt="Complexity Overlay" class="overlay-image" id="overlayComplexity">
-        <img src="./probes-img/DP1/dp1-recurrences.png" alt="Recurrences Overlay" class="overlay-image" id="overlayRecurrences">
-		  </div>
-      
-
+         <!-- second row for list of components -->
+        <div class="probes-card-1-left">
+        </div>
+ 
+        <div class="component-list">
+          <div class="tag">
+            <p class="tag-text">List of components:</p>
+          </div>
+          <section class="probes-text">
+      <p class="oral-description">
+        <span class="recurrences">1 blue-painted foam triangular prism</span>
+        <span class="recurrences"><br>1 blue-painted rectangular</span>
+        <span class="treatments"><br>1 white big foam sphere</span>
+        <span class="complexity"><br>1 wooden sphere encased in a wireframe structure</span>
+        <span class="complexity"><br>1 dark red sandpaper rectangular</span>
+        <span class="text-default"><br>1 wooden peg</span>
+        </p>
+          </section>
         </div>
 
+        <!-- second row finisce qui -> trovare altra soluzione -->
+
+        </div> 
+        
+     
+
         <!-- Oral Description -->
-        <div class="workshops-card-1-right-3x-horizontal">
+        <div class="single-probe-oral">
           <div class="tag">
             <p class="tag-text">Oral description:</p>
           </div>
-          <section class="workshops-text">
+          <section class="probes-text">
 			<p class="oral-description">
 				“So, well, as you know, I have never had any personal experience, but I treat, I have treated many patients, so <span class="complexity">I put the rough paper underneath to demonstrate the fact that the world is not smooth, in the sense that some veins always happen. In short, so it's something that some people have certain problems, and others have these problems...</span> well, that's how it is now. <span class="recurrences">The colours because, well, I don't have, I mean, not in the sense that I never see life only with dull colours, but in any case with vivid colours, and I wanted to say that in any case, in the end, in all this problem here, it's not that there's no remedy, even if they are chronic things that, however, even with the passing of time, even with ageing, however, less badly, pass or transform.</span> And then there, <span class="complexity">I put the ball with the wire not to give you a sense of cage constraint, but simply that in any case every situation is complex and must be taken individually. </span>So even though we've tried to find a common definition here, in the end everyone has their own definition anyway, and unfortunately I admit it, it's that in the health world this thing here, if you always try to standardise, but 
 				<span class="treatments">in the end you don't... every situation is its own and then in the end the lighter one of ball for anyway. That's how you also mentioned some of you that in the end let's say antibiotics or at least strong therapies, so they are not always a solution many times it's enough...I have friends who have brought cystitis with acupuncture and well, there are those who actually believe in it. Then there are so many things, even lighter things [alternative solutions to antibiotics].”
@@ -171,29 +193,6 @@
           </section>
         </div>
 
-
-         <!-- second row for list of components -->
-        <div class="workshops-card-1-left">
-        </div>
-
-
-        <div class="component-list">
-          <div class="tag">
-            <p class="tag-text">List of components:</p>
-          </div>
-          <section class="workshops-text">
-			<p class="oral-description">
-				<span class="recurrences"><br>1 blue-painted foam triangular prism</span>
-        <span class="recurrences"><br>1 blue-painted rectangular</span>
-        <span class="treatments"><br>1 white big foam sphere</span>
-        <span class="complexity"><br>1 wooden sphere encased in a wireframe structure</span>
-        <span class="complexity"><br>1 dark red sandpaper rectangular</span>
-        <span class="text-default"><br>1 wooden peg</span>
-			  </p>
-          </section>
-        </div>
-
-        <!-- second row finisce qui -> trovare altra soluzione -->
 
       </section>
     </section>
