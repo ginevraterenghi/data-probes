@@ -1,5 +1,3 @@
-
-
 // Data probes: title colour
 var colors = [
     "#00C6D4", "#00FF99", "#9CF7FF", "#AE00FF", "#FF00E5", "#FF7800", "#0040FF", "#00D0FF",
@@ -55,8 +53,10 @@ window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 4 * 16) { // 10rem = 10 * 16px (assuming 1rem = 16px)
       nav.classList.add('blur-text');
+      nav.style.pointerEvents = 'none';
     } else {
       nav.classList.remove('blur-text');
+      nav.style.pointerEvents = 'auto';
     }
   });
 
@@ -165,3 +165,33 @@ textElements.forEach(el => el.classList.toggle('active'));
     document.querySelector('.bloated-stomach').classList.remove('active');
 
   });
+
+function resizeImageContainer() {
+  const baseImage = document.querySelector('.base-image');
+  console.log(baseImage.offsetWidth)
+  // Assuming you want to resize the wrapper you added.
+  // If you want to resize .image-container directly, change the selector below.
+  const itemContainerWrapper = document.querySelector('.image-container');
+
+  if (baseImage && itemContainerWrapper) {
+    console.log("met first condition")
+    if (baseImage.complete && baseImage.naturalWidth > 0) { // Check if image is loaded and has dimensions
+      console.log("met second condition")
+      const aspectRatio = baseImage.naturalHeight / baseImage.naturalWidth;
+      const currentImageWidth = baseImage.offsetWidth;
+      console.log(aspectRatio)
+      itemContainerWrapper.style.height = (currentImageWidth * aspectRatio) + 'px';
+    } else {
+      // If the image isn't loaded yet, wait for it
+      baseImage.addEventListener('load', resizeImageContainer);
+    }
+  }
+}
+
+// Call the function on initial load and on window resize
+window.addEventListener('DOMContentLoaded', resizeImageContainer);
+window.addEventListener('resize', resizeImageContainer);
+
+// Initial call in case the image is already cached and loaded
+// or if the load event has already fired.
+document.addEventListener('DOMContentLoaded', resizeImageContainer);
