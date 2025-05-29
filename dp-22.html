@@ -73,41 +73,42 @@
 
     <!-- Workshop Info -->
     <section class="probes-section">
-        <section class="probes-sub-section">
-          <div class="head-left">
-            <div class="tag-left">
-              <p class="tag-text">Data-probe 22</p>
-            </div>
+      <section class="probes-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Data-probe 22</p>
           </div>
-          <div class="head-central">
-            <div class="tag">
-              <p class="tag-text">15 October 2024 (WS4)</p>
-            </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">15 October 2024 (WS4)</p>
           </div>
-          <div class="head-central">
-            <div class="tag">
-              <p class="tag-text">Monterrey (MX)</p>
-            </div>
+        </div>
+        <div class="head-central">
+          <div class="tag">
+            <p class="tag-text">Monterrey (MX)</p>
           </div>
-        </section>
+        </div>
       </section>
-  
-      <!-- Participant Description -->
-      <section class="probes-section">
-        <section class="probes-sub-section">
-          <div class="head-left">
-            <div class="tag-left">
-              <p class="tag-text">Group 2</p>
-            </div>
+    </section>
+
+    <!-- Participant Description -->
+    <section class="probes-section">
+      <section class="probes-sub-section">
+        <div class="head-left">
+          <div class="tag-left">
+            <p class="tag-text">Group 2</p>
           </div>
-          <div class="head-central-long">
-            <div class="tag">
-              <p class="tag-text-long">4 attendees of the Cumulus Design Conference
-                </p>
-            </div>
+        </div>
+        <div class="head-central-long">
+          <div class="tag">
+            <p class="tag-text-long">
+               4 attendees of the Cumulus Design Conference
+            </p>
           </div>
-        </section>
+        </div>
       </section>
+    </section>
 
     <!-- Legend -->
     <section class="probes-section">
@@ -121,10 +122,6 @@
              <button class="back-pain-button selected" onclick="toggleOverlay(this, 'overlayBackPain', 'back-pain')"></button>
             <p class="button-to-select-text">lower-back pain</p>
           </div>
-          <!-- <div class="legend-item">
-            <button class="constipation-button selected" onclick="toggleOverlay(this, 'overlayConstipation', 'constipation')"></button>
-            <p class="button-to-select-text">constipation</p>
-          </div> -->
           <div class="legend-item">
             <button class="nausea-button selected" onclick="toggleOverlay(this, 'overlayNausea', 'nausea')"></button>
             <p class="button-to-select-text">nausea</p>
@@ -140,48 +137,80 @@
     <!-- Data Probe Details -->
     <section class="probes-section">
       <section class="probes-sub-section">
+
+
         <!-- Written Description -->
-        <div class="probes-card-1-left">
+        <div class="single-probe-written">
           <div class="tag-left">
             <p class="tag-text">Written description:</p>
           </div>
           <section class="probes-text">
             <p class="written-description">
-              The format did not consider this part.
+             The format did not consider this part.
             </p>
           </section>
         </div>
 
-        <!-- Picture -->
-        <div class="probes-card-1-central">
-          <div class="tag">
-            <p class="tag-text">Picture of the artefact:</p>
-          </div>
+      
 
+        <!-- Picture -->
+
+        <div class="single-probe-pic">
+          <div class="tag">
+            <p class="tag-text">Picture of the probe:</p>
+          </div>
+      <div class="item-container-wrapper">
 		  <div class="image-container">
-        <img src="./probes-img/dp22/dp22.png" alt="Base Image" class="base-image">
+           <img src="./probes-img/dp22/dp22.png" alt="Base Image" class="base-image">
         <img src="./probes-img/dp22/dp22-anxiety.png" alt="Anxiety Overlay" class="overlay-image" id="overlayAnxiety">
         <img src="./probes-img/dp22/dp22-back-pain.png" alt="BackPain Overlay" class="overlay-image" id="overlayBackPain">
         <img src="./probes-img/dp22/dp22-bloated-stomach.png" alt="BloatedStomach Overlay" class="overlay-image" id="overlayBloatedStomach">
         <img src="./probes-img/dp22/dp22-nausea.png" alt="Nausea Overlay" class="overlay-image" id="overlayNausea">
 		  </div>
-      
 
+      <!-- List of components -->
+        <div class="component-list">
+          <div class="tag">
+            <p class="tag-text">List of components:</p>
+          </div>
+          <section class="probes-text">
+     <div class="oral-description"> 
+
+        <div class="list-item anxiety">3 small sphere of polyester;</div>
+        <div class="list-item anxiety">1 big sphere of polyester;</div>
+        <div class="list-item">2 small sphere of foam;</div>
+        <div class="list-item nausea">3 small sphere of wood;</div>
+        <div class="list-item">1 big cube of foam;</div>
+        <div class="list-item">1 small cube of foam;</div>
+
+        <div class="list-item lower-abdomen">1 big sphere of wood;</div>
+        <div class="list-item lower-abdomen">1 big cube of wood;</div>
+        <div class="list-item back-pain">1 big triangular prism of wood;</div>
+
+        <div class="list-item">1 big sphere of foam;</div>
+        <div class="list-item">1 transparent flexible connector;</div>
+        <div class="list-item">5 short wooden pegs;</div>
+        <div class="list-item">6 long wooden pegs;</div>
+    
+     </div>
+          </section>
+        </div>
+      </div>
+  
         </div>
 
         <!-- Oral Description -->
-        <div class="probes-card-1-right-3x-horizontal">
-          <div class="tag">
+         <div class="single-probe-oral">
+          <div class="tag-left">
             <p class="tag-text">Oral description:</p>
           </div>
           <section class="probes-text">
-			<p class="oral-description">
+           <p class="oral-description">
         “So, it's not a person, it's lactose intolerance. <span class="bloated-stomach">At the bottom you don't know what was really messed... the fullness. Yeah, so the state of feeling full quite quickly with this little square</span>. It's really because of the one thing that we variable that we added which is density density. OK. So like <span class="bloated-stomach">the wood squares are quite dense and squared, it's full and then we started with bloating because it starts going out of control, here's one of the big one</span>. So I think we are well. I think this [small sphere of foam] was quite cute. <span class="bloated-stomach">This is bloating [the big sphere of wood]</span> in combination with the <span class="back-pain">lower back pain, yeah, back pain so. The pain is sharp and set the shape</span>. And then I think that’s all. <span class="nausea">This is also nausea because it felt like a marble inside you, because the motion</span> <span class="anxiety">and these, well, that feels like, mental fog</span>. Yeah. <span class="bloated-stomach">And the bloating, that’s sound. Sometimes it feels worse, like the wood. And the size. Normally, at the start of the day would be OK, but as the day...</span>”
-         </p>
+        </p>
           </section>
         </div>
-
-
+      
       </section>
     </section>
 
