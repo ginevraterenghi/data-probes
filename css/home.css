@@ -12,6 +12,7 @@ html, body {
 #probes-main {
     padding: 1rem;
     padding-top: 10rem;
+    padding-bottom: 0rem;
     border-top: 0 solid #000;
   }
   
@@ -231,7 +232,7 @@ html, body {
   nav {
     display: flex;
     flex-wrap: wrap;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     box-sizing: border-box; 
     width: 100%;
     backdrop-filter: blur(0);
@@ -277,46 +278,33 @@ html, body {
     font-family: ABCCamera-Regular;
     src: url(https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.otf);
   }
-  @font-face {
-    font-family: ABCCamera-Medium;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Medium-Trial.woff);
-  }
-  @font-face {
-    font-family: ABCCamera-Regular;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.woff2) format('woff2'),
-         url(https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.woff) format('woff');
-  }
+
   
   /*! ------------------- SuisseIntl */
-  @font-face {
-    font-family: SuisseIntl-Light;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-light-webfont.woff);
-  }
-  @font-face {
-    font-family: SuisseIntl-LightItalic;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-LightItalic.woff);
-  }
-  @font-face {
-    font-family: SuisseIntl-Regular;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-regular-webfont.woff);
-  }
-  @font-face {
-    font-family: SuisseIntl-Book;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-book-webfont.woff);
-  }
-  @font-face {
-    font-family: SuisseIntl-Medium;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-medium-webfont.woff);
-  }
-  @font-face {
-    font-family: SuisseIntl-Bold;
-    src: url(https://ginevraterenghi.github.io/data-probes/font/suisseintl-bold.woff);
-  }
+
+@font-face {
+  font-family: "SuisseIntl-Light";
+  src: url("https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.ttf") format("ttf");
+  src: url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Ligh.otft') format('otf');
+  src: url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+    /*! ------------------- PPPEditorialNew */
+@font-face {
+  font-family: "PPEditorialNew-Regular";
+  src: url("https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.woff") format("woff");
+  src: url('https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
     /*! ------------------- GT-Maru round */
     
     @font-face {
-      font-family: 'GT Maru Regular';
+      font-family: 'GT-Maru-Regular';
       src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff') format('woff');
       src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.otf') format('otf');
       font-weight: normal;
@@ -675,10 +663,11 @@ html, body {
   
     .nav-tag {
       width: calc(100% / 5);
+      margin-top: 0.4rem;
     }
   
     .nav-tag-first {
-      width: 20%;
+      width: 24%;
     }
   
     .nav-tag-last {

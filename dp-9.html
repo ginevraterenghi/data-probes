@@ -115,16 +115,16 @@
       <section class="probes-sub-section">
         <section class="interactive-legend-section">
           <div class="legend-item-first">
+            <button class="pain-button selected" onclick="toggleOverlay(this, 'overlayPain', 'pain')"></button>
+            <p class="button-to-select-text">pain</p>
+          </div>
+          <div class="legend-item">
             <button class="anxiety-button selected" onclick="toggleOverlay(this, 'overlayAnxiety', 'anxiety')"></button>
             <p class="button-to-select-text">anxiety</p>
           </div>
           <div class="legend-item">
-            <button class="discomfort-button selected" onclick="toggleOverlay(this, 'overlayDiscomfort', 'discomfort')"></button>
-            <p class="button-to-select-text">discomfort</p>
-          </div>
-          <div class="legend-item">
-            <button class="recurrences-button selected" onclick="toggleOverlay(this, 'overlayRecurrences', 'recurrences')"></button>
-            <p class="button-to-select-text">recurrences</p>
+            <button class="complexity-button selected" onclick="toggleOverlay(this, 'overlayComplexity', 'complexity')"></button>
+            <p class="button-to-select-text">complexity</p>
           </div>
         </section>
       </section>
@@ -142,7 +142,7 @@
           </div>
           <section class="probes-text">
             <p class="written-description">
-                 “I have tried to have all the, kind of triangle shapes because I'm trying to avoid any sphere, <span class="discomfort">I feel like when it's smooth surface, it doesn't quite explain the pain. I prefer the sharp edge</span> as the way to describe all these sharp edge that I feel. I would like to create <span class="anxiety">something asymmetric. Anything relatively unstable</span>, still too stable for me [laugh]. But it's kind of trying to explain that <span class="anxiety">it's not safe or stable. It's this feeling anxious and you know, kind of feel scared every time you go to the bathroom</span>. I used the<span class="anxiety"> wood rather than other the material because I feel like it's quite heavy and it does suggest this pain</span>, I guess, that is quite important. It is quite significant for me, but <span class="recurrences">I don't want it to be all one material because, the feeling is different and it's by having a mixed material it does make it feel like yes, it's more complex than just, you know, like the same all the time</span>. I try to avoid anything that relatively smooth. OK, so that's why it end up looking like this. Yeah, OK.”
+                Not provided
             </p>
           </section>
         </div>
@@ -158,8 +158,9 @@
       <div class="item-container-wrapper">
 		  <div class="image-container">
             <img src="./probes-img/dp9/dp9.png" alt="Base Image" class="base-image">
-            <img src="./probes-img/dp9/dp9-recurrences.png" alt="Recurrences Overlay" class="overlay-image" id="overlayRecurrences">
-            <img src="./probes-img/dp9/dp9-discomfort.png" alt="Discomfort Overlay" class="overlay-image" id="overlayDiscomfort">
+            <img src="./probes-img/dp9/dp9-pain.png" alt="Recurrences Overlay" class="overlay-image" id="overlayPain">
+            <img src="./probes-img/dp9/dp9-anxiety.png" alt="Anxiety Overlay" class="overlay-image" id="overlayAnxiety">
+            <img src="./probes-img/dp9/dp9-complexity.png" alt="Complexity Overlay" class="overlay-image" id="overlayComplexity">
 		  </div>
 
       <!-- List of components -->
@@ -168,13 +169,11 @@
             <p class="tag-text">List of components:</p>
           </div>
           <section class="probes-text">
-     <div class="oral-description"> 
+     <div class="component-description"> 
 
-        <div class="list-item discomfort">1 big triangular prism in wood;</div>
-        <div class="list-item discomfort">2 small triangular prisms in wood;</div>
-        <div class="list-item discomfort">2 small triangular prisms in polyester;</div>
-        <div class="list-item discomfort">1 big parallelepiped of foam;</div>
-        <div class="list-item">4 long pegs in wood</div>
+        <div class="list-item pain">1 big triangular prism in wood;</div>
+        <div class="list-item pain">2 small triangular prisms in wood;</div>
+        <div class="list-item complexity">2 small triangular prisms in polyester;</div> 4 long pegs in wood
     
      </div>
           </section>
@@ -190,7 +189,7 @@
           </div>
           <section class="probes-text">
            <p class="oral-description">
-            “I have tried to have all the, kind of triangle shapes because I'm trying to avoid any sphere, <span class="discomfort">I feel like when it's smooth surface, it doesn't quite explain the pain. I prefer the sharp edge</span> as the way to describe all these sharp edge that I feel. I would like to create <span class="anxiety">something asymmetric. Anything relatively unstable</span>, still too stable for me [laugh]. But it's kind of trying to explain that <span class="anxiety">it's not safe or stable. It's this feeling anxious and you know, kind of feel scared every time you go to the bathroom</span>. I used the<span class="anxiety"> wood rather than other the material because I feel like it's quite heavy and it does suggest this pain</span>, I guess, that is quite important. It is quite significant for me, but <span class="recurrences">I don't want it to be all one material because, the feeling is different and it's by having a mixed material it does make it feel like yes, it's more complex than just, you know, like the same all the time</span>. I try to avoid anything that relatively smooth. OK, so that's why it end up looking like this. Yeah, OK.”
+            “I have tried to have all the, kind of triangle shapes because I'm trying to avoid any sphere, <span class="pain">I feel like when it's smooth surface, it doesn't quite explain the pain</span>. I prefer the sharp edge as the way to describe all these sharp edge that I feel. I would like to create <span class="anxiety">something asymmetric. Anything relatively unstable</span>, still too stable for me [laugh]. But it's kind of trying to explain that <span class="anxiety">it's not safe or stable. It's this feeling anxious and you know, kind of feel scared every time you go to the bathroom</span>. I used the<span class="pain"> wood rather than other the material because I feel like it's quite heavy and it does suggest this pain</span>, I guess, that is quite important. It is quite significant for me, but <span class="complexity">I don't want it to be all one material because, the feeling is different and it's by having a mixed material it does make it feel like yes, it's more complex than just, you know, like the same all the time</span>. I try to avoid anything that relatively smooth. OK, so that's why it end up looking like this. Yeah, OK.”
                 </p>
           </section>
         </div>

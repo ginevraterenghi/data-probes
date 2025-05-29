@@ -22,33 +22,11 @@
 
 @font-face {
   font-family: "GT-Maru-Regular";
-  src: url("https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2")
-    format("woff2");
-}
-
-.kosugi-maru-regular {
-  font-family: "Kosugi Maru", sans-serif;
-  font-weight: 400;
+  src: url("https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
 }
 
-.m-plus-rounded-1c-light {
-  font-family: "M PLUS Rounded Light", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.m-plus-rounded-1c-regular {
-  font-family: "M PLUS Rounded Regular", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.m-plus-rounded-1c-bold {
-  font-family: "M PLUS Rounded Bold", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
 .component-list {
   top: 0; /* Adjust as needed */
@@ -58,6 +36,7 @@
   border-top: 1px solid rgba(43, 43, 43, 1);
   padding-top: 1rem;
   margin-top: 1rem;
+  font-family: "SuisseIntl-Regular";
 }
 
 .full-width-image-container {
@@ -71,7 +50,7 @@
 }
 
 .tag-text-long {
-  font-family: SuisseIntl-Regular, sans-serif;
+  font-family: "SuisseIntl-Regular", sans-serif;
   text-decoration: none;
   color: #000;
   font-size: 0.8rem;
@@ -80,20 +59,33 @@
 
 .written-description {
   font-family: "IBM Plex Serif", serif;
+ /* font-family: "PPEditorialNew-Regular"; */
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   padding-left: 0rem;
   padding-right: 1rem;
+  padding-bottom: 0rem;
 }
 
 .oral-description {
-  font-family: "SuisseIntl-Regular", sans-serif;
+  font-family: "GT-Maru-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.95rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+
+}
+
+.component-description {
+ font-family: "SuisseIntl-Light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
   padding-left: 0rem;
   padding-right: 0rem;
 
@@ -267,17 +259,26 @@
   ------------------------------------------ */
 
 .treatments {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #0040ff;
-  padding: 0px;
-  display: inline;  
   color: white;
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .treatments.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .treatments-button {
@@ -304,16 +305,26 @@
 }
 
 .complexity {
- background-clip: padding-box;
-  border-radius: 50px;
   background-color: #239857;
-  padding: 0px;
-  display: inline;  
+  color: white;
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .complexity.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .complexity-button {
@@ -340,16 +351,25 @@
 }
 
 .recurrences {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ff7800;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .recurrences.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .recurrences-button {
@@ -375,17 +395,25 @@
 }
 
 .urine {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #c5c500;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
   border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .urine.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .urine-button {
@@ -411,16 +439,26 @@
 }
 
 .lower-abdomen {
- background-clip: padding-box;
+ background-color: #ae00ff;
+  color: white;
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
   border-radius: 50px;
-  background-color: #ae00ff;
-  padding: 0px;
-  display: inline;  
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .lower-abdomen.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .lower-abdomen-button {
@@ -446,16 +484,25 @@
 }
 
 .fever {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #00c6d4;
-  padding: 0px;
-  display: inline;  
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */ 
 }
 
 .fever.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .fever-button {
@@ -481,16 +528,25 @@
 }
 
 .discomfort {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #9cf7ff;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .discomfort.active {
-  color: black; 
-  background-color: white;
+  color: black;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .discomfort-button {
@@ -516,16 +572,25 @@
 }
 
 .pain {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ffce9c;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .pain.active {
-  color: black; 
-  background-color: white;
+  color: black;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .pain-button {
@@ -551,16 +616,26 @@
 }
 
 .infection {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #7b7b7b;
-  padding: 0px;
-  display: inline; 
+  color:white;
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .infection.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .infection-button {
@@ -586,16 +661,25 @@
 }
 
 .back-pain {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ff00e5;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .back-pain.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .back-pain-button {
@@ -621,16 +705,25 @@
 }
 
 .bloated-stomach {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #007bff;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .bloated-stomach.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .bloated-stomach-button {
@@ -656,16 +749,25 @@
 }
 
 .anxiety {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #00ff99;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .anxiety.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .anxiety-button {
@@ -691,16 +793,25 @@
 }
 
 .vomiting {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ffcc00;
-  padding: 0px;
-  display: inline; 
+  display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .vomiting.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .vomiting-button {
@@ -726,16 +837,25 @@
 }
 
 .nausea {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #f6dbff;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .nausea.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .nausea-button {
@@ -761,16 +881,26 @@
 }
 
 .leaks {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #9a5f28;
-  padding: 0px;
+  color: white;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .leaks.active {
-  color: black; 
-  background-color: white;
+  color: black;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .leaks-button {
@@ -796,16 +926,26 @@
 }
 
 .cramps {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #763267;
-  padding: 0px;
+  color: white;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .cramps.active {
-  color: black; 
-  background-color: white;
+  color: black;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .cramps-button {
@@ -831,16 +971,26 @@
 }
 
 .causes {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ff0066;
-  padding: 0px;
+  color: white;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .causes.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .causes-button {
@@ -867,16 +1017,26 @@
 }
 
 .doctor {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #8052eb;
-  padding: 0px;
+  color: white;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .doctor.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .doctor-button {
@@ -903,16 +1063,25 @@
 }
 
 .nose {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #f78dff;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .nose.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .nose-button {
@@ -938,16 +1107,25 @@
 }
 
 .throat {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #5aeee0;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .throat.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .throat-button {
@@ -973,16 +1151,25 @@
 }
 
 .joint-pain {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #b6b622;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .joint-pain.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .joint-pain-button {
@@ -1008,16 +1195,25 @@
 }
 
 .neck-pain {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #9b84ff;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .neck-pain.active {
-  color: black; 
-  background-color: white;
+  color: black;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .neck-pain-button {
@@ -1043,16 +1239,25 @@
 }
 
 .shoulder-pain {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #ffa6d6;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .shoulder-pain.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .shoulder-pain-button {
@@ -1078,16 +1283,25 @@
 }
 
 .headache {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #6c7196;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .headache.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .headache-button {
@@ -1113,16 +1327,25 @@
 }
 
 .bellyache {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #55c131;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .bellyache.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .bellyache-button {
@@ -1148,16 +1371,25 @@
 }
 
 .constipation {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #67673c;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .constipation.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .constipation-button {
@@ -1183,16 +1415,25 @@
 }
 
 .fatigue {
-  background-clip: padding-box;
-  border-radius: 50px;
-  background-color: #00d0ff;
-  padding: 0px;
+ background-color: #00d0ff;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .fatigue.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .fatigue-button {
@@ -1218,16 +1459,25 @@
 }
 
 .isolation {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #1f77b4;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .isolation.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .isolation-button {
@@ -1253,16 +1503,25 @@
 }
 
 .insomnia {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #f67375;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .insomnia.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .insomnia-button {
@@ -1288,16 +1547,25 @@
 }
 
 .normality {
-  background-clip: padding-box;
-  border-radius: 50px;
   background-color: #acac84;
-  padding: 0px;
   display: inline;
+  margin: 0 2px;
+  padding: 0 0.3em; /* no top/bottom padding */
+  line-height: 1;
+  border-radius: 50px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; /* for Safari */
 }
 
 .normality.active {
   color: black;
-  background-color: white;
+  background-color: transparent;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-decoration-break: initial;
+  -webkit-box-decoration-break: initial;
 }
 
 .normality-button {

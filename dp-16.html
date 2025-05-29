@@ -114,13 +114,21 @@
     <section class="probes-section">
       <section class="probes-sub-section">
         <section class="interactive-legend-section">
-       <div class="legend-item">
-              <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
-              <p class="button-to-select-text">urine</p>
-            </div>
-            <div class="legend-item">
+            <div class="legend-item-first">
+             <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
+            <p class="button-to-select-text">urine</p>
+          </div>
+          <div class="legend-item">
              <button class="anxiety-button selected" onclick="toggleOverlay(this, 'overlayAnxiety', 'anxiety')"></button>
             <p class="button-to-select-text">anxiety</p>
+          </div>
+          <div class="legend-item">
+             <button class="leaks-button selected" onclick="toggleOverlay(this, 'overlayLeaks', 'leaks')"></button>
+            <p class="button-to-select-text">bad odours</p>
+          </div>
+          <div class="legend-item">
+             <button class="pain-button selected" onclick="toggleOverlay(this, 'overlayPain', 'pain')"></button>
+            <p class="button-to-select-text">pain</p>
           </div>
           <div class="legend-item">
             <button class="treatments-button selected" onclick="toggleOverlay(this, 'overlayTreatments', 'treatments')"></button>
@@ -163,6 +171,7 @@
 		  <div class="image-container">
           <img src="./probes-img/dp16/dp16.png" alt="Base Image" class="base-image">
         <img src="./probes-img/dp16/dp16-urine.png" alt="Urine Overlay" class="overlay-image" id="overlayUrine">
+        <img src="./probes-img/dp16/dp16-leaks.png" alt="Leaks Overlay" class="overlay-image" id="overlayLeaks">
 		  </div>
 
       <!-- List of components -->
@@ -171,16 +180,14 @@
             <p class="tag-text">List of components:</p>
           </div>
           <section class="probes-text">
-     <div class="oral-description"> 
+     <div class="component-description"> 
 
-        <div class="list-item urine">2 small cubes of polyester;</div>
-        <div class="list-item urine">1 triangular prism of polyester;</div>
+        <div class="list-item leaks">2 small cubes of polyester;</div>
+        <div class="list-item leaks">1 triangular prism of polyester;</div>
         <div class="list-item urine">1 big triangular prism of wood;</div>
         <div class="list-item urine">1 small triangular prism of wood;</div>
         <div class="list-item urine">1 big sphere of foam;</div>
-        <div class="list-item urine">1 big cube of foam;</div>
-        <div class="list-item urine">3 long pegs;</div>
-        <div class="list-item urine">2 short pegs;</div>
+        <div class="list-item urine">1 big cube of foam;</div> 3 long pegs; 2 short pegs;
         
     
      </div>
@@ -197,7 +204,7 @@
           </div>
           <section class="probes-text">
            <p class="oral-description">
-             “<span class="anxiety">The whole point is unstable</span> [...]. And also like well, that's why most of it is like on one side. <span class="urine">The wood and this and the wood part is all about the pain when peeing, so it's the base of everything [1]. That's where what hurts the most. So it's like sharp edges and stuff. This [foam] is for the bloody urine, so to not very explainable why I chose this but I was hoping for fluid texture or something like Play-doh so that we can change the texture [2]</span>. So maybe possibly next time then for <span class="urine">this [polyester] was about the foul smelling urine [3]. So it's same as she said, the sound was very like irritating, so it kind of… it's not something annoying, but it's just irritating to smell also</span>. Yeah, so. That’s all.”
+             “<span class="anxiety">The whole point is unstable</span> [...]. And also like well, that's why most of it is like on one side. <span class="urine">The wood and this and the wood part is all about the pain when peeing, so it's the base of everything [1]</span>. <span class="pain">That's where what hurts the most. So it's like sharp edges and stuff</span>. <span class="urine">This [foam] is for the bloody urine, </span> so to not very explainable why I chose this but I was hoping for fluid texture or something like Play-doh so that we can change the texture [2]. So maybe possibly next time then for <span class="leaks">this [polyester] was about the foul smelling urine [3]. So it's same as she said, the sound was very like irritating, so it kind of… it's not something annoying, but it's just irritating to smell also</span>. Yeah, so. That’s all.”
                 </p>
           </section>
         </div>
