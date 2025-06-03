@@ -53,7 +53,7 @@ window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 4 * 16) { // 10rem = 10 * 16px (assuming 1rem = 16px)
       nav.classList.add('blur-text');
-      nav.style.pointerEvents = 'none';
+      // nav.style.pointerEvents = 'none';
     } else {
       nav.classList.remove('blur-text');
       nav.style.pointerEvents = 'auto';
