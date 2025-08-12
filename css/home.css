@@ -51,6 +51,15 @@ html, body {
     
   } */
 
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: solid .5px black;
+    margin: -8px;
+    padding: 10px; */
+  }
+
    .card.probe-1 {
     grid-row: 1;
     grid-column: 1;
@@ -228,6 +237,10 @@ html, body {
   .hidden-nav-menu {
     display: none;
   }
+
+  .menu-visible{
+    display: contents;
+  }
   
   nav {
     display: flex;
@@ -365,6 +378,14 @@ html, body {
   .text-menu-special {
     font-family: ABCCamera-Regular;
     font-size: 30px;
+  }
+
+  .text-menu-special.mobile{
+    display: none;
+  }
+
+  .text-menu-special.desktop{
+    display: contents;
   }
   
   .text-menu {
@@ -509,19 +530,23 @@ html, body {
       MEDIA CONTENT
   ------------------------------------------ */
   
-  .probes-pic,
-  .dp-3d,
-  .final-event-pic {
+  .probes-pic {
     width: 100%;
-    padding-top: 1rem;
+    max-height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
   }
   
   .dp-3d {
+    width: 100%;
     height: 300px;
+    padding-top: 1rem;
   }
   
   .final-event-pic {
     width: 50%;
+    padding-top: 1rem;
   }
   
   /*! ------------------------------------------
@@ -529,7 +554,7 @@ html, body {
   ------------------------------------------ */
   
   .read-more-button {
-    margin-top: auto;
+    /* margin-top: auto; */
     margin-left: 1rem;
     align-self: flex-start;
     border: 1px solid #000;
@@ -563,11 +588,187 @@ html, body {
       MEDIA QUERIES
   ------------------------------------------ */
   
-  @media (min-width: 900px) {
+  @media (max-width: 900px) {
+
+    .text-menu-special.mobile{
+      display: contents;
+    }
+
+    .text-menu-special.desktop{
+      display: none;
+    }
 
     /* #grid-container {
       grid-template-columns: 1fr;
       } */
+
+    #grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+    }
+
+    .probes-pic{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      height:fit-content;
+    }
+
+
+     .card.probe-1 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .card.probe-2 {
+      grid-row: 2;
+      grid-column: 1;
+    }
+
+    .card.probe-3 {
+      grid-row: 3;
+      grid-column: 1;
+    }
+
+    .card.probe-4 {
+      grid-row: 4;
+      grid-column: 1;
+    }
+
+    .card.probe-5 {
+    grid-row: 5;
+    grid-column: 1;
+    }
+
+    .card.probe-6 {
+    grid-row: 6;
+    grid-column: 1;
+    }
+    
+    .card.probe-7 {
+    grid-row: 7;
+    grid-column: 1;
+    }
+
+    .card.probe-8 {
+    grid-row: 8;
+    grid-column: 1;
+    }
+
+    .card.probe-9 {
+    grid-row: 9;
+    grid-column: 1;
+    }
+
+    .card.probe-10 {
+    grid-row: 10;
+    grid-column: 1;
+    }
+
+    .card.probe-11 {
+    grid-row: 11;
+    grid-column: 1;
+    }
+
+    .card.probe-12 {
+    grid-row: 12;
+    grid-column: 1;
+    }
+
+    .card.probe-15 {
+    grid-row: 15;
+    grid-column: 1;
+    }
+
+    .card.probe-16 {
+    grid-row: 16;
+    grid-column: 1;
+    }
+
+    .card.probe-14 {
+    grid-row: 14;
+    grid-column: 1;
+    }
+
+    .card.probe-13 {
+    grid-row: 13;
+    grid-column: 1;
+    }
+
+    .card.probe-21 {
+    grid-row: 21;
+    grid-column: 1;
+    }
+
+    .card.probe-22 {
+    grid-row: 22;
+    grid-column: 1;
+    }
+
+    .card.probe-23 {
+    grid-row: 23;
+    grid-column: 1;
+    }
+
+    .card.probe-17 {
+    grid-row: 17;
+    grid-column: 1;
+    }
+
+    .card.probe-19 {
+    grid-row: 19;
+    grid-column: 1;
+    }
+
+    .card.probe-20 {
+    grid-row: 20;
+    grid-column: 1;
+    }
+
+    .card.probe-25 {
+    grid-row: 25;
+    grid-column: 1;
+    }
+
+    .card.probe-27 {
+    grid-row: 27;
+    grid-column: 1;
+    }
+
+    .card.probe-28 {
+    grid-row: 28;
+    grid-column: 1;
+    }
+
+    .card.probe-31 {
+    grid-row: 31;
+    grid-column: 1;
+    }
+
+    .card.probe-24 {
+    grid-row: 24;
+    grid-column: 1;
+    }
+
+    .card.probe-18 {
+    grid-row: 18;
+    grid-column: 1;
+    }
+
+    .card.probe-26 {
+    grid-row: 26;
+    grid-column: 1;
+    }
+
+    .card.probe-29 {
+    grid-row: 29;
+    grid-column: 1;
+    }
+
+    .card.probe-30 {
+    grid-row: 30;
+    grid-column: 1;
+    }
 
     .probes-card-1 {
       width: 33%;
@@ -652,6 +853,9 @@ html, body {
       padding-top: 1.2rem;
       padding-bottom: 1.2rem;
     }
+  }
+
+  @media(min-width: 900px) {
   
     #hamburger-menu {
       display: none;

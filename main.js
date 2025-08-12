@@ -6,7 +6,7 @@ var colors = [
     "#FF0066", "#FFA6D6", "#FFCC00", "#FFCE9C"
 ];
 
-var textElement = document.getElementById('textlocation');
+var textElement = document.getElementById('textlocation-desktop');
 var text = textElement.innerText;
 var html = text.split('').map(function(letter) {
   var randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -14,6 +14,15 @@ var html = text.split('').map(function(letter) {
 }).join('');
 
 textElement.innerHTML = html;
+
+var textElementMobile = document.getElementById('textlocation-mobile');
+var textMobile = textElement.innerText;
+var htmlMobile = text.split('').map(function(letter) {
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  return '<font color="' + randomColor + '">' + letter + '</font>';
+}).join('');
+
+textElementMobile.innerHTML = htmlMobile;
 
 // Menu words blurred when scrolling
 window.addEventListener('scroll', function() {
@@ -195,3 +204,11 @@ window.addEventListener('resize', resizeImageContainer);
 // Initial call in case the image is already cached and loaded
 // or if the load event has already fired.
 document.addEventListener('DOMContentLoaded', resizeImageContainer);
+
+//Fake hamburger menu on title
+var title = document.getElementById('title');
+var menu = document.getElementById('menu-elements-toggle');
+title.addEventListener('click', function(){
+  menu.classList.toggle('menu-visible');
+  console.log(menu.classList);
+})
