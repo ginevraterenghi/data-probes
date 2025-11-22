@@ -44,7 +44,7 @@ const INITIAL_CLASSES = [
   '.insomnia', '.normality', '.bloated-stomach'
 ];
 
-const isSubdirectory = window.location.pathname.includes('/data-probes/');
+const isSubdirectory = window.location.pathname.includes('/pages/');
 const basePath = isSubdirectory ? '../' : '';
 
 
