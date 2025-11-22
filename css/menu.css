@@ -1,10 +1,10 @@
 /* Navigation Styles - Mobile First */
 
 .title-header {
-    padding: 16px;
+    padding: 2rem;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Ensure title header is visible in the menu */
@@ -21,7 +21,7 @@ header.navigation-header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 16px; 
+    padding: 2rem; 
     box-sizing: border-box; 
     /* Mobile Active State Logic is complex with classes, handled below */
     position: sticky;
@@ -48,7 +48,7 @@ header.navigation-header.active {
 
 header.navigation-header.active .mobile-menu-title {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 2rem;
 }
 
 h1.page-title {
@@ -57,16 +57,16 @@ h1.page-title {
     font-weight: 200; 
     display: flex; 
     flex-direction: column;
-    gap: 4px;
+    gap: 1rem;
 }
 
 h1.page-title .title {
-    font-size: 24px;
+    font-size: 3rem;
     line-height: 1.2;
 }
 
 h1.page-title .subtitle {
-    font-size: 16px;
+    font-size: 2rem;
     color: #666;
 }
 
@@ -79,9 +79,9 @@ ul.navigation-list {
     /* Mobile Grid */
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr;
-    row-gap: 16px;
-    column-gap: 16px;
-    margin-top: 0px; 
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-top: 0; 
     width: 100%;
     box-sizing: border-box;
 }
@@ -89,7 +89,7 @@ ul.navigation-list {
 header.navigation-header.active ul.navigation-list {
     grid-template-columns: 1fr; 
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 16px;
+    row-gap: 2rem;
     width: 100%;
 }
 
@@ -103,7 +103,7 @@ li.navigation-item {
 
 li.navigation-item a.text-menu-special {
     font-family: ABCCamera-Regular;
-    font-size: 28px;
+    font-size: 4rem;
     font-weight: 200;
     color: #000;
     text-decoration: none;
@@ -112,7 +112,7 @@ li.navigation-item a.text-menu-special {
 /* Expand Button - Visible on Mobile */
 li.navigation-item .expand-button {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 28px;
+    font-size: 4rem;
     font-weight: 200;
     color: #000;
     text-decoration: none;
@@ -147,12 +147,12 @@ li.navigation-item .expand-button {
 .impressum {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px;
+    gap: 1rem;
+    padding: 2rem;
     width: 100%;
     box-sizing: border-box;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 2rem;
     font-weight: 200;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -168,15 +168,15 @@ header.navigation-header .impressum {
 header.navigation-header.active .impressum {
     display: flex !important;
     flex-direction: column;
-    gap: 4px;
+    gap: 1rem;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: 200;
     color: #000;
     text-decoration: none;
     margin-top: auto;
-    padding: 16px;
-    padding-bottom: 32px;
+    padding: 2rem;
+    padding-bottom: 4rem;
 }
 
 header.navigation-header.active .impressum .supervisors {
@@ -194,7 +194,7 @@ header.navigation-header.active .impressum .supervisors {
 
 .text-menu {
     font-family: SuisseIntl-Light;
-    font-size: 20px;
+    font-size: 3rem;
 }
 
 nav {
@@ -210,7 +210,7 @@ nav {
 
 nav a {
     font-family: SuisseIntl-Light, sans-serif;
-    font-size: 20px;
+    font-size: 3rem;
     color: #000;
     text-decoration: none;
     display: inline-block;
@@ -219,7 +219,7 @@ nav a {
 }
 
 .blur-text a {
-    filter: blur(2px);
+    filter: blur(0.25rem);
 }
 
 header.navigation-header.active.blur-text a {
@@ -250,7 +250,7 @@ header.navigation-header.active #physical-variables {
     ul.navigation-list {
         grid-template-columns: repeat(5, 1fr); 
         grid-template-rows: auto; /* Reset rows */
-        margin-top: 0px; 
+        margin-top: 0; 
     }
     
     /* Reset Active state header styles if any leaked? 
@@ -303,7 +303,7 @@ header.navigation-header.active #physical-variables {
     .impressum {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 16px;
+        gap: 2rem;
     }
     
     .impressum .author {
@@ -339,7 +339,7 @@ header.navigation-header.active #physical-variables {
     }
     
     .blur-text li.navigation-item:not(#home) a.text-menu-special {
-        filter: blur(2px);
+        filter: blur(0.25rem);
     }
 
     .blur-text li.navigation-item:not(#home) a.text-menu-special:hover {
