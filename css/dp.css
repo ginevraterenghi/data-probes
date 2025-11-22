@@ -34,6 +34,7 @@
 }
 
 /* Layout - Mobile First */
+
 .probes-sub-section,
 .probes-sub-section-second-line {
   display: grid;
@@ -48,7 +49,6 @@
 }
 
 .probes-sub-section > div:last-child {
-  border-bottom: none;
   padding-bottom: 0;
 }
 
@@ -368,8 +368,19 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding:2rem;
+  padding: 2rem;
   padding-left:0rem;
+}
+
+@media(max-width: 769px) {
+  .legend-item {
+    padding: 1rem;
+  }
+
+  .legend-item-first {
+    padding: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 .page-wrapper {

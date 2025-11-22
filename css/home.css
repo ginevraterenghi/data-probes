@@ -20,7 +20,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(30, 1fr);
+  grid-template-rows: repeat(30, auto);
   gap: 2rem;
   width: 100%;
 }
