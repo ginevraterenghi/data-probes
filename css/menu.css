@@ -222,6 +222,10 @@ nav a {
     filter: blur(2px);
 }
 
+header.navigation-header.active.blur-text a {
+    filter: none;
+}
+
 nav a:hover {
     filter: blur(0);
 }
@@ -240,6 +244,7 @@ header.navigation-header.active #physical-variables {
 
 /* DESKTOP STYLES */
 @media (min-width: 769px) {
+    
     
     /* Navigation List - Desktop */
     ul.navigation-list {

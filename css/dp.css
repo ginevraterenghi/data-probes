@@ -181,9 +181,6 @@
 
 /* Buttons */
 .read-more-button {
-  margin-top: auto;
-  margin-left: 1rem;
-  align-self: flex-start;
   border: 1px solid #000;
   border-radius: 2rem;
   padding: .5rem .7rem;
@@ -393,6 +390,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(43, 43, 43, 1);
+  margin: 0 16px;
 }
 
 .bottom-left,
@@ -411,7 +409,6 @@
 
 .bottom-right {
   text-align: right;
-  padding-right: 1rem;
 }
 
 .bottom-tag {
