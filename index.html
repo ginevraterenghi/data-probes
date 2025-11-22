@@ -1,306 +1,324 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Data-probes</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Data-probes</title>
+    <!-- generate the social media meta tags from https://megatags.co/ and paste them here, replacing the placeholder ones -->
+    <!-- Search Engine -->
+    <meta
+      name="description"
+      content="PhD research to promote women's agency in healthcare through data physicalization"
+    />
+    <meta name="image" content="thumbnail image of your work" />
 
-	<!-- generate the social media meta tags from https://megatags.co/ and paste them here, replacing the placeholder ones -->
-	<!-- Search Engine -->
-	<meta name="description" content="PhD research to promote women's agency in healthcare through data physicalization">
-	<meta name="image" content="thumbnail image of your work">
-	
-	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="Data-probes">
-	<meta itemprop="description" content="PhD research to promote women’s agency in healthcare through data physicalization">
-	<meta itemprop="image" content="img-here">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Data-probes" />
+    <meta
+      itemprop="description"
+      content="PhD research to promote women’s agency in healthcare through data physicalization"
+    />
+    <meta itemprop="image" content="img-here" />
 
-	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta name="og:title" content="Data-probes">
-	<meta name="og:description" content="PhD research to promote women’s agency in healthcare through data physicalization">
-	<meta name="og:image"
-		content="thumbnail image of your work. Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px">
-	<meta name="og:url" content="url to this page">
-	<meta name="og:site_name" content="Data-probes">
-	<meta name="og:locale" content="en_US">
-	<meta name="og:type" content="website">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Data-probes" />
+    <meta
+      name="og:description"
+      content="PhD research to promote women’s agency in healthcare through data physicalization"
+    />
+    <meta
+      name="og:image"
+      content="thumbnail image of your work. Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px"
+    />
+    <meta name="og:url" content="url to this page" />
+    <meta name="og:site_name" content="Data-probes" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:type" content="website" />
 
-	<!-- fav icon link -->
-	<link rel="shortcut icon" type="image/png" href="fav.png" />
+    <!-- fav icon link -->
+    <link rel="shortcut icon" type="image/png" href="fav.png" />
 
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<link rel="stylesheet" type="text/css" href="css/dp.css">
-	
-	<!-- JS -->
-	<script src="main.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/dp.css" />
 
-	<!-- font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="main.js" defer></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Heebo:wght@100..900&display=swap"
-		rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
 
-	<script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-	
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 
-</head>
+	<script>
+		function toggleNavigationItem(itemId) {
+			const item = document.getElementById(itemId);
+			if (item) {
+				item.classList.toggle('active');
+				item.querySelector('.expand-button').textContent = item.classList.contains('active') ? ' - ' : ' + ';
+				let overflow = document.querySelector('body').style.overflow == 'hidden' ? 'visible' : 'hidden';
+				document.querySelector('body').style.overflow = overflow;
+			}
+		}
+	</script>
+  </head>
 
-
-<body>
-<nav id="main-nav-menu">
-		<div id="title" class="nav-tag-first nav-element">
-			<a href="index.html" id="textlocation-desktop" class="text-menu-special desktop">Data-probes:</a>
-			<a id="textlocation-mobile" class="text-menu-special mobile">Data-probes:</a>
+  <body>
+	<header class="navigation-header" id="navigation-header">
+		<h1 class="page-title">
+			<span class="title">Physical variables to shape individual interpretations into collective knowledge.</span>
+			<span class="subtitle">A participatory data physicalization approach to women’s UTI symptoms.</span>
+		</h1>
+    	<nav class="navigation-menu">
+			<ul class="navigation-list">
+				<li id="home" class="navigation-item"><a href="#">Data-probes Artefacts</a> <button class="expand-button" onclick="toggleNavigationItem('navigation-header')"> + </button></li>
+				<li id="physical-variables" class="navigation-item"><a href="#">Phisical-variables Apparatus</a></li>
+				<li id="thesis" class="navigation-item"><a href="#">PhD thesis</a></li>
+			</ul>
+    	</nav>
+		<div class="impressum">
+			<span class="author">Ginevra Terenghi</span>
+			<span class="uni-1">School of Design, Brunel University London</span>
+			<span class="uni-2">University of Applied Sciences and Arts of Southern Switzerland (SUPSI)</span>
+			<span class="year">April 2022 – TBD</span>
 		</div>
-		
-		<div id="menu-elements-toggle" class="hidden-nav-menu">
-			<div class="nav-tag nav-element">
-				<a href="index.html" class="text-menu">physicalizations</a>
-			</div>
+	</header>
 
-			<div class="nav-tag nav-element">
-				<a href="index.html" class="text-menu">methodology</a>
-			</div>
+    <main>
+      <div id="grid-container">
+        <div class="card probe-1">
+          <img class="probes-pic" src="./probes-img/dp1/dp1.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-1.html">Data-probe 1</a>
+          </button>
+        </div>
 
-			<div class="nav-tag nav-element">
-				<a href="index.html" class="text-menu">sources</a>
-			</div>
-			
-			<div class="nav-tag-last nav-element">
-				<a href="index.html">about</a>
-			</div>
-		</div>
-</nav>
+        <div class="card probe-2">
+          <img class="probes-pic" src="./probes-img/dp2/dp2.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-2.html">Data-probe 2</a>
+          </button>
+        </div>
 
-<main>
-	<div id="grid-container">
+        <div class="card probe-3">
+          <img class="probes-pic" src="./probes-img/dp3/dp3.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-3.html">Data-probe 3</a>
+          </button>
+        </div>
 
-		<div class="card probe-1">
-			<img class="probes-pic" src="./probes-img/dp1/dp1.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-1.html">Data-probe 1</a> 
-			</button>
-		</div>
+        <div class="card probe-5">
+          <img class="probes-pic" src="./probes-img/dp5/dp5.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-5.html">Data-probe 5</a>
+          </button>
+        </div>
 
-		<div class="card probe-2">
-			<img class="probes-pic" src="./probes-img/dp2/dp2.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-2.html">Data-probe 2</a> 
-			</button>
-		</div>
+        <div class="card probe-4">
+          <img class="probes-pic" src="./probes-img/dp4/dp4.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-4.html">Data-probe 4</a>
+          </button>
+        </div>
 
-		<div class="card probe-3">
-			<img class="probes-pic" src="./probes-img/dp3/dp3.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-3.html">Data-probe 3</a> 
-			</button>
-		</div>
+        <div class="card probe-6">
+          <img class="probes-pic" src="./probes-img/dp6/dp6.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-6.html">Data-probe 6</a>
+          </button>
+        </div>
 
-		<div class="card probe-5">
-			<img class="probes-pic" src="./probes-img/dp5/dp5.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-5.html">Data-probe 5</a> 
-			</button>
-		</div>
+        <div class="card probe-7">
+          <img class="probes-pic" src="./probes-img/dp7/dp7.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-7.html">Data-probe 7</a>
+          </button>
+        </div>
 
-		<div class="card probe-4">
-			<img class="probes-pic" src="./probes-img/dp4/dp4.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-4.html">Data-probe 4</a> 
-			</button>
-		</div>
+        <div class="card probe-8">
+          <img class="probes-pic" src="./probes-img/dp8/dp8.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-8.html">Data-probe 8</a>
+          </button>
+        </div>
 
-		<div class="card probe-6">
-			<img class="probes-pic" src="./probes-img/dp6/dp6.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-6.html">Data-probe 6</a> 
-			</button>
-		</div>
-		
-		<div class="card probe-7">
-			<img class="probes-pic" src="./probes-img/dp7/dp7.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-7.html">Data-probe 7</a> 
-			</button>
-		</div>
+        <div class="card probe-9">
+          <img class="probes-pic" src="./probes-img/dp9/dp9.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-9.html">Data-probe 9</a>
+          </button>
+        </div>
 
-		<div class="card probe-8">
-			<img class="probes-pic" src="./probes-img/dp8/dp8.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-8.html">Data-probe 8</a> 
-			</button>
-		</div>
+        <div class="card probe-10">
+          <img class="probes-pic" src="./probes-img/dp10/dp10.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-10.html">Data-probe 10</a>
+          </button>
+        </div>
 
-		<div class="card probe-9">
-			<img class="probes-pic" src="./probes-img/dp9/dp9.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-9.html">Data-probe 9</a> 
-			</button>
-		</div>
+        <div class="card probe-11">
+          <img class="probes-pic" src="./probes-img/dp11/dp11.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-11.html">Data-probe 11</a>
+          </button>
+        </div>
 
-		<div class="card probe-10">
-			<img class="probes-pic" src="./probes-img/dp10/dp10.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-10.html">Data-probe 10</a> 
-			</button>
-		</div>
+        <div class="card probe-12">
+          <img class="probes-pic" src="./probes-img/dp12/dp12.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-12.html">Data-probe 12</a>
+          </button>
+        </div>
 
-		<div class="card probe-11">
-			<img class="probes-pic" src="./probes-img/dp11/dp11.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-11.html">Data-probe 11</a> 
-			</button>
-		</div>
+        <div class="card probe-15">
+          <img class="probes-pic" src="./probes-img/dp15/dp15.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-15.html">Data-probe 15</a>
+          </button>
+        </div>
 
-		<div class="card probe-12">
-			<img class="probes-pic" src="./probes-img/dp12/dp12.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-12.html">Data-probe 12</a> 
-			</button>
-		</div>
+        <div class="card probe-16">
+          <img class="probes-pic" src="./probes-img/dp16/dp16.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-16.html">Data-probe 16</a>
+          </button>
+        </div>
 
-		<div class="card probe-15">
-			<img class="probes-pic" src="./probes-img/dp15/dp15.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-15.html">Data-probe 15</a> 
-			</button>
-		</div>
+        <div class="card probe-14">
+          <img class="probes-pic" src="./probes-img/dp14/dp14.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-14.html">Data-probe 14</a>
+          </button>
+        </div>
 
-		<div class="card probe-16">
-			<img class="probes-pic" src="./probes-img/dp16/dp16.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-16.html">Data-probe 16</a> 
-			</button>
-		</div>
+        <div class="card probe-13">
+          <img class="probes-pic" src="./probes-img/dp13/dp13.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-13.html">Data-probe 13</a>
+          </button>
+        </div>
 
-		<div class="card probe-14">
-			<img class="probes-pic" src="./probes-img/dp14/dp14.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-14.html">Data-probe 14</a> 
-			</button>
-		</div>
+        <div class="card probe-21">
+          <img class="probes-pic" src="./probes-img/dp21/dp21.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-21.html">Data-probe 21</a>
+          </button>
+        </div>
 
-		<div class="card probe-13">
-			<img class="probes-pic" src="./probes-img/dp13/dp13.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-13.html">Data-probe 13</a> 
-			</button>
-		</div>
+        <div class="card probe-22">
+          <img class="probes-pic" src="./probes-img/dp22/dp22.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-22.html">Data-probe 22</a>
+          </button>
+        </div>
 
-		<div class="card probe-21">
-			<img class="probes-pic" src="./probes-img/dp21/dp21.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-21.html">Data-probe 21</a> 
-			</button>
-		</div>
+        <div class="card probe-23">
+          <img class="probes-pic" src="./probes-img/dp23/dp23.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-23.html">Data-probe 23</a>
+          </button>
+        </div>
 
-		<div class="card probe-22">
-			<img class="probes-pic" src="./probes-img/dp22/dp22.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-22.html">Data-probe 22</a> 
-			</button>
-		</div>
+        <div class="card probe-17">
+          <img class="probes-pic" src="./probes-img/dp17/dp17.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-17.html">Data-probe 17</a>
+          </button>
+        </div>
 
-		<div class="card probe-23">
-			<img class="probes-pic" src="./probes-img/dp23/dp23.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-23.html">Data-probe 23</a> 
-			</button>
-		</div>
+        <div class="card probe-19">
+          <img class="probes-pic" src="./probes-img/dp19/dp19.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-19.html">Data-probe 19</a>
+          </button>
+        </div>
 
-		<div class="card probe-17">
-			<img class="probes-pic" src="./probes-img/dp17/dp17.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-17.html">Data-probe 17</a> 
-			</button>
-		</div>
+        <div class="card probe-20">
+          <img class="probes-pic" src="./probes-img/dp20/dp20.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-20.html">Data-probe 20</a>
+          </button>
+        </div>
 
-		<div class="card probe-19">
-			<img class="probes-pic" src="./probes-img/dp19/dp19.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-19.html">Data-probe 19</a> 
-			</button>
-		</div>
+        <div class="card probe-25">
+          <img class="probes-pic" src="./probes-img/dp25/dp25.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-25.html">Data-probe 25</a>
+          </button>
+        </div>
 
-		<div class="card probe-20">
-			<img class="probes-pic" src="./probes-img/dp20/dp20.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-20.html">Data-probe 20</a> 
-			</button>
-		</div>
+        <div class="card probe-27">
+          <img class="probes-pic" src="./probes-img/dp27/dp27.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-27.html">Data-probe 27</a>
+          </button>
+        </div>
 
-		<div class="card probe-25">
-			<img class="probes-pic" src="./probes-img/dp25/dp25.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-25.html">Data-probe 25</a> 
-			</button>
-		</div>
+        <div class="card probe-28">
+          <img class="probes-pic" src="./probes-img/dp28/dp28.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-28.html">Data-probe 28</a>
+          </button>
+        </div>
 
-		<div class="card probe-27">
-			<img class="probes-pic" src="./probes-img/dp27/dp27.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-27.html">Data-probe 27</a> 
-			</button>
-		</div>
+        <div class="card probe-31">
+          <img class="probes-pic" src="./probes-img/dp31/dp31.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-31.html">Data-probe 31</a>
+          </button>
+        </div>
 
-		<div class="card probe-28">
-			<img class="probes-pic" src="./probes-img/dp28/dp28.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-28.html">Data-probe 28</a> 
-			</button>
-		</div>
+        <div class="card probe-24">
+          <img class="probes-pic" src="./probes-img/dp24/dp24.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-24.html">Data-probe 24</a>
+          </button>
+        </div>
 
-		<div class="card probe-31">
-			<img class="probes-pic" src="./probes-img/dp31/dp31.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-31.html">Data-probe 31</a> 
-			</button>
-		</div>
+        <div class="card probe-18">
+          <img class="probes-pic" src="./probes-img/dp18/dp18.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-18.html">Data-probe 18</a>
+          </button>
+        </div>
 
-		<div class="card probe-24">
-			<img class="probes-pic" src="./probes-img/dp24/dp24.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-24.html">Data-probe 24</a> 
-			</button>
-		</div>
+        <div class="card probe-26">
+          <img class="probes-pic" src="./probes-img/dp26/dp26.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-26.html">Data-probe 26</a>
+          </button>
+        </div>
 
-		<div class="card probe-18">
-			<img class="probes-pic" src="./probes-img/dp18/dp18.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-18.html">Data-probe 18</a> 
-			</button>
-		</div>
+        <div class="card probe-29">
+          <img class="probes-pic" src="./probes-img/dp29/dp29.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-29.html">Data-probe 29</a>
+          </button>
+        </div>
 
-		<div class="card probe-26">
-			<img class="probes-pic" src="./probes-img/dp26/dp26.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-26.html">Data-probe 26</a> 
-			</button>
-		</div>
-
-		<div class="card probe-29">
-			<img class="probes-pic" src="./probes-img/dp29/dp29.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-29.html">Data-probe 29</a> 
-			</button>
-		</div>
-
-		<div class="card probe-30">
-			<img class="probes-pic" src="./probes-img/dp30/dp30.png">
-			<button id="randomButton" class="read-more-button">
-				<a href="dp-30.html">Data-probe 30</a> 
-			</button>
-		</div>
-
-	</div>
-</main>
-
-</body>
-
+        <div class="card probe-30">
+          <img class="probes-pic" src="./probes-img/dp30/dp30.png" />
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-30.html">Data-probe 30</a>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
