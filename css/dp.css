@@ -2,10 +2,10 @@
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 3rem;
   padding-left: 0rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-bottom: 0rem;
 }
 
@@ -13,16 +13,16 @@
   font-family: "GT-Maru-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 3rem;
   padding-left: 0rem;
   padding-right: 0rem;
 }
 
 /* Main container */
 #probes-main {
-  padding: 1rem;
-  padding-top: 72px;
+  padding: 2rem;
+  padding-top: 9rem;
   padding-bottom: 0rem;
   border-top: 0 solid #000;
 }
@@ -39,12 +39,12 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
   padding-bottom: 0;
 }
 
 .probes-sub-section-second-line {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .probes-sub-section > div:last-child {
@@ -57,7 +57,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
   position: relative;
   border-top: 1px solid rgba(43, 43, 43, 1);
@@ -65,7 +65,7 @@
 }
 
 .workshop-card + .workshop-card {
-  margin-top: 2.6rem; /* 1.3rem * 2 */
+  margin-top: 5rem; /* 2.5rem * 2 */
 }
 
 .workshop-card::after {
@@ -89,14 +89,14 @@
 }
 
 .probes-button {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .probes-button {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   position: relative;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   z-index: 1000;
 } 
 
@@ -110,7 +110,7 @@
 
 .probes-right {
   text-align: right;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .probes-tag-big,
@@ -125,52 +125,52 @@
 
 .probes-tag-big {
   font-family: SuisseIntl-Book;
-  font-size: 1.1rem;
-  padding-top: 1rem;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
 
 .probes-tag-name,
 .probes-tag-last {
   font-family: SuisseIntl-Book;
-  font-size: 1.3rem;
+  font-size: 3rem;
   color: #ff46ec;
   display: inline-block;
 }
 
 .probes-tag-name {
-  margin-top: 1rem;
-  line-height: 1.7rem;
+  margin-top: 2rem;
+  line-height: 4rem;
 }
 
 .probes-tag-last {
   margin-top: 0;
-  line-height: 1.3rem;
+  line-height: 3rem;
 }
 
 .probes-tag-little {
-  font-size: 1.1rem;
-  line-height: 1.9rem;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 .probes-tag-little-2 {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: right;
-  line-height: 1rem;
-  padding-top: 1.3rem;
+  line-height: 2rem;
+  padding-top: 3rem;
 }
 
 .probes-tag-description {
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 2rem;
+  line-height: 3rem;
   white-space: break-spaces;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 /* Media Content */
 .probes-pic,
 .final-event-pic {
-  padding-top:1rem;
+  padding-top:2rem;
   width: 100%;
 }
 
@@ -182,21 +182,21 @@
 /* Buttons */
 .read-more-button {
   border: 1px solid #000;
-  border-radius: 2rem;
-  padding: .5rem .7rem;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
   background-color: #fff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 
 .read-more-button a {
   font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: .8rem;
+  font-size: 2rem;
   line-height: 0;
 }
 
@@ -232,7 +232,7 @@
   width: 100%;
   padding: 0;
   border-bottom: 1px solid rgba(43, 43, 43, 1);
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .tag-left {
@@ -243,7 +243,7 @@
   font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 2rem;
 }
 
 .component-list {
@@ -252,8 +252,8 @@
   z-index: 1;
   pointer-events: none; /* Prevent clicks from affecting this layer */
   border-top: 1px solid rgba(43, 43, 43, 1);
-  padding-top: 1rem;
-  margin-top: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
   font-family: "SuisseIntl-Regular";
 }
 
@@ -271,16 +271,16 @@
   font-family: "SuisseIntl-Regular", sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 .component-description {
  font-family: "SuisseIntl-Light", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 3rem;
   padding-left: 0rem;
   padding-right: 0rem;
 }
@@ -340,7 +340,7 @@
   font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 2rem;
   line-height: 0;
   padding: 0;
   align-items: flex-end;
@@ -360,20 +360,20 @@
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding:1rem;
+  gap: 1rem;
+  padding:2rem;
 }
 
 .legend-item-first {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding:1rem;
+  gap: 1rem;
+  padding:2rem;
   padding-left:0rem;
 }
 
 .page-wrapper {
-  min-height: calc(100vh - 4rem); /* Adjust based on footer height */
+  min-height: calc(100vh - 8rem); /* Adjust based on footer height */
   display: flex;
   flex-direction: column;
 }
@@ -385,12 +385,12 @@
 
 .bottom {
   display: flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(43, 43, 43, 1);
-  margin: 0 16px;
+  margin: 0 2rem;
 }
 
 .bottom-left,
@@ -413,24 +413,24 @@
 
 .bottom-tag {
   margin-top: auto;
-  margin-left: 1rem;
+  margin-left: 2rem;
   align-self: flex-start;
   text-decoration: none;
   display: inline-block;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 
 /* The middle section with vertical layout */
 .vertical-section-group {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* spacing between vertical subsections */
+  gap: 1rem; /* spacing between vertical subsections */
 }
 
 .vertical-subsection {
   flex: 1;
   border: 1px solid #999;
-  padding: 8px;
+  padding: 1rem;
 }
 
 /*! ------------------------------------------
@@ -441,10 +441,10 @@
   background-color: #0040ff;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -461,11 +461,11 @@
 }
 
 .treatments-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #0040ff;
   background-color: white;
@@ -473,13 +473,13 @@
 }
 
 .treatments-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #0040ff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -487,10 +487,10 @@
   background-color: #239857;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -507,11 +507,11 @@
 }
 
 .complexity-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #239857;
   background-color: white;
@@ -519,23 +519,23 @@
 }
 
 .complexity-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #239857;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .recurrences {
   background-color: #ff7800;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -552,34 +552,34 @@
 }
 
 .recurrences-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ff7800;
   background-color: white;
 }
 
 .recurrences-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ff7800;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .urine {
   background-color: #c5c500;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -596,24 +596,24 @@
 }
 
 .urine-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #c5c500;
   background-color: white;
 }
 
 .urine-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #c5c500;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -621,10 +621,10 @@
  background-color: #ae00ff;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -641,34 +641,34 @@
 }
 
 .lower-abdomen-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ae00ff;
   background-color: white;
 }
 
 .lower-abdomen-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ae00ff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .fever {
   background-color: #00c6d4;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */ 
 }
@@ -685,34 +685,34 @@
 }
 
 .fever-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #00c6d4;
   background-color: white;
 }
 
 .fever-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #00c6d4;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .discomfort {
   background-color: #9cf7ff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -729,34 +729,34 @@
 }
 
 .discomfort-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #9cf7ff;
   background-color: white;
 }
 
 .discomfort-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #9cf7ff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .pain {
   background-color: #ffce9c;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -773,24 +773,24 @@
 }
 
 .pain-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ffce9c;
   background-color: white;
 }
 
 .pain-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ffce9c;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -798,10 +798,10 @@
   background-color: #7b7b7b;
   color:white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -818,34 +818,34 @@
 }
 
 .infection-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #7b7b7b;
   background-color: white;
 }
 
 .infection-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #7b7b7b;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .back-pain {
   background-color: #ff00e5;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -862,34 +862,34 @@
 }
 
 .back-pain-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ff00e5;
   background-color: white;
 }
 
 .back-pain-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ff00e5;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .bloated-stomach {
   background-color: #007bff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -906,34 +906,34 @@
 }
 
 .bloated-stomach-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #007bff;
   background-color: white;
 }
 
 .bloated-stomach-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #007bff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .anxiety {
   background-color: #00ff99;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -950,34 +950,34 @@
 }
 
 .anxiety-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #00ff99;
   background-color: white;
 }
 
 .anxiety-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #00ff99;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .vomiting {
   background-color: #ffcc00;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -994,34 +994,34 @@
 }
 
 .vomiting-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ffcc00;
   background-color: white;
 }
 
 .vomiting-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ffcc00;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .nausea {
   background-color: #f6dbff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1038,24 +1038,24 @@
 }
 
 .nausea-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #f6dbff;
   background-color: white;
 }
 
 .nausea-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #f6dbff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1063,10 +1063,10 @@
   background-color: #9a5f28;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1083,24 +1083,24 @@
 }
 
 .leaks-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #9a5f28;
   background-color: white;
 }
 
 .leaks-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #9a5f28;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1108,10 +1108,10 @@
   background-color: #763267;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1128,24 +1128,24 @@
 }
 
 .cramps-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #763267;
   background-color: white;
 }
 
 .cramps-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #763267;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1153,10 +1153,10 @@
   background-color: #ff0066;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1173,11 +1173,11 @@
 }
 
 .causes-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ff0066;
   background-color: white;
@@ -1185,13 +1185,13 @@
 }
 
 .causes-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ff0066;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1199,10 +1199,10 @@
   background-color: #8052eb;
   color: white;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1219,11 +1219,11 @@
 }
 
 .doctor-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #8052eb;
   background-color: white;
@@ -1231,23 +1231,23 @@
 }
 
 .doctor-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #8052eb;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .nose {
   background-color: #f78dff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1264,34 +1264,34 @@
 }
 
 .nose-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #f78dff;
   background-color: white;
 }
 
 .nose-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #f78dff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .throat {
   background-color: #5aeee0;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1308,34 +1308,34 @@
 }
 
 .throat-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #5aeee0;
   background-color: white;
 }
 
 .throat-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #5aeee0;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .joint-pain {
   background-color: #b6b622;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1352,34 +1352,34 @@
 }
 
 .joint-pain-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #b6b622;
   background-color: white;
 }
 
 .joint-pain-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #b6b622;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .neck-pain {
   background-color: #9b84ff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1396,34 +1396,34 @@
 }
 
 .neck-pain-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #9b84ff;
   background-color: white;
 }
 
 .neck-pain-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #9b84ff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .shoulder-pain {
   background-color: #ffa6d6;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1440,34 +1440,34 @@
 }
 
 .shoulder-pain-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #ffa6d6;
   background-color: white;
 }
 
 .shoulder-pain-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ffa6d6;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .headache {
   background-color: #6c7196;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1484,34 +1484,34 @@
 }
 
 .headache-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #6c7196;
   background-color: white;
 }
 
 .headache-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #6c7196;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .bellyache {
   background-color: #55c131;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1528,34 +1528,34 @@
 }
 
 .bellyache-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #55c131;
   background-color: white;
 }
 
 .bellyache-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #55c131;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .constipation {
   background-color: #67673c;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1572,34 +1572,34 @@
 }
 
 .constipation-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #67673c;
   background-color: white;
 }
 
 .constipation-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #67673c;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .fatigue {
  background-color: #00d0ff;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1616,34 +1616,34 @@
 }
 
 .fatigue-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #00d0ff;
   background-color: white;
 }
 
 .fatigue-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #00d0ff;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .isolation {
   background-color: #1f77b4;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1660,34 +1660,34 @@
 }
 
 .isolation-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #1f77b4;
   background-color: white;
 }
 
 .isolation-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #1f77b4;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .insomnia {
   background-color: #f67375;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1704,34 +1704,34 @@
 }
 
 .insomnia-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #f67375;
   background-color: white;
 }
 
 .insomnia-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #f67375;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
 .normality {
   background-color: #acac84;
   display: inline;
-  margin: 0 2px;
-  padding: 0 0.3em; /* no top/bottom padding */
+  margin: 0 0.5rem;
+  padding: 0 0.5rem; /* no top/bottom padding */
   line-height: 1;
-  border-radius: 50px;
+  border-radius: 6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone; /* for Safari */
 }
@@ -1748,24 +1748,24 @@
 }
 
 .normality-button {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
   border: 1px solid #acac84;
   background-color: white;
 }
 
 .normality-button.selected {
-  width: 20px;
-  height: 20px;
+  width: 3rem;
+  height: 3rem;
   background-color: #acac84;
-  margin-right: 0.7rem;
+  margin-right: 2rem;
   border: 1px solid transparent;
   padding: 0;
-  margin: 5px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1786,8 +1786,8 @@
 .probes-sub-section-second-line {
     display: flex;
     border-top: 1px solid rgba(43, 43, 43, 1);
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
   .probes-card-3 {
@@ -1804,7 +1804,7 @@
   }
 
   .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
-    border-bottom: 0px solid rgba(43, 43, 43, 1);
+    border-bottom: 0 solid rgba(43, 43, 43, 1);
   }
 
   .probes-card-1-left,
@@ -1844,11 +1844,11 @@
   }
 
   .probes-tag-last {
-    font-size: 1.1rem;
+    font-size: 3rem;
   }
 
   .probes-tag-little-2 {
-    font-size: .7rem;
+    font-size: 2rem;
   }
   
   /* 3 vertical sections data-probe single pages */
@@ -1862,8 +1862,8 @@
   .single-probe-pic {
     width: 31%;
     border-bottom: 0;
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left:2rem;
+    padding-right:2rem;
     border-right: 1px solid rgba(43, 43, 43, 1);
   }
 
@@ -1878,7 +1878,7 @@
     width: 33%;
     padding: 0;
     border-bottom: 0;
-    padding-left:1rem;
+    padding-left:2rem;
     box-sizing: border-box;
   }
 
@@ -1887,13 +1887,13 @@
     border-bottom: 0;
     box-sizing: border-box;
     border-top: 1px solid rgba(43, 43, 43, 1);
-    padding-top: 1rem;
-    margin-top: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
   }
   
   .bottom {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .probe-card-central {
