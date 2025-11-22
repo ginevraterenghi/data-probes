@@ -17,8 +17,13 @@ img {
   display: block;
 }
 
-/* CSS Variables for Probe Colors */
+/* CSS Variables */
 :root {
+  /* Breakpoints */
+  --bp-mobile: 768px;
+  --bp-desktop: 769px;
+
+  /* Probe Colors */
   --col-treatments: #0040ff;
   --col-complexity: #239857;
   --col-recurrences: #ff7800;
