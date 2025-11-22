@@ -1,7 +1,7 @@
 /* Main container */
 #probes-main {
-  padding: 1rem;
-  padding-top: 10rem;
+  padding: 2rem;
+  padding-top: 20rem;
   padding-bottom: 0rem;
   border-top: 0 solid #000;
 }
@@ -14,14 +14,14 @@
 
 /* Mobile First Grid */
 #grid-container {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(30, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@ main {
   justify-content: space-between;
   border: solid 0.5px black;
   margin: 0;
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* Mobile Probes Pic */
@@ -51,7 +51,7 @@ main {
   max-height: 80%;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* Mobile Grid Placement */
@@ -89,29 +89,29 @@ main {
 
 .final-event-pic {
   width: 50%;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 /* Buttons */
 .read-more-button {
-  margin-left: 1rem;
+  margin-left: 2rem;
   align-self: flex-start;
   border: 1px solid #000;
-  border-radius: 2rem;
-  padding: 0.5rem 0.7rem;
+  border-radius: 4rem;
+  padding: 1rem 2rem;
   background-color: #fff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 
 .read-more-button a {
   font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 2rem;
   line-height: 0;
 }
 
@@ -132,12 +132,12 @@ main {
   #grid-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .probes-pic {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
   }
 
   .card.probe-1 { grid-row: 1; grid-column: 1; }
