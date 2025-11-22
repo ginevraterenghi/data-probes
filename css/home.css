@@ -19,7 +19,6 @@
   padding-right: 1rem;
   box-sizing: border-box;
   display: grid;
-  /* Mobile Grid */
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(30, 1fr);
   gap: 1rem;
@@ -41,7 +40,6 @@ main {
   border: solid 0.5px black;
   margin: -8px;
   padding: 10px;
-  /* Mobile Card Width implicit from grid */
 }
 
 /* Mobile Probes Pic */
@@ -121,7 +119,6 @@ main {
   color: #000;
 }
 
-/* Other utility classes found in home.css */
 .probes-card-1-left,
 .probes-card-1-central,
 .probes-card-1-right,
@@ -130,11 +127,6 @@ main {
   border-bottom: 1px solid rgba(43, 43, 43, 1);
 }
 
-/* Navigation and Probes Layout classes are now in dp.css or menu.css,
-   but home.css had copies. I'll keep them minimal or referencing base.css/dp.css if they are shared.
-   Actually, some classes in home.css like .probes-tag etc seem redundant if they are in dp.css and both are loaded.
-   I will only keep grid logic and home-specifics here.
-*/
 
 @media (min-width: 769px) {
   #grid-container {
@@ -179,14 +171,4 @@ main {
   .card.probe-26 { grid-row: 9; grid-column: 3; }
   .card.probe-29 { grid-row: 9; grid-column: 4; }
   .card.probe-30 { grid-row: 9; grid-column: 5; }
-  
-  /* Grid Container alternate definition from home.css line 205?
-     "display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 8rem;"
-     This selector .grid-container (class) vs #grid-container (id)
-     The HTML uses id="grid-container". The class seems unused or legacy. I'll ignore the class .grid-container.
-  */
-  
-  /* The rest of styles in home.css min-width query (lines 675+) were duplicates of dp.css. 
-     Since home.html doesn't seem to use .single-probe-*, I won't duplicate them here.
-  */
 }

@@ -4,7 +4,14 @@
     padding: 16px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
+
+/* Ensure title header is visible in the menu */
+/* header.navigation-header .title-header {
+    display: block;
+    margin-bottom: 1rem;
+} */
 
 .mobile-menu-title {
     display: none;

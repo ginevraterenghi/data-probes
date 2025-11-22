@@ -1,5 +1,3 @@
-/* Base Styles, Resets, and Variables */
-
 /* Reset & Box Sizing */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,13 +15,9 @@ img {
   display: block;
 }
 
-/* CSS Variables */
 :root {
-  /* Breakpoints */
   --bp-mobile: 768px;
   --bp-desktop: 769px;
-
-  /* Probe Colors */
   --col-treatments: #0040ff;
   --col-complexity: #239857;
   --col-recurrences: #ff7800;
@@ -56,7 +50,6 @@ img {
   --col-normality: #acac84;
 }
 
-/* Fonts */
 @font-face {
   font-family: 'ABCCamera-Regular';
   src: url('../assets/font/ABCCamera-Regular-Trial.otf');
