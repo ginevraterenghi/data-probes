@@ -1,10 +1,241 @@
-.tag {
+.written-description {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding-left: 0rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+}
+
+.oral-description {
+  font-family: "GT-Maru-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/* Main container */
+#probes-main {
+  padding: 1rem;
+  padding-top: 72px;
+  padding-bottom: 0rem;
+  border-top: 0 solid #000;
+}
+
+/* Fixed Header */
+#header-fixed-top {
+  width: 100%;
+  z-index: 999;
+}
+
+/* Layout - Mobile First */
+.probes-sub-section,
+.probes-sub-section-second-line {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 1rem;
+  padding-bottom: 0;
+}
+
+.probes-sub-section-second-line {
+  padding-top: 1rem;
+}
+
+.probes-sub-section > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.workshop-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  border-top: 1px solid rgba(43, 43, 43, 1);
+  width: 100%;
+}
+
+.workshop-card + .workshop-card {
+  margin-top: 2.6rem; /* 1.3rem * 2 */
+}
+
+.workshop-card::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgba(43, 43, 43, 1);
+  width: 100%;
+  left: 0;
+}
+
+.workshop-card:last-child::after {
+  border-bottom: 0;
+}
+
+/* Content Styles */
+.probes-text,
+.probes-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.probes-button {
+  padding-bottom: 1rem;
+}
+
+.probes-button {
+  padding-bottom: 1rem;
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+} 
+
+.probes-tag,
+.probes-tag-title,
+.probes-left,
+.probes-right {
+  padding: 0;
+  margin: 0;
+}
+
+.probes-right {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.probes-tag-big,
+.probes-tag-name,
+.probes-tag-last,
+.probes-tag-little,
+.probes-tag-little-2,
+.probes-tag-description {
+  font-family: SuisseIntl-Light, sans-serif;
+  color: #2a2a2a;
+}
+
+.probes-tag-big {
+  font-family: SuisseIntl-Book;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.probes-tag-name,
+.probes-tag-last {
+  font-family: SuisseIntl-Book;
+  font-size: 1.3rem;
+  color: #ff46ec;
+  display: inline-block;
+}
+
+.probes-tag-name {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+
+.probes-tag-last {
+  margin-top: 0;
+  line-height: 1.3rem;
+}
+
+.probes-tag-little {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+.probes-tag-little-2 {
+  font-size: 1rem;
+  text-align: right;
+  line-height: 1rem;
+  padding-top: 1.3rem;
+}
+
+.probes-tag-description {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  white-space: break-spaces;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* Media Content */
+.probes-pic,
+.final-event-pic {
+  padding-top:1rem;
+  width: 100%;
+}
+
+
+.final-event-pic {
+  width: 50%;
+}
+
+/* Buttons */
+.read-more-button {
   margin-top: auto;
-  /* margin-left: 1rem; */
+  margin-left: 1rem;
   align-self: flex-start;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  padding: .5rem .7rem;
+  background-color: #fff;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   line-height: 1rem;
+}
+
+.read-more-button a {
+  font-family: SuisseIntl-Regular, sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: .8rem;
+  line-height: 0;
+}
+
+.read-more-button:hover a {
+  color: #000;
+}
+
+.probes-card-1-left, .probes-card-1-central, .probes-card-1-right, .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
+    border-bottom: 1px solid rgba(43, 43, 43, 1);
+}
+
+/* Mobile Specifics */
+/* #grid-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  gap: 2rem;
+  height: auto;
+} */
+
+.card {
+  width: 100%;
+}
+
+.card > img {
+  width: 100%;
+  height: auto;
+}
+
+.head-left,
+.head-central,
+.head-central-long {
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid rgba(43, 43, 43, 1);
+  padding-bottom: 1rem;
 }
 
 .tag-left {
@@ -17,16 +248,6 @@
   color: #000;
   font-size: 0.8rem;
 }
-
-/*! ------------------- GT-Maru round - does not work */
-
-@font-face {
-  font-family: "GT-Maru-Regular";
-  src: url("https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 .component-list {
   top: 0; /* Adjust as needed */
@@ -57,29 +278,6 @@
   line-height: 1.4;
 }
 
-.written-description {
-  font-family: "IBM Plex Serif", serif;
- /* font-family: "PPEditorialNew-Regular"; */
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  padding-left: 0rem;
-  padding-right: 1rem;
-  padding-bottom: 0rem;
-}
-
-.oral-description {
-  font-family: "GT-Maru-Regular", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  padding-left: 0rem;
-  padding-right: 0rem;
-
-}
-
 .component-description {
  font-family: "SuisseIntl-Light", sans-serif;
   font-weight: 400;
@@ -88,22 +286,6 @@
   line-height: 1.6rem;
   padding-left: 0rem;
   padding-right: 0rem;
-
-}
-
-
-
-.head-left,
-.head-central {
-  width: 19%;
-  padding: 0;
-  border-bottom: 0;
-}
-
-.head-central-long {
-  width: 60%;
-  padding: 0;
-  border-bottom: 0;
 }
 
 .image-container {
@@ -1590,7 +1772,128 @@
   cursor: pointer;
 }
 
-@media (min-width: 900px) {
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .probes-card-1 {
+    width: 33%;
+    padding: 0 3.5% 0 12.5%;
+    border-right: 1px solid rgba(43, 43, 43, 1);
+  }
+
+  .probes-card-2 {
+    width: 33%;
+    padding: 0 12.5% 0 3.5%;
+  }
+
+  .probes-sub-section,
+.probes-sub-section-second-line {
+    display: flex;
+    border-top: 1px solid rgba(43, 43, 43, 1);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+  .probes-card-3 {
+    width: 33%;
+    padding-left: 3.5%;
+  }
+
+  .probes-card-1-left,
+  .probes-card-1-central,
+  .probes-card-1-right {
+    width: 33%;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
+    border-bottom: 0px solid rgba(43, 43, 43, 1);
+  }
+
+  .probes-card-1-left,
+  .probes-card-1-central {
+    border-right: 1px solid rgba(43, 43, 43, 1);
+  }
+
+  .probes-card-1-right-3x-horizontal {
+    width: 33%;
+  }
+
+  .probes-card-1-right-2x-horizontal,
+  .probes-card-1-central-2x-horizontal,
+  .probes-card-1-left-2x-horizontal {
+    width: 38%;
+  }
+
+  .probes-card-1-central-2x-horizontal,
+  .probes-card-1-left-2x-horizontal {
+    border-right: 1px solid rgba(43, 43, 43, 1);
+  }
+
+  .workshop-card {
+    width: 30%;
+  }
+
+  .workshop-card + .workshop-card {
+    margin-top: 0;
+  }
+
+  .probes-tag {
+    width: 50%;
+  }
+
+  .probes-tag-special {
+    width: 90%;
+  }
+
+  .probes-tag-last {
+    font-size: 1.1rem;
+  }
+
+  .probes-tag-little-2 {
+    font-size: .7rem;
+  }
+  
+  /* 3 vertical sections data-probe single pages */
+  .single-probe-written {
+    width: 33%;
+    padding: 0;
+    border-bottom: 0;
+    border-right: 1px solid rgba(43, 43, 43, 1);
+  }
+
+  .single-probe-pic {
+    width: 31%;
+    border-bottom: 0;
+    padding-left:1rem;
+    padding-right:1rem;
+    border-right: 1px solid rgba(43, 43, 43, 1);
+  }
+
+  .single-probe-pic-horizontal {
+    width: 64%;
+    border-bottom: 0;
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+
+  .single-probe-oral {
+    width: 33%;
+    padding: 0;
+    border-bottom: 0;
+    padding-left:1rem;
+    box-sizing: border-box;
+  }
+
+  .single-probe-oral-horizontal {
+    padding: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(43, 43, 43, 1);
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  
   .bottom {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1605,5 +1908,18 @@
 
   .probe-card-rights {
     width: 57%;
+  }
+
+  .head-left,
+  .head-central {
+    width: 19%;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .head-central-long {
+    width: 60%;
+    padding: 0;
+    border-bottom: 0;
   }
 }
