@@ -104,7 +104,7 @@ function toggleOverlay(button, imageId, textClass) {
   }
 }
 
-function loadImpressum() {
+function loadFooter() {
   fetch(basePath + 'footer.html')
     .then(response => response.text())
     .then(data => {
@@ -136,7 +136,7 @@ function loadMenu() {
       if (header) {
         header.outerHTML = data;
         initUI();
-        loadImpressum();
+        loadFooter();
       } else {
         const body = document.querySelector('body');
         if (body) {
@@ -152,7 +152,7 @@ function loadMenu() {
             targetParent.insertBefore(child, referenceNode);
           });
           initUI();
-          loadImpressum();
+          loadFooter();
         }
       }
     })
