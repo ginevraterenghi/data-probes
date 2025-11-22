@@ -1,0 +1,288 @@
+/* Navigation Menu Styles extracted from css/home.css */
+
+/* Fonts required for menu */
+@font-face {
+  font-family: ABCCamera-Regular;
+  src: url(https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.otf);
+}
+
+@font-face {
+  font-family: "SuisseIntl-Light";
+  src: url("https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.ttf")
+    format("ttf");
+  src: url("https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Ligh.otft")
+    format("otf");
+  src: url("https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Navigation Styles */
+
+.title-header {
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mobile-menu-title {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header.navigation-header.active .mobile-menu-title {
+        display: block;
+        margin-bottom: 16px;
+    }
+}
+
+header.navigation-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px; 
+    box-sizing: border-box; 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: transparent; 
+}
+
+@media (max-width: 768px) {
+    header.navigation-header.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100svh; 
+        height: 100dvh;
+        overflow-y: auto;
+        background-color: white;
+        box-sizing: border-box;
+    }
+}
+
+h1.page-title {
+    margin: 0; 
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 200; 
+    display: flex; 
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Also include .title and .subtitle styles if they are not global */
+h1.page-title .title {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+h1.page-title .subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+ul.navigation-list {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    column-gap: 16px;
+    margin-top: 0px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    ul.navigation-list {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+        row-gap: 16px;
+        width: 100%;
+    }
+
+    header.navigation-header.active ul.navigation-list {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 16px;
+        width: 100%;
+    }
+}
+
+.blur-text li.navigation-item:not(#home) a.text-menu-special {
+    filter: blur(2px);
+}
+
+.blur-text li.navigation-item:not(#home) a.text-menu-special:hover {
+    filter: blur(0);
+}
+
+li.navigation-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+li.navigation-item a.text-menu-special {
+    font-family: ABCCamera-Regular;
+    font-size: 28px;
+    font-weight: 200;
+    color: #000;
+    text-decoration: none;
+}
+
+li.navigation-item .expand-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: #000;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    grid-column: 1 / span 2;
+}
+
+@media (max-width: 768px) {
+    li.navigation-item .expand-button {
+        display: flex;
+    }
+
+    #home {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+#physical-variables {
+    grid-column: 3 / span 2;
+}
+
+@media (max-width: 768px) {
+    #physical-variables {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+#thesis {
+    grid-column: 5;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    #thesis {
+        grid-column: 1;
+        grid-row: 3;
+        justify-content: flex-start;
+    }
+}
+
+.impressum {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    header.navigation-header {
+        grid-template-rows: 1fr; 
+    }
+
+    header.navigation-header  #thesis {
+        display: none;
+    }
+
+    header.navigation-header #physical-variables {
+        display: none;
+    }
+
+    header.navigation-header.active #thesis {
+        display: block;
+    }
+
+    header.navigation-header.active #physical-variables {
+        display: block;
+    }
+
+    header.navigation-header.active .impressum {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        font-size: 16px;
+        font-weight: 200;
+        color: #000;
+        text-decoration: none;
+        margin-top: auto;
+    }
+}
+
+/* Typography for menu */
+.text-menu-special {
+    font-family: ABCCamera-Regular;
+    font-size: 30px;
+}
+
+.text-menu-special.mobile {
+    display: none;
+}
+
+.text-menu-special.desktop {
+    display: contents;
+}
+
+.text-menu {
+    font-family: SuisseIntl-Light;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    .text-menu-special.mobile {
+        display: contents;
+    }
+
+    .text-menu-special.desktop {
+        display: none;
+    }
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; 
+    box-sizing: border-box;
+    width: 100%;
+    backdrop-filter: blur(0);
+    z-index: 999;
+    position: static; /* Override fixed position from probes.css if present */
+}
+
+nav a {
+    font-family: SuisseIntl-Light, sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: baseline;
+    transition: filter 0.3s ease;
+}
+
+.blur-text a {
+    filter: blur(2px);
+}
+
+nav a:hover {
+    filter: blur(0);
+}

@@ -7,30 +7,36 @@ var colors = [
 ];
 
 var textElement = document.getElementById('textlocation-desktop');
-var text = textElement.innerText;
-var html = text.split('').map(function(letter) {
-  var randomColor = colors[Math.floor(Math.random() * colors.length)];
-  return '<font color="' + randomColor + '">' + letter + '</font>';
-}).join('');
-
-textElement.innerHTML = html;
+if (textElement) {
+    var text = textElement.innerText;
+    var html = text.split('').map(function(letter) {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      return '<font color="' + randomColor + '">' + letter + '</font>';
+    }).join('');
+    
+    textElement.innerHTML = html;
+}
 
 var textElementMobile = document.getElementById('textlocation-mobile');
-var textMobile = textElement.innerText;
-var htmlMobile = text.split('').map(function(letter) {
-  var randomColor = colors[Math.floor(Math.random() * colors.length)];
-  return '<font color="' + randomColor + '">' + letter + '</font>';
-}).join('');
-
-textElementMobile.innerHTML = htmlMobile;
+if (textElementMobile) {
+    var textMobile = textElementMobile.innerText;
+    var htmlMobile = textMobile.split('').map(function(letter) {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      return '<font color="' + randomColor + '">' + letter + '</font>';
+    }).join('');
+    
+    textElementMobile.innerHTML = htmlMobile;
+}
 
 // Menu words blurred when scrolling
 window.addEventListener('scroll', function() {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 10) {
-    nav.classList.add('blur-text');
-  } else {
-    nav.classList.remove('blur-text');
+  const nav = document.getElementById('navigation-header');
+  if (nav) {
+      if (window.scrollY > 10) {
+        nav.classList.add('blur-text');
+      } else {
+        nav.classList.remove('blur-text');
+      }
   }
 });
 
@@ -57,17 +63,6 @@ buttons.forEach(function(button) {
   });
 });
 
-// Menu words blurred when scrolling past 10rem
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 4 * 16) { // 10rem = 10 * 16px (assuming 1rem = 16px)
-      nav.classList.add('blur-text');
-      // nav.style.pointerEvents = 'none';
-    } else {
-      nav.classList.remove('blur-text');
-      nav.style.pointerEvents = 'auto';
-    }
-  });
 
   function toggleSelected(btn) {
     btn.classList.toggle('selected');
@@ -83,112 +78,75 @@ textElements.forEach(el => el.classList.toggle('active'));
     button.classList.toggle('selected');
   
     // Toggle image visibility
-    if (image.style.display === 'none') {
-      image.style.display = 'block';
-    } else {
-      image.style.display = 'none';
+    if (image) {
+        if (image.style.display === 'none') {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
     }
   
     // Toggle text color class
-    textElement.classList.toggle('active');
+    if (typeof textElement !== 'undefined' && textElement) {
+        textElement.classList.toggle('active');
+    }
   }
   
   // Initialize default state on page load
   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector('.treatments-button').classList.add('selected');
-    document.querySelector('.complexity-button').classList.add('selected');
-    document.querySelector('.recurrences-button').classList.add('selected');
-    document.querySelector('.urine-button').classList.add('selected');
-    document.querySelector('.lower-abdomen-button').classList.add('selected');
-    document.querySelector('.fever-button').classList.add('selected');
-    document.querySelector('.back-pain-button').classList.add('selected');
-    document.querySelector('.discomfort-button').classList.add('selected');
-    document.querySelector('.pain-button').classList.add('selected');
-    document.querySelector('.infection-button').classList.add('selected');
-    document.querySelector('.causes-button').classList.add('selected');
-    document.querySelector('.doctor-button').classList.add('selected');
-    document.querySelector('.nose-button').classList.add('selected');
-    document.querySelector('.throat-button').classList.add('selected');
-    document.querySelector('.joint-pain-button').classList.add('selected');
-    document.querySelector('.neck-pain-button').classList.add('selected');
-    document.querySelector('.shoulder-pain-button').classList.add('selected');
-    document.querySelector('.headache-button').classList.add('selected');
-    document.querySelector('.bellyache-button').classList.add('selected');
-    document.querySelector('.constipation-button').classList.add('selected');
-    document.querySelector('.fatigue-button').classList.add('selected');
-    document.querySelector('.isolation-button').classList.add('selected');
-    document.querySelector('.insomnia-button').classList.add('selected');
-    document.querySelector('.normality-button').classList.add('selected');
-    document.querySelector('.bloated-stomach-button').classList.add('selected');
-  
-    document.getElementById('overlay.treatments').style.display = 'block';
-    document.getElementById('overlayComplexity').style.display = 'block';
-    document.getElementById('overlayRecurrences').style.display = 'block';
-    document.getElementById('overlayUrine').style.display = 'block';
-    document.getElementById('overlayLowerAbdomen').style.display = 'block';
-    document.getElementById('overlayFever').style.display = 'block';
-    document.getElementById('overlayBackPain').style.display = 'block';
-    document.getElementById('overlayDiscomfort').style.display = 'block';
-    document.getElementById('overlayPain').style.display = 'block';
-    document.getElementById('overlayInfection').style.display = 'block';
-    document.getElementById('overlayCauses').style.display = 'block';
-    document.getElementById('overlayDoctor').style.display = 'block';
-    document.getElementById('overlayNose').style.display = 'block';
-    document.getElementById('overlayThroat').style.display = 'block';
-    document.getElementById('overlayjointPain').style.display = 'block';
-    document.getElementById('overlayNeckPain').style.display = 'block';
-    document.getElementById('overlayShoulderPain').style.display = 'block';
-    document.getElementById('overlayHeadache').style.display = 'block';
-    document.getElementById('overlayBellyache').style.display = 'block';
-    document.getElementById('overlayConstipation').style.display = 'block';
-    document.getElementById('overlayFatigue').style.display = 'block';
-    document.getElementById('overlayIsolation').style.display = 'block';
-    document.getElementById('overlayInsomnia').style.display = 'block';
-    document.getElementById('overlayNormality').style.display = 'block';
-    document.getElementById('overlayBloatedStomach').style.display = 'block';
-  
-    document.querySelector('.treatments').classList.remove('active');
-    document.querySelector('.complexity').classList.remove('active');
-    document.querySelector('.recurrences').classList.remove('active');
-    document.querySelector('.urine').classList.remove('active');
-    document.querySelector('.lower-abdomen').classList.remove('active');
-    document.querySelector('.fever').classList.remove('active');
-    document.querySelector('.back-pain').classList.remove('active');
-    document.querySelector('.discomfort').classList.remove('active');
-    document.querySelector('.pain').classList.remove('active');
-    document.querySelector('.infection').classList.remove('active');
-    document.querySelector('.causes').classList.remove('active');
-    document.querySelector('.doctor').classList.remove('active');
-    document.querySelector('.nose').classList.remove('active');
-    document.querySelector('.throat').classList.remove('active');
-    document.querySelector('.joint-pain').classList.remove('active');
-    document.querySelector('.neck-pain').classList.remove('active');
-    document.querySelector('.shoulder-pain').classList.remove('active');
-    document.querySelector('.headache').classList.remove('active');
-    document.querySelector('.bellyache').classList.remove('active');
-    document.querySelector('.constipation').classList.remove('active');
-    document.querySelector('.fatigue').classList.remove('active');
-    document.querySelector('.isolation').classList.remove('active');
-    document.querySelector('.insomnia').classList.remove('active');
-    document.querySelector('.normality').classList.remove('active');
-    document.querySelector('.bloated-stomach').classList.remove('active');
+    const selectors = [
+        '.treatments-button', '.complexity-button', '.recurrences-button', '.urine-button',
+        '.lower-abdomen-button', '.fever-button', '.back-pain-button', '.discomfort-button',
+        '.pain-button', '.infection-button', '.causes-button', '.doctor-button',
+        '.nose-button', '.throat-button', '.joint-pain-button', '.neck-pain-button',
+        '.shoulder-pain-button', '.headache-button', '.bellyache-button', '.constipation-button',
+        '.fatigue-button', '.isolation-button', '.insomnia-button', '.normality-button',
+        '.bloated-stomach-button'
+    ];
+
+    selectors.forEach(selector => {
+        const el = document.querySelector(selector);
+        if (el) el.classList.add('selected');
+    });
+
+    const overlays = [
+        'overlay.treatments', 'overlayComplexity', 'overlayRecurrences', 'overlayUrine',
+        'overlayLowerAbdomen', 'overlayFever', 'overlayBackPain', 'overlayDiscomfort',
+        'overlayPain', 'overlayInfection', 'overlayCauses', 'overlayDoctor',
+        'overlayNose', 'overlayThroat', 'overlayjointPain', 'overlayNeckPain',
+        'overlayShoulderPain', 'overlayHeadache', 'overlayBellyache', 'overlayConstipation',
+        'overlayFatigue', 'overlayIsolation', 'overlayInsomnia', 'overlayNormality',
+        'overlayBloatedStomach'
+    ];
+
+    overlays.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = 'block';
+    });
+
+    const classes = [
+        '.treatments', '.complexity', '.recurrences', '.urine', '.lower-abdomen',
+        '.fever', '.back-pain', '.discomfort', '.pain', '.infection', '.causes',
+        '.doctor', '.nose', '.throat', '.joint-pain', '.neck-pain', '.shoulder-pain',
+        '.headache', '.bellyache', '.constipation', '.fatigue', '.isolation',
+        '.insomnia', '.normality', '.bloated-stomach'
+    ];
+
+    classes.forEach(cls => {
+        const el = document.querySelector(cls);
+        if (el) el.classList.remove('active');
+    });
 
   });
 
 function resizeImageContainer() {
   const baseImage = document.querySelector('.base-image');
-  console.log(baseImage.offsetWidth)
-  // Assuming you want to resize the wrapper you added.
-  // If you want to resize .image-container directly, change the selector below.
   const itemContainerWrapper = document.querySelector('.image-container');
 
   if (baseImage && itemContainerWrapper) {
-    console.log("met first condition")
     if (baseImage.complete && baseImage.naturalWidth > 0) { // Check if image is loaded and has dimensions
-      console.log("met second condition")
       const aspectRatio = baseImage.naturalHeight / baseImage.naturalWidth;
       const currentImageWidth = baseImage.offsetWidth;
-      console.log(aspectRatio)
       itemContainerWrapper.style.height = (currentImageWidth * aspectRatio) + 'px';
     } else {
       // If the image isn't loaded yet, wait for it
@@ -205,10 +163,27 @@ window.addEventListener('resize', resizeImageContainer);
 // or if the load event has already fired.
 document.addEventListener('DOMContentLoaded', resizeImageContainer);
 
-//Fake hamburger menu on title
+// Fake hamburger menu on title - commenting out as we are replacing the menu
+/*
 var title = document.getElementById('title');
 var menu = document.getElementById('menu-elements-toggle');
-title.addEventListener('click', function(){
-  menu.classList.toggle('menu-visible');
-  console.log(menu.classList);
-})
+if (title && menu) {
+    title.addEventListener('click', function(){
+      menu.classList.toggle('menu-visible');
+      console.log(menu.classList);
+    })
+}
+*/
+
+function toggleNavigationItem(itemId) {
+    const item = document.getElementById(itemId);
+    if (item) {
+        item.classList.toggle('active');
+        const expandButton = item.querySelector('.expand-button');
+        if (expandButton) {
+            expandButton.textContent = item.classList.contains('active') ? ' - ' : ' + ';
+        }
+        let overflow = document.querySelector('body').style.overflow == 'hidden' ? 'visible' : 'hidden';
+        document.querySelector('body').style.overflow = overflow;
+    }
+}

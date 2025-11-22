@@ -45,6 +45,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="css/dp.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
 
     <!-- JS -->
     <script src="main.js" defer></script>
@@ -65,31 +66,31 @@
     />
 
     <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
-
-	<script>
-		function toggleNavigationItem(itemId) {
-			const item = document.getElementById(itemId);
-			if (item) {
-				item.classList.toggle('active');
-				item.querySelector('.expand-button').textContent = item.classList.contains('active') ? ' - ' : ' + ';
-				let overflow = document.querySelector('body').style.overflow == 'hidden' ? 'visible' : 'hidden';
-				document.querySelector('body').style.overflow = overflow;
-			}
-		}
-	</script>
   </head>
 
   <body>
-	<header class="navigation-header" id="navigation-header">
+    <div class="title-header">
 		<h1 class="page-title">
 			<span class="title">Physical variables to shape individual interpretations into collective knowledge.</span>
 			<span class="subtitle">A participatory data physicalization approach to women’s UTI symptoms.</span>
 		</h1>
+    </div>
+	<header class="navigation-header" id="navigation-header">
+    <!-- Title duplicate for mobile menu -->
+    <div class="mobile-menu-title">
+      <h1 class="page-title">
+        <span class="title">Physical variables to shape individual interpretations into collective knowledge.</span>
+        <span class="subtitle">A participatory data physicalization approach to women’s UTI symptoms.</span>
+      </h1>
+    </div>
     	<nav class="navigation-menu">
 			<ul class="navigation-list">
-				<li id="home" class="navigation-item"><a href="#">Data-probes Artefacts</a> <button class="expand-button" onclick="toggleNavigationItem('navigation-header')"> + </button></li>
-				<li id="physical-variables" class="navigation-item"><a href="#">Phisical-variables Apparatus</a></li>
-				<li id="thesis" class="navigation-item"><a href="#">PhD thesis</a></li>
+				<li id="home" class="navigation-item">
+          <a href="#" id="textlocation-desktop" class="text-menu-special">Data-probes Artefacts</a> 
+          <button class="expand-button" onclick="toggleNavigationItem('navigation-header')"> + </button>
+        </li>
+				<li id="physical-variables" class="navigation-item"><a href="#" class="text-menu-special">Phisical-variables Apparatus</a></li>
+				<li id="thesis" class="navigation-item"><a href="#" class="text-menu-special">PhD thesis</a></li>
 			</ul>
     	</nav>
 		<div class="impressum">
