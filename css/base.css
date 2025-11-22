@@ -1,0 +1,84 @@
+/* Base Styles, Resets, and Variables */
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS Variables for Probe Colors */
+:root {
+  --col-treatments: #0040ff;
+  --col-complexity: #239857;
+  --col-recurrences: #ff7800;
+  --col-urine: #c5c500;
+  --col-lower-abdomen: #ae00ff;
+  --col-fever: #00c6d4;
+  --col-discomfort: #9cf7ff;
+  --col-pain: #ffce9c;
+  --col-infection: #7b7b7b;
+  --col-back-pain: #ff00e5;
+  --col-bloated-stomach: #007bff;
+  --col-anxiety: #00ff99;
+  --col-vomiting: #ffcc00;
+  --col-nausea: #f6dbff;
+  --col-leaks: #9a5f28;
+  --col-cramps: #763267;
+  --col-causes: #ff0066;
+  --col-doctor: #8052eb;
+  --col-nose: #f78dff;
+  --col-throat: #5aeee0;
+  --col-joint-pain: #b6b622;
+  --col-neck-pain: #9b84ff;
+  --col-shoulder-pain: #ffa6d6;
+  --col-headache: #6c7196;
+  --col-bellyache: #55c131;
+  --col-constipation: #67673c;
+  --col-fatigue: #00d0ff;
+  --col-isolation: #1f77b4;
+  --col-insomnia: #f67375;
+  --col-normality: #acac84;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'ABCCamera-Regular';
+  src: url('https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.otf');
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Light';
+  src: url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.ttf') format('ttf'),
+       url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Ligh.otft') format('otf'),
+       url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPEditorialNew-Regular';
+  src: url('https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.woff') format('woff'),
+       url('https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Maru-Regular';
+  src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2') format('woff2'),
+       url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff') format('woff'),
+       url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
