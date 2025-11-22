@@ -1,31 +1,34 @@
-// Data probes: title colour
-var colors = [
-    "#00C6D4", "#00FF99", "#9CF7FF", "#AE00FF", "#FF00E5", "#FF7800", "#0040FF", "#00D0FF",
-    "#1F77B4", "#239857", "#55C131", "#5AEEE0", "#67673C", "#6C7196", "#763267", "#7B7B7B",
-    "#9A5F28", "#9B84FF", "#ACAC84", "#B6B622", "#C5C500", "#F67375", "#F6DBFF", "#F78DFF",
-    "#FF0066", "#FFA6D6", "#FFCC00", "#FFCE9C"
-];
 
-var textElement = document.getElementById('textlocation-desktop');
-if (textElement) {
-    var text = textElement.innerText;
-    var html = text.split('').map(function(letter) {
-      var randomColor = colors[Math.floor(Math.random() * colors.length)];
-      return '<font color="' + randomColor + '">' + letter + '</font>';
-    }).join('');
-    
-    textElement.innerHTML = html;
-}
+function initUI() {
+  // Data probes: title colour
+  var colors = [
+      "#00C6D4", "#00FF99", "#9CF7FF", "#AE00FF", "#FF00E5", "#FF7800", "#0040FF", "#00D0FF",
+      "#1F77B4", "#239857", "#55C131", "#5AEEE0", "#67673C", "#6C7196", "#763267", "#7B7B7B",
+      "#9A5F28", "#9B84FF", "#ACAC84", "#B6B622", "#C5C500", "#F67375", "#F6DBFF", "#F78DFF",
+      "#FF0066", "#FFA6D6", "#FFCC00", "#FFCE9C"
+  ];
 
-var textElementMobile = document.getElementById('textlocation-mobile');
-if (textElementMobile) {
-    var textMobile = textElementMobile.innerText;
-    var htmlMobile = textMobile.split('').map(function(letter) {
-      var randomColor = colors[Math.floor(Math.random() * colors.length)];
-      return '<font color="' + randomColor + '">' + letter + '</font>';
-    }).join('');
-    
-    textElementMobile.innerHTML = htmlMobile;
+  var textElement = document.getElementById('textlocation-desktop');
+  if (textElement) {
+      var text = textElement.innerText;
+      var html = text.split('').map(function(letter) {
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        return '<font color="' + randomColor + '">' + letter + '</font>';
+      }).join('');
+      
+      textElement.innerHTML = html;
+  }
+
+  var textElementMobile = document.getElementById('textlocation-mobile');
+  if (textElementMobile) {
+      var textMobile = textElementMobile.innerText;
+      var htmlMobile = textMobile.split('').map(function(letter) {
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        return '<font color="' + randomColor + '">' + letter + '</font>';
+      }).join('');
+      
+      textElementMobile.innerHTML = htmlMobile;
+  }
 }
 
 // Menu words blurred when scrolling
@@ -92,8 +95,97 @@ textElements.forEach(el => el.classList.toggle('active'));
     }
   }
 
+  function loadImpressum() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        // Inject into footer if present
+        const footer = document.querySelector('footer');
+        if (footer) footer.innerHTML = data;
+
+        // Inject into header impressum(s) if present
+        const impressums = document.querySelectorAll('.impressum');
+        impressums.forEach(el => {
+           // Check if it is the footer itself to avoid double injection (though innerHTML handles it)
+           // but specifically target the header one or any other.
+           // Since footer.html contains the *content* of the impressum div (wait, no, looking at footer.html it HAS the wrapper div)
+           // Previous footer.html content: <div class="impressum">...</div>
+           // If I inject that into <footer>, I get <footer><div class="impressum">...</div></footer>. Correct.
+           // If I inject that into <div class="impressum"> (in header), I get <div class="impressum"><div class="impressum">...</div></div>.
+           // This might double the padding/margin if CSS targets .impressum.
+           // Let's check if we can extract innerHTML.
+           
+            const temp = document.createElement('div');
+            temp.innerHTML = data;
+            const inner = temp.querySelector('.impressum') ? temp.querySelector('.impressum').innerHTML : data;
+            
+            // Only update if empty to avoid overwriting if something else is there (or if we want to enforce it)
+            // But for header, it is empty in menu.html. For footer, it is empty in index.html (removed by script previously?)
+            // Actually, let's just set it.
+            
+            // If the element IS the impressum div (has class impressum), we should set its innerHTML to the innerHTML of data.
+            if (el.classList.contains('impressum')) {
+                el.innerHTML = inner;
+            }
+        });
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  }
+
+  function loadMenu() {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            const header = document.getElementById('navigation-header');
+            if (header) {
+                header.outerHTML = data;
+                initUI();
+                loadImpressum();
+            } else {
+                // Inject if missing (e.g. stripped from HTML)
+                const body = document.querySelector('body');
+                if (body) {
+                    const temp = document.createElement('div');
+                    temp.innerHTML = data;
+                    const newHeader = temp.firstElementChild;
+                    
+                    // If we are stripping the header from the HTML, we need to insert it at the right place.
+                    // In dp-*.html, the header was inside .page-wrapper.
+                    // In index.html, the header was a direct child of body (before main).
+                    
+                    const wrapper = document.querySelector('.page-wrapper');
+                    if (wrapper) {
+                        wrapper.insertBefore(newHeader, wrapper.firstChild);
+                    } else {
+                        // For index.html (or if wrapper not found)
+                        // Insert before main if main exists, else prepend to body
+                        const main = document.querySelector('main');
+                        if (main) {
+                            body.insertBefore(newHeader, main);
+                        } else {
+                            body.insertBefore(newHeader, body.firstChild);
+                        }
+                    }
+                    initUI();
+                    loadImpressum();
+                }
+            }
+        })
+        .catch(err => console.error('Error loading menu:', err));
+  }
+  
+  function loadHead() {
+      fetch('head.html')
+      .then(response => response.text())
+      .then(data => {
+          document.head.innerHTML += data;
+      })
+      .catch(err => console.error('Error loading head:', err));
+  }
+
   // Initialize default state on page load
-  loadFooter();
+  loadMenu();
+  loadHead();
 
   const selectors = [
         '.treatments-button', '.complexity-button', '.recurrences-button', '.urine-button',
