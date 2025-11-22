@@ -11,7 +11,7 @@ html, body {
 /* Main container */
 #probes-main {
     padding: 1rem;
-    padding-top: 10rem;
+    padding-top: 72px;
     padding-bottom: 0rem;
     border-top: 0 solid #000;
   }

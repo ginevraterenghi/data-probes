@@ -179,10 +179,17 @@ function toggleNavigationItem(itemId) {
     const item = document.getElementById(itemId);
     if (item) {
         item.classList.toggle('active');
-        const expandButton = item.querySelector('.expand-button');
-        if (expandButton) {
-            expandButton.textContent = item.classList.contains('active') ? ' - ' : ' + ';
+        
+        // Find the expand button within the specific navigation item (home) that triggered this
+        // Since the button calls this with 'navigation-header', we need to look for the button in the home item
+        const homeItem = document.querySelector('#home');
+        if (homeItem) {
+             const expandButton = homeItem.querySelector('.expand-button');
+             if (expandButton) {
+                  expandButton.textContent = item.classList.contains('active') ? ' - ' : ' + ';
+             }
         }
+
         let overflow = document.querySelector('body').style.overflow == 'hidden' ? 'visible' : 'hidden';
         document.querySelector('body').style.overflow = overflow;
     }

@@ -192,7 +192,51 @@ li.navigation-item .expand-button {
 }
 
 .impressum {
-    display: none; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+header.navigation-header .impressum {
+    display: none;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.impressum .author {
+    grid-column: 1;
+}
+
+.impressum .supervisors {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum .uni-wrapper {
+    grid-column: 3 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.impressum .year {
+    grid-column: 5;
+}
+
+@media (max-width: 768px) {
+    .impressum {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -217,7 +261,7 @@ li.navigation-item .expand-button {
     }
 
     header.navigation-header.active .impressum {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         gap: 4px;
         font-family: 'Helvetica', 'Arial', sans-serif;
@@ -226,6 +270,12 @@ li.navigation-item .expand-button {
         color: #000;
         text-decoration: none;
         margin-top: auto;
+        padding: 16px;
+        padding-bottom: 32px;
+    }
+
+    header.navigation-header.active .impressum .supervisors {
+        display: none;
     }
 }
 
