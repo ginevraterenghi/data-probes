@@ -201,6 +201,15 @@ function toggleNavigationItem(itemId) {
 
     let overflow = document.querySelector('body').style.overflow == 'hidden' ? 'visible' : 'hidden';
     document.querySelector('body').style.overflow = overflow;
+
+    const nav = document.getElementById('navigation-header');
+    if (nav) {
+      if (window.scrollY > 10) {
+        nav.classList.add('blur-text');
+      } else {
+        nav.classList.remove('blur-text');
+      }
+    }
   }
 }
 
