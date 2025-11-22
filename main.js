@@ -187,10 +187,12 @@ textElements.forEach(el => el.classList.toggle('active'));
       .then(data => {
           if (isSubdirectory) {
               data = data.replace(/href="css\//g, 'href="../css/');
+              data = data.replace(/href="fav.png"/g, 'href="../fav.png"');
           }
           document.head.innerHTML += data;
       })
       .catch(err => console.error('Error loading head:', err));
+  }
   }
 
   // Initialize default state on page load
