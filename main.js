@@ -95,8 +95,12 @@ textElements.forEach(el => el.classList.toggle('active'));
     }
   }
 
+  // Determine base path for shared resources
+  const isSubdirectory = window.location.pathname.includes('/data-probes/');
+  const basePath = isSubdirectory ? '../' : '';
+
   function loadImpressum() {
-    fetch('footer.html')
+    fetch(basePath + 'footer.html')
       .then(response => response.text())
       .then(data => {
         // Inject into footer if present
@@ -133,9 +137,12 @@ textElements.forEach(el => el.classList.toggle('active'));
   }
 
   function loadMenu() {
-      fetch('menu.html')
+      fetch(basePath + 'menu.html')
         .then(response => response.text())
         .then(data => {
+            if (isSubdirectory) {
+                data = data.replace(/href="index.html"/g, 'href="../index.html"');
+            }
             const header = document.getElementById('navigation-header');
             if (header) {
                 header.outerHTML = data;
@@ -175,9 +182,12 @@ textElements.forEach(el => el.classList.toggle('active'));
   }
   
   function loadHead() {
-      fetch('head.html')
+      fetch(basePath + 'head.html')
       .then(response => response.text())
       .then(data => {
+          if (isSubdirectory) {
+              data = data.replace(/href="css\//g, 'href="../css/');
+          }
           document.head.innerHTML += data;
       })
       .catch(err => console.error('Error loading head:', err));

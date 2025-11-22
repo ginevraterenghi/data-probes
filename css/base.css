@@ -59,31 +59,31 @@ img {
 /* Fonts */
 @font-face {
   font-family: 'ABCCamera-Regular';
-  src: url('https://ginevraterenghi.github.io/data-probes/font/ABCCamera-Regular-Trial.otf');
+  src: url('../assets/font/ABCCamera-Regular-Trial.otf');
 }
 
 @font-face {
   font-family: 'SuisseIntl-Light';
-  src: url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.ttf') format('ttf'),
-       url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Ligh.otft') format('otf'),
-       url('https://ginevraterenghi.github.io/data-probes/font/SuisseIntl-Light.woff') format('woff');
+  src: url('../assets/font/SuisseIntl-Light.ttf') format('ttf'),
+       url('../assets/font/SuisseIntl-Light.otf') format('otf'),
+       url('../assets/font/SuisseIntl-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PPEditorialNew-Regular';
-  src: url('https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.woff') format('woff'),
-       url('https://ginevraterenghi.github.io/data-probes/font/PPEditorialNew-Regular.otf') format('otf');
+  src: url('../assets/font/PPEditorialNew-Regular.woff') format('woff'),
+       url('../assets/font/PPEditorialNew-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GT-Maru-Regular';
-  src: url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff2') format('woff2'),
-       url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.woff') format('woff'),
-       url('https://ginevraterenghi.github.io/data-probes/font/GT-Maru-Regular-Trial.otf') format('otf');
+  src: url('../assets/font/GT-Maru-Regular-Trial.woff2') format('woff2'),
+       url('../assets/font/GT-Maru-Regular-Trial.woff') format('woff'),
+       url('../assets/font/GT-Maru-Regular-Trial.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
