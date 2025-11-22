@@ -1,238 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Shape your symptoms: workshop</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Shape your symptoms: workshop</title>
+    <!-- Meta Tags for SEO and Social Sharing -->
+    <meta name="description" content="PhD research to promote women's agency in healthcare through data" />
+    <meta name="image" content="thumbnail image of your work" />
+    <meta itemprop="name" content="Shape your symptoms" />
+    <meta itemprop="description" content="PhD research to promote women’s agency in healthcare through data" />
+    <meta itemprop="image" content="img-here" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Shape your symptoms" />
+    <meta name="twitter:description" content="PhD research to promote women’s agency in healthcare through data" />
+    <meta name="twitter:site" content="@name" />
+    <meta name="twitter:creator" content="your twitter handles here, if any" />
+    <meta name="twitter:image:src" content="thumbnail image of your work" />
+    <meta property="og:title" content="Shape your symptoms" />
+    <meta property="og:description" content="PhD research to promote women’s agency in healthcare through data" />
+    <meta property="og:image" content="thumbnail image of your work" />
+    <meta property="og:url" content="url to this page" />
+    <meta property="og:site_name" content="Shape your symptoms" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
 
-  <!-- Meta Tags for SEO and Social Sharing -->
-  <meta name="description" content="PhD research to promote women's agency in healthcare through data" />
-  <meta name="image" content="thumbnail image of your work" />
-  <meta itemprop="name" content="Shape your symptoms" />
-  <meta itemprop="description" content="PhD research to promote women’s agency in healthcare through data" />
-  <meta itemprop="image" content="img-here" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Shape your symptoms" />
-  <meta name="twitter:description" content="PhD research to promote women’s agency in healthcare through data" />
-  <meta name="twitter:site" content="@name" />
-  <meta name="twitter:creator" content="your twitter handles here, if any" />
-  <meta name="twitter:image:src" content="thumbnail image of your work" />
-  <meta property="og:title" content="Shape your symptoms" />
-  <meta property="og:description" content="PhD research to promote women’s agency in healthcare through data" />
-  <meta property="og:image" content="thumbnail image of your work" />
-  <meta property="og:url" content="url to this page" />
-  <meta property="og:site_name" content="Shape your symptoms" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/dp.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <script src="../main.js" defer></script>
+  </head>
 
+  <body>
+    <div class="page-wrapper">
+      <div id="probes" class="anchors"></div>
+      <section id="probes-main">
+        <!-- Workshop Info -->
+        <section class="probes-section">
+          <section class="probes-sub-section">
+            <div class="head-left">
+              <div class="tag-left">
+                <p class="tag-text">
+                  Data-probe 16
+                </p>
+              </div>
+            </div>
+            <div class="head-central">
+              <div class="tag">
+                <p class="tag-text">
+                  24 May 2024 (WS3)
+                </p>
+              </div>
+            </div>
+            <div class="head-central">
+              <div class="tag">
+                <p class="tag-text">
+                  Mendrisio (CH)
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
 
-  
+        <!-- Participant Description -->
+        <section class="probes-section">
+          <section class="probes-sub-section">
+            <div class="head-left">
+              <div class="tag-left">
+                <p class="tag-text">
+                  Participant 16
+                </p>
+              </div>
+            </div>
+            <div class="head-central-long">
+              <div class="tag">
+                <p class="tag-text-long">
+                  Professional with experience in public relations, and digital communication. She experienced UTI only once. She attended as SUPSI MA of Interaction design student
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
 
+        <!-- Legend -->
+        <section class="probes-section">
+          <section class="probes-sub-section">
+            <section class="interactive-legend-section">
+              <div class="legend-item-first">
+                <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
+                <p class="button-to-select-text">
+                  urine
+                </p>
+              </div>
+              <div class="legend-item">
+                <button class="anxiety-button selected" onclick="toggleOverlay(this, 'overlayAnxiety', 'anxiety')"></button>
+                <p class="button-to-select-text">
+                  anxiety
+                </p>
+              </div>
+              <div class="legend-item">
+                <button class="leaks-button selected" onclick="toggleOverlay(this, 'overlayLeaks', 'leaks')"></button>
+                <p class="button-to-select-text">
+                  bad odours
+                </p>
+              </div>
+              <div class="legend-item">
+                <button class="pain-button selected" onclick="toggleOverlay(this, 'overlayPain', 'pain')"></button>
+                <p class="button-to-select-text">
+                  pain
+                </p>
+              </div>
+              <div class="legend-item">
+                <button class="treatments-button selected" onclick="toggleOverlay(this, 'overlayTreatments', 'treatments')"></button>
+                <p class="button-to-select-text">
+                  treatments / cures
+                </p>
+              </div>
+              <div class="legend-item">
+                <button class="causes-button selected" onclick="toggleOverlay(this, 'overlayCauses', 'causes')"></button>
+                <p class="button-to-select-text">
+                  causes
+                </p>
+              </div>
+            </section>
+          </section>
+        </section>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/dp.css" />
-  <link rel="stylesheet" href="../css/menu.css" />
-</head>
+        <!-- Data Probe Details -->
+        <section class="probes-section">
+          <section class="probes-sub-section">
+            <!-- Written Description -->
+            <div class="single-probe-written">
+              <div class="tag-left">
+                <p class="tag-text">
+                  Written description:
+                </p>
+              </div>
+              <section class="probes-text">
+                <p class="written-description">
+                  <span class="causes">UTI. Probably got it from a water park</span>. <span class="urine">Pain when peeing with blood</span>. <span class="treatments">I went to the doctor to get antibiotics as it was hurting for a day with no improvements. It worked</span>. For prevention, I would ensure proper methods of cleaning especially after pooping. Nothing much could be done if gotten from water park.
+                </p>
+              </section>
+            </div>
 
-<body>
+            <!-- Picture -->
 
-	<div class="page-wrapper">
+            <div class="single-probe-pic">
+              <div class="tag">
+                <p class="tag-text">
+                  Picture of the probe:
+                </p>
+              </div>
+              <div class="item-container-wrapper">
+                <div class="image-container">
+                  <img src="../assets/img/dp16/dp16.png" alt="Base Image" class="base-image" />
+                  <img src="../assets/img/dp16/dp16-urine.png" alt="Urine Overlay" class="overlay-image" id="overlayUrine" />
+                  <img src="../assets/img/dp16/dp16-leaks.png" alt="Leaks Overlay" class="overlay-image" id="overlayLeaks" />
+                </div>
 
-	
-	
+                <!-- List of components -->
+                <div class="component-list">
+                  <div class="tag">
+                    <p class="tag-text">
+                      List of components:
+                    </p>
+                  </div>
+                  <section class="probes-text">
+                    <div class="component-description">
+                      <div class="list-item leaks">2 small cubes of polyester;</div>
+                      <div class="list-item leaks">1 triangular prism of polyester;</div>
+                      <div class="list-item urine">1 big triangular prism of wood;</div>
+                      <div class="list-item urine">1 small triangular prism of wood;</div>
+                      <div class="list-item urine">1 big sphere of foam;</div>
+                      <div class="list-item urine">1 big cube of foam;</div>
+                      3 long pegs; 2 short pegs;
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
 
-  <div id="probes" class="anchors"></div>
-  <section id="probes-main">
-
-    <!-- Workshop Info -->
-    <section class="probes-section">
-      <section class="probes-sub-section">
-        <div class="head-left">
-          <div class="tag-left">
-            <p class="tag-text">Data-probe 16</p>
-          </div>
-        </div>
-        <div class="head-central">
-          <div class="tag">
-            <p class="tag-text">24 May 2024 (WS3)</p>
-          </div>
-        </div>
-        <div class="head-central">
-          <div class="tag">
-            <p class="tag-text">Mendrisio (CH)</p>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Participant Description -->
-    <section class="probes-section">
-      <section class="probes-sub-section">
-        <div class="head-left">
-          <div class="tag-left">
-            <p class="tag-text">Participant 16</p>
-          </div>
-        </div>
-        <div class="head-central-long">
-          <div class="tag">
-            <p class="tag-text-long">
-                Professional with experience in public relations, and digital communication. She experienced UTI only once. She attended as SUPSI MA of Interaction design student
-            </p>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Legend -->
-    <section class="probes-section">
-      <section class="probes-sub-section">
-        <section class="interactive-legend-section">
-            <div class="legend-item-first">
-             <button class="urine-button selected" onclick="toggleOverlay(this, 'overlayUrine', 'urine')"></button>
-            <p class="button-to-select-text">urine</p>
-          </div>
-          <div class="legend-item">
-             <button class="anxiety-button selected" onclick="toggleOverlay(this, 'overlayAnxiety', 'anxiety')"></button>
-            <p class="button-to-select-text">anxiety</p>
-          </div>
-          <div class="legend-item">
-             <button class="leaks-button selected" onclick="toggleOverlay(this, 'overlayLeaks', 'leaks')"></button>
-            <p class="button-to-select-text">bad odours</p>
-          </div>
-          <div class="legend-item">
-             <button class="pain-button selected" onclick="toggleOverlay(this, 'overlayPain', 'pain')"></button>
-            <p class="button-to-select-text">pain</p>
-          </div>
-          <div class="legend-item">
-            <button class="treatments-button selected" onclick="toggleOverlay(this, 'overlayTreatments', 'treatments')"></button>
-            <p class="button-to-select-text">treatments / cures</p>
-          </div>
-          <div class="legend-item">
-            <button class="causes-button selected" onclick="toggleOverlay(this, 'overlayCauses', 'causes')"></button>
-            <p class="button-to-select-text">causes</p>
-          </div>
+            <!-- Oral Description -->
+            <div class="single-probe-oral">
+              <div class="tag-left">
+                <p class="tag-text">
+                  Oral description:
+                </p>
+              </div>
+              <section class="probes-text">
+                <p class="oral-description">
+                  “<span class="anxiety">The whole point is unstable</span> [...]. And also like well, that's why most of it is like on one side. <span class="urine">The wood and this and the wood part is all about the pain when peeing, so it's the base of everything [1]</span>. <span class="pain">That's where what hurts the most. So it's like sharp edges and stuff</span>. <span class="urine">This [foam] is for the bloody urine, </span> so to not very explainable why I chose this but I was hoping for fluid texture or something like Play-doh so that we can change the texture [2]. So maybe possibly next time then for <span class="leaks">this [polyester] was about the foul smelling urine [3]. So it's same as she said, the sound was very like irritating, so it kind of… it's not something annoying, but it's just irritating to smell also</span>. Yeah, so. That’s all.”
+                </p>
+              </section>
+            </div>
+          </section>
         </section>
       </section>
-    </section>
+    </div>
 
-    <!-- Data Probe Details -->
-    <section class="probes-section">
-      <section class="probes-sub-section">
-
-
-        <!-- Written Description -->
-        <div class="single-probe-written">
-          <div class="tag-left">
-            <p class="tag-text">Written description:</p>
-          </div>
-          <section class="probes-text">
-            <p class="written-description">
-            <span class="causes">UTI. Probably got it from a water park</span>. <span class="urine">Pain when peeing with blood</span>. <span class="treatments">I went to the doctor to get antibiotics as it was hurting for a day with no improvements. It worked</span>. For prevention, I would ensure proper methods of cleaning especially after pooping. Nothing much could be done if gotten from water park.
-            </p>
-          </section>
+    <!-- Bottom -->
+    <section class="bottom-section">
+      <section class="bottom">
+        <div class="bottom-left">
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-15.html">< previous probe</a>
+          </button>
         </div>
-
-      
-
-        <!-- Picture -->
-
-        <div class="single-probe-pic">
-          <div class="tag">
-            <p class="tag-text">Picture of the probe:</p>
-          </div>
-      <div class="item-container-wrapper">
-		  <div class="image-container">
-          <img src="../assets/img/dp16/dp16.png" alt="Base Image" class="base-image">
-        <img src="../assets/img/dp16/dp16-urine.png" alt="Urine Overlay" class="overlay-image" id="overlayUrine">
-        <img src="../assets/img/dp16/dp16-leaks.png" alt="Leaks Overlay" class="overlay-image" id="overlayLeaks">
-		  </div>
-
-      <!-- List of components -->
-        <div class="component-list">
-          <div class="tag">
-            <p class="tag-text">List of components:</p>
-          </div>
-          <section class="probes-text">
-     <div class="component-description"> 
-
-        <div class="list-item leaks">2 small cubes of polyester;</div>
-        <div class="list-item leaks">1 triangular prism of polyester;</div>
-        <div class="list-item urine">1 big triangular prism of wood;</div>
-        <div class="list-item urine">1 small triangular prism of wood;</div>
-        <div class="list-item urine">1 big sphere of foam;</div>
-        <div class="list-item urine">1 big cube of foam;</div> 3 long pegs; 2 short pegs;
-        
-    
-     </div>
-          </section>
+        <div class="bottom-central">
+          <button id="randomButton" class="read-more-button">
+            <a href="../index.html">< back to album ></a>
+          </button>
         </div>
-      </div>
-  
+        <div class="bottom-right">
+          <button id="randomButton" class="read-more-button">
+            <a href="dp-17.html">next probe ></a>
+          </button>
         </div>
-
-        <!-- Oral Description -->
-         <div class="single-probe-oral">
-          <div class="tag-left">
-            <p class="tag-text">Oral description:</p>
-          </div>
-          <section class="probes-text">
-           <p class="oral-description">
-             “<span class="anxiety">The whole point is unstable</span> [...]. And also like well, that's why most of it is like on one side. <span class="urine">The wood and this and the wood part is all about the pain when peeing, so it's the base of everything [1]</span>. <span class="pain">That's where what hurts the most. So it's like sharp edges and stuff</span>. <span class="urine">This [foam] is for the bloody urine, </span> so to not very explainable why I chose this but I was hoping for fluid texture or something like Play-doh so that we can change the texture [2]. So maybe possibly next time then for <span class="leaks">this [polyester] was about the foul smelling urine [3]. So it's same as she said, the sound was very like irritating, so it kind of… it's not something annoying, but it's just irritating to smell also</span>. Yeah, so. That’s all.”
-                </p>
-          </section>
-        </div>
-      
       </section>
     </section>
 
-	
-  </section>
-</div>
 
-  <!-- Bottom -->
-  <section class="bottom-section">
-
-	<section class="bottom">
-	  <div class="bottom-left">
-		<button id="randomButton" class="read-more-button">
-			<a href="dp-15.html">< previous probe</a> 
-		</button>
-	  </div>
-	  <div class="bottom-central">
-		<button id="randomButton" class="read-more-button">
-			<a href="../index.html">< back to album ></a> 
-		</button>
-	  </div>
-	  <div class="bottom-right">
-		<button id="randomButton" class="read-more-button">
-			<a href="dp-17.html">next probe ></a> 
-		</button>
-	  </div>
-	</section>
-  </section>
-
-  <script src="../main.js" defer></script>
-
-
-
-
-  <footer>
-    <div class="impressum">
-      <span class="author">Ginevra Terenghi</span>
-      <div class="supervisors">
-        <span>Arthi Manohar</span>
-        <span>Busayawan Lam</span>
-        <span>Serena Cangiano</span>
-      </div>
-      <div class="uni-wrapper">
-        <span class="uni-1">School of Design, Brunel University London</span>
-        <span class="uni-2">University of Applied Sciences and Arts of Southern Switzerland (SUPSI)</span>
-      </div>
-      <span class="year">April 2022 – TBD</span>
-    </div>
-  </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
