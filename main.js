@@ -91,10 +91,11 @@ textElements.forEach(el => el.classList.toggle('active'));
         textElement.classList.toggle('active');
     }
   }
-  
+
   // Initialize default state on page load
-  document.addEventListener("DOMContentLoaded", function () {
-    const selectors = [
+  loadFooter();
+
+  const selectors = [
         '.treatments-button', '.complexity-button', '.recurrences-button', '.urine-button',
         '.lower-abdomen-button', '.fever-button', '.back-pain-button', '.discomfort-button',
         '.pain-button', '.infection-button', '.causes-button', '.doctor-button',
@@ -137,8 +138,6 @@ textElements.forEach(el => el.classList.toggle('active'));
         if (el) el.classList.remove('active');
     });
 
-  });
-
 function resizeImageContainer() {
   const baseImage = document.querySelector('.base-image');
   const itemContainerWrapper = document.querySelector('.image-container');
@@ -156,12 +155,8 @@ function resizeImageContainer() {
 }
 
 // Call the function on initial load and on window resize
-window.addEventListener('DOMContentLoaded', resizeImageContainer);
+resizeImageContainer();
 window.addEventListener('resize', resizeImageContainer);
-
-// Initial call in case the image is already cached and loaded
-// or if the load event has already fired.
-document.addEventListener('DOMContentLoaded', resizeImageContainer);
 
 // Fake hamburger menu on title - commenting out as we are replacing the menu
 /*
