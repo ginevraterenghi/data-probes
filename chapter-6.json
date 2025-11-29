@@ -1,0 +1,73 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "6. Discussion",
+      "children": [
+        {
+          "name": "6.1 Participatory mapping for collective knowledge",
+          "children": [
+            {
+              "name": "Collective mapping as knowledge-making",
+              "value": 713,
+              "sectionId": "sec-6-1-1-collective-mapping-as-knowledge-making",
+              "content": "This section argues that mapping in this research is not a neutral act of encoding but a participatory and social process through which knowledge is produced. Drawing on work in data visualisation and participatory mapping, the text explains how participants collectively mapped sensations, materials and meanings onto physical variables, creating networks of correspondences that support recognition of patterns across individual experiences. Through group activities, personal symptom accounts are transformed into shared artefacts and spatial arrangements that others can see, compare and respond to. The section connects this practice to ideas of sociological and data imagination, suggesting that participants learn to see their own symptoms as part of wider situations rather than isolated problems. Mapping thus functions as a knowledge-making practice that links private bodily experiences to collective forms of understanding."
+            },
+            {
+              "name": "Ambiguity, negotiation and shared understanding",
+              "value": 655,
+              "sectionId": "sec-6-1-2-ambiguity-negotiation-and-shared-understanding",
+              "content": "This subsection explores how ambiguity and negotiation shape the collective mapping process. Participants frequently disagree on terms such as pain, burning or pressure, revealing that symptoms are experienced and described differently. Rather than treating this variability as a problem, the section shows how it becomes productive: disagreements prompt clarification, refinement of vocabulary, and recognition of the limits of biomedical categories. Negotiations around labels and material choices expose what cannot easily be captured in standard language, highlighting nuances such as temporal rhythms, emotional load, or subtle bodily cues. Shared understanding does not emerge as full consensus but as a layered appreciation of similarity and difference. The section concludes that participatory mapping makes these ambiguities visible and turns them into resources for deeper, more situated knowledge about UTIs and intimate health."
+            }
+          ]
+        },
+        {
+          "name": "6.2 Symptoms as physical indicators in practice",
+          "children": [
+            {
+              "name": "Material traces and embodied indicators",
+              "value": 605,
+              "sectionId": "sec-6-2-1-material-traces-and-embodied-indicators",
+              "content": "Here the thesis revisits the conceptualisation of symptoms as physical indicators by looking at how they are enacted in the workshop. Symptoms are framed as material traces that emerge from bodily processes and become perceptible through embodied interpretation. The section explains how physical variables allow participants to extend these traces into tangible forms: rough surfaces, unstable constructions or dense clusters give shape to experiences of burning, anxiety or heaviness. The artefacts and mappings are described as autographic inscriptions that record the interaction between bodies and materials, rather than neutral representations of pre-existing data. This view shifts attention from viewing symptoms as fixed signs to understanding them as ongoing, situated indicators that are co-produced by physiology, perception and material engagement. The section argues that designing ways to materialise these indicators supports both self-observation and collective interpretation."
+            },
+            {
+              "name": "Temporal and situated aspects of symptoms",
+              "value": 632,
+              "sectionId": "sec-6-2-2-temporal-and-situated-aspects-of-symptoms",
+              "content": "This subsection emphasises the temporal and situated nature of symptoms as revealed through the study. It shows how participants understand UTIs not as isolated episodes but as trajectories made of pre-symptoms, acute phases, recurrences and remissions. Physical variables and mappings support the expression of these dynamics—for example by arranging components along lines or loops, or by varying size and density to show escalation. The section stresses that interpretation is always tied to context: menstrual cycles, sexual activity, work demands, prior diagnoses and healthcare encounters all influence how sensations are perceived and acted upon. The discussion argues that conventional clinical models, which often treat symptoms as static items on a checklist, fail to capture these situated temporalities. By contrast, the participatory physicalization approach foregrounds how timing, repetition and context are integral to what symptoms mean for those who live with them."
+            }
+          ]
+        },
+        {
+          "name": "6.3 Design implications for women’s health",
+          "children": [
+            {
+              "name": "Supporting articulation and communication of symptoms",
+              "value": 653,
+              "sectionId": "sec-6-3-1-supporting-articulation-and-communication-of-symptoms",
+              "content": "This section draws design implications from the findings for supporting articulation and communication of symptoms in women’s health. It argues that tools based on physical variables and participatory mapping can help women express subtle, intimate or stigmatised experiences that are otherwise hard to discuss with clinicians. By enabling richer vocabularies and material expressions, these tools can make consultations more precise and less frustrating for both parties. The section suggests that design can create mediating artefacts—such as simplified kits, cards or diagrams—that help structure conversations, foreground temporal patterns and connect subjective accounts with clinical concerns. It also notes that these approaches may improve data literacy, as participants learn to treat their own sensations as information that can be recorded, compared and reflected upon, rather than as vague discomfort that is easily dismissed."
+            },
+            {
+              "name": "Designing for shared understanding in healthcare contexts",
+              "value": 607,
+              "sectionId": "sec-6-3-2-designing-for-shared-understanding-in-healthcare-contexts",
+              "content": "This subsection extends the implications to healthcare systems and collaborative settings. It argues that design for women’s health should not only support individual expression but also cultivate shared understanding among patients, clinicians and other stakeholders. Drawing on the expert assessment, the section suggests that participatory physicalization could complement existing diagnostic tools and pain scales by offering more contextual, qualitative insight. It discusses scenarios where material artefacts or maps might be used in multidisciplinary meetings, educational settings or community workshops to align perspectives and negotiate priorities. The section cautions that integrating such methods requires attention to time constraints, training and institutional culture, but maintains that they hold promise for addressing structural gender biases and communication gaps in healthcare by making women’s embodied knowledge more visible and actionable."
+            }
+          ]
+        },
+        {
+          "name": "6.4 Summary",
+          "value": 364,
+          "sectionId": "sec-6-4-summary",
+          "content": "The summary recaps the main arguments of Chapter 6. It states that participatory mapping and material engagement enabled participants to transform their individual symptom experiences into forms of collective knowledge. Symptoms are reframed as temporal, situated and materially mediated indicators rather than static, purely clinical entities. Physical variables are highlighted as the key contribution: they operate simultaneously as design elements, interpretive devices and epistemic tools that link embodied sensation to shared understanding. The discussion further shows that the approach has implications beyond UTIs, suggesting transferable value for other conditions where subjective experience is central. Finally, the section prepares the ground for the next chapter, where these insights are consolidated into a formal apparatus of physical variables intended for broader application."
+        },
+        {
+          "name": "Research questions",
+          "value": 117,
+          "sectionId": "sec-6-research-questions",
+          "content": "This brief section revisits the three research questions in light of the discussion. It argues that the findings demonstrate how participatory design practices can expand healthcare enquiry by involving women as co-creators of knowledge; how material engagement, via data-probes and physical variables, supports interpretation and communication of intimate, embodied experiences; and how physical variables can transform individual sensations into collective representations of health. Together, the answers to these questions position participatory data physicalization as a generative process through which new forms of healthcare knowledge emerge from the interplay between bodies, materials and social interaction."
+        }
+      ]
+    }
+  ]
+}

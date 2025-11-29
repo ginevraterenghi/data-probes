@@ -1,0 +1,57 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "5. Assessment: Medical experts’ feedback on results",
+      "children": [
+        {
+          "name": "5.1 Interview modalities and interviewees",
+          "value": 420,
+          "sectionId": "sec-5-1-interview-modalities-and-interviewees",
+          "content": "This section describes how the interviews with medical experts were conducted and who participated. Experts were first contacted via email and invited to 45-minute online interviews. Each expert received a personalised document containing selected workshop materials, including transcript excerpts, summaries of participants’ accounts, and descriptions of artefacts. They were asked to review the documents beforehand and provide written comments to support their reflections during the interview. A total of 12 healthcare professionals took part. They were selected based on expertise in infectious diseases, UTIs, clinical management, or in narrative and participatory approaches to patient experience. Most had professional ties to the SPEARHEAD consortium. Priority was given to women experts to support the interpretation of women’s embodied experiences, though three men were included for the relevance of their expertise. Their roles varied: some worked directly with UTI patients, some specialised in AMR and infection control, and others were researchers or clinicians who use narrative methods. To distinguish them from workshop participants, experts are identified as ME (Medical Expert) followed by a number. This section establishes the professional diversity of the expert group and explains the ethical considerations, including informed consent and controlled access to materials shared with the interviewees."
+        },
+        {
+          "name": "5.2 Analysis of medical expert interviews",
+          "children": [
+            {
+              "name": "Theme 1: The diagnostic challenge",
+              "value": 610,
+              "sectionId": "sec-5-2-1-the-diagnostic-challenge",
+              "content": "Experts emphasised the diagnostic ambiguity surrounding UTIs. They noted that symptoms alone are often insufficient for a definitive diagnosis, particularly because burning, urgency or abdominal discomfort can overlap with other conditions such as STIs, vaginal infections, pelvic floor disorders, or interstitial cystitis. Without laboratory confirmation, clinicians often make decisions under uncertainty. Medical experts highlighted that symptom descriptions from patients are highly variable, using metaphors, emotional expressions, or lay terms that do not correspond to clinical categories. They pointed out that this mismatch complicates interpretation and increases the risk of misdiagnosis or unnecessary antibiotic prescription. Several experts remarked that workshop participants’ language—rich in sensory and material metaphors—captures nuance but also reveals gaps between biomedical vocabulary and lived experience. The challenge, they argued, lies not in patients’ inability to describe sensations but in the clinical system’s limited structures for incorporating such richly textured accounts. This theme highlights the need for tools that help clinicians grasp the quality, trajectory and emotional dimensions of symptoms without dismissing them as nonspecific or unreliable."
+            },
+            {
+              "name": "Theme 2: The psycho-emotional and relational burden of UTIs",
+              "value": 660,
+              "sectionId": "sec-5-2-2-the-psycho-emotional-and-relational-burden-of-utis",
+              "content": "Experts recognised the psychological, emotional and relational dimensions of UTIs as central to understanding the condition. Many emphasised that UTIs affect more than the bladder—they influence sexuality, intimacy, body image, anxiety levels and daily functioning. They noted that women often carry a silent burden, feeling shame or frustration when symptoms recur or when their concerns are dismissed by clinicians. Experts observed that participants’ artefacts and narratives captured these emotional layers vividly, revealing fear of recurrence, anticipatory anxiety, and the erosion of trust in one’s own body. They highlighted that the workshops allowed women to express these dimensions in ways that clinical interviews typically do not facilitate. Emotional aspects were seen as diagnostic clues rather than distractions: for example, the sense of dread preceding urination could indicate severity or chronicity. Experts also stressed that psychosocial burdens affect treatment-seeking behaviour—some women delay consultations due to previous negative encounters or feelings of embarrassment. This theme underscores the need for clinical frameworks that recognise UTIs as biopsychosocial experiences rather than purely physiological events."
+            },
+            {
+              "name": "Theme 3: Facilitating meaning-making through narrative and physicalization",
+              "value": 700,
+              "sectionId": "sec-5-2-3-facilitating-meaning-making-through-narrative-and-physicalization",
+              "content": "Experts expressed strong interest in the potential of narrative and material methods to enhance communication and understanding of symptoms. They noted that the artefacts and physical variables created during the workshops enabled participants to externalise sensations in ways that were intelligible to clinicians, bridging the gap between subjective feelings and clinical interpretation. Several experts highlighted that the tactile and visual nature of the representations made abstract sensations more concrete. This allowed them to identify aspects such as intensity, localisation, instability, or progression that are often difficult to articulate verbally. They also commented on the capacity of narrative accounts—when prompted by artefacts—to reveal detailed temporal sequences, triggers, coping strategies and emotional states. Experts agreed that these methods could improve anamnesis, especially in recurrent cases where patients and clinicians struggle to distinguish between symptoms, side effects, and anticipatory anxiety. Some envisioned applications in medical education, enabling trainees to better understand patients’ lived experiences. They also noted that physicalization could help clinicians detect inconsistencies, align expectations, and support shared decision-making. Overall, this theme highlights the value of combining narrative and material approaches to foster deeper, more contextualised patient–clinician dialogue."
+            },
+            {
+              "name": "Theme 4: Methodological reflections on potential, pitfalls, and pathways to practice",
+              "value": 580,
+              "sectionId": "sec-5-2-4-methodological-reflections",
+              "content": "Experts reflected critically on the methodological strengths and limitations of the workshop format. They praised its potential to highlight experiential knowledge and to support patient agency, but noted challenges for clinical integration. One concern was scalability: the sessions require time, facilitation skills, and material resources that may not be available in primary care. Another concern was interpretive ambiguity: while openness enables rich expression, it may also produce representations that clinicians find difficult to read without training. Experts highlighted the risk of conflating symptoms with emotional or contextual factors—for instance, distinguishing pain from fear of pain. They also pointed out that patients with different cultural or material literacy levels may engage differently with the method. Despite these concerns, experts saw clear pathways for practice, including adapting components of the workshop for shorter consultations, using simplified physical-variable sets, or incorporating material prompts into patient interviews. They emphasised the promise of the method in cases where conventional diagnostic tools fall short, such as chronic or recurrent UTIs, and encouraged further refinement to ensure that physical and narrative representations reliably complement clinical reasoning."
+            }
+          ]
+        },
+        {
+          "name": "5.3 Limitations of the medical expert interviews as assessment method",
+          "value": 390,
+          "sectionId": "sec-5-3-limitations-of-the-medical-expert-interviews",
+          "content": "This section reflects on limitations inherent to using medical expert interviews as an assessment method. One limitation concerns sample diversity: although experts represented relevant specialisations, the group was still limited in size and skewed toward those familiar with participatory or narrative approaches. This may bias interpretations toward positive evaluations. Another limitation is the dependence on curated materials: experts reviewed workshop excerpts selected by the researcher, which may have shaped their impressions. The format of online interviews also restricted opportunities for hands-on interaction with artefacts, potentially reducing their interpretive richness. The section notes that experts’ perspectives inevitably reflect their disciplinary orientations, which influence what they consider clinically relevant. Finally, interviews provide reflective, second-order commentary rather than direct observation of participants engaging with materials. The section concludes that while expert feedback is essential for validation, it should be understood as one interpretive layer within a broader, multi-perspective evaluation process."
+        },
+        {
+          "name": "5.4 Conclusions from the assessment",
+          "value": 196,
+          "sectionId": "sec-5-4-conclusions-from-the-assessment",
+          "content": "This concluding section summarises the key insights from the expert validation phase. Experts confirmed that the workshop revealed medically relevant information that is often overlooked during standard consultations, particularly concerning the quality, temporality and emotional context of symptoms. They recognised that material engagement and narrative elicitation provided access to tacit knowledge, enabling clearer distinctions between sensation types, triggers, and psychosocial impacts. Experts agreed that the method holds potential for enhancing patient–clinician communication and supporting more nuanced anamnesis, especially in recurrent UTIs where diagnostic complexity is high. At the same time, they highlighted the need for careful adaptation to clinical settings through simplified materials, facilitator training, and integration into existing workflows. The section concludes that the assessment validates the methodological and experiential value of the workshop while outlining considerations for future refinement and implementation in healthcare practice."
+        }
+      ]
+    }
+  ]
+}

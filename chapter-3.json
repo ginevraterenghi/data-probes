@@ -1,0 +1,91 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "3. Methodology: Physical variables and data-probes within the “shape your symptoms” workshop",
+      "children": [
+        {
+          "name": "3.1 Methodological approach",
+          "children": [
+            {
+              "name": "Design research and practice-based inquiry",
+              "value": 538,
+              "sectionId": "sec-3-1-1-design-research-and-practice-based-inquiry",
+              "content": "This section situates the thesis within design research and practice-based inquiry. It argues that the project is not only about studying an existing phenomenon but about designing and testing a method that becomes part of the phenomenon itself. Design research is presented as an exploratory, iterative approach in which prototypes, workshops, and artefacts function as both interventions and research instruments. Knowledge emerges through cycles of making, trying, and reflecting rather than through linear hypothesis testing. Practice-based inquiry emphasises that the researcher’s own design practice – creating the data-probes, developing the workshop format, adjusting materials and procedures – is a primary means of investigation. The section explains how the thesis draws on mixed qualitative methods (interviews, workshops, thematic analysis, visual documentation) but anchors them in a design-led logic where material experiments are central. This framing justifies why the methodology must accommodate iteration, openness, and adaptation, and why success is assessed not by standardised reproducibility but by the quality of insights and reflective transformations generated through practice."
+            },
+            {
+              "name": "Participatory design and co-creation",
+              "value": 496,
+              "sectionId": "sec-3-1-2-participatory-design-and-co-creation",
+              "content": "Here the methodology is positioned within participatory design and co-creation traditions. The section explains that women with lived experience of UTIs, as well as clinicians and other stakeholders, are treated as co-investigators rather than passive subjects. Participation is defined as an ongoing involvement in defining what is relevant, shaping the tools, and interpreting the outcomes. Drawing on literature introduced in Chapter 2, the text highlights how participatory design challenges power asymmetries in healthcare by foregrounding voices that are often marginalised, especially women’s perspectives on intimate conditions. The workshop is described as a space where different forms of expertise – experiential, clinical, design – meet and influence each other. Co-creation is not limited to producing solutions; it includes co-creating vocabularies, physical variables, and shared maps of symptoms. This section also acknowledges the challenges of participation: it requires careful facilitation, time, and attention to ethics, as well as an awareness that not all contributions are equal or equally comfortable to express. The participatory stance underpins later empirical work and motivates the involvement of medical experts in the assessment phase."
+            },
+            {
+              "name": "Material engagement and making as inquiry",
+              "value": 505,
+              "sectionId": "sec-3-1-3-material-engagement-and-making-as-inquiry",
+              "content": "This part foregrounds material engagement as a core methodological principle. It builds on the theoretical arguments of Chapter 2 to treat materials not as neutral carriers of meaning but as active participants in the research process. Through the data-probes and the physical variables, participants work with textures, weights, shapes, and connectors to express how symptoms feel. The section describes how making becomes a form of inquiry: by choosing and combining components, participants reflect on the qualities of their sensations and negotiate how to represent them. Gestures such as pressing, cutting, aligning, or intentionally destabilising artefacts are understood as ways of thinking through the body. The method is therefore designed to elicit tacit and pre-verbal aspects of experience that are hard to access through interviews alone. The section also explains how the material kit was iteratively refined – which elements were added or removed and why – and how limitations of the kit (for example the absence of sharp or coloured components) themselves sparked useful discussion. Material engagement thus operates both as a data collection strategy and as a means for participants to develop greater awareness and agency in relation to their own symptoms."
+            },
+            {
+              "name": "Reflexivity and researcher positioning",
+              "value": 403,
+              "sectionId": "sec-3-1-4-reflexivity-and-researcher-positioning",
+              "content": "This subsection addresses reflexivity and the researcher’s positioning within the study. It recognises that the researcher is simultaneously designer, facilitator, analyst, and narrator, and that these roles shape how the methodology is enacted and what becomes visible. Drawing on reflexive traditions in qualitative and feminist research, the section explains how personal background, interests, and institutional contexts influence decisions about which topics to foreground, which materials to use, and how to interpret participants’ contributions. Particular attention is given to the dual role of facilitating the workshops and later analysing the resulting data: the same person who invites expressions also decides how they are coded and used. To address this, the methodology emphasises documentation of decisions, transparency in reporting changes to the protocol, and dialogue with supervisors and medical experts as informal forms of triangulation. Reflexivity is also connected to ethics and care: creating a safe environment for discussing intimate infections requires sensitivity to power dynamics, emotional responses, and cultural differences. The section concludes that reflexivity is not an optional add-on but an integral part of how the apparatus of physical variables is constructed and used."
+            }
+          ]
+        },
+        {
+          "name": "3.2 The “shape your symptoms” workshop",
+          "children": [
+            {
+              "name": "Workshop aims and structure",
+              "value": 400,
+              "sectionId": "sec-3-2-1-workshop-aims-and-structure",
+              "content": "This section introduces the 'Shape your symptoms' workshop as the main methodological device of the thesis. The workshop is designed as a 2.5–3-hour session for small groups, usually 5–8 participants, bringing together women with experience of UTIs and, in some cases, medical experts. Its overall aim is to support self-awareness, data literacy, and more nuanced communication of symptoms by engaging participants in a series of structured yet open activities. The text outlines the step-by-step flow: pre-workshop written stories; arrival and introduction; an ice-breaking exercise where each person defines what “symptom” means to them; collective identification and ranking of UTI symptoms using labels; introduction of the idea of shaping; familiarisation with the material kit; co-definition of physical variables; individual artefact construction using data-probes; and final presentations and discussion. Each phase is linked to specific research aims – such as eliciting language, building a shared vocabulary, or observing material choices – and to expected benefits for participants. The section emphasises that the workshop is iterative and has been refined across five sessions in Switzerland, the UK and Mexico, with feedback informing adjustments to timing, materials, and facilitation."
+            },
+            {
+              "name": "Participants recruitment and profiles",
+              "value": 392,
+              "sectionId": "sec-3-2-2-participants-recruitment-and-profiles",
+              "content": "Here the thesis describes how participants were recruited and who took part. Recruitment primarily targeted women with lived experience of UTIs or other intimate infections, sometimes complemented by clinicians, design students, or colleagues in health-related fields. Participants were reached through personal networks, institutional mailing lists, and course cohorts at SUPSI and Brunel. The section summarises the composition of each workshop session, noting how many participants had recurrent UTIs, single episodes, other intimate infections, or professional backgrounds in healthcare. It reflects on the implications of this sampling: having many design-literate participants supported engagement with representation tasks, while also limiting diversity in education and social position. The text also discusses practical and ethical criteria – voluntary participation, informed consent, the option to abstain from being photographed, and the importance of matching or at least being sensitive to gender identity when forming groups. Ultimately, participants are described as 'people experienced with the disease' rather than patients only, highlighting that their expertise extends beyond their diagnosis."
+            },
+            {
+              "name": "Workshop activities and phases",
+              "value": 474,
+              "sectionId": "sec-3-2-3-workshop-activities-and-phases",
+              "content": "This subsection details the concrete activities and phases of the workshop. It walks through each step: writing personal stories, defining 'symptom' on a card, selecting and ranking symptom labels, exploring materials, pairing symptoms with physical-variable labels, shaping individual artefacts, and presenting them to the group. For each phase, the text specifies what participants are asked to do, what materials are used, and what kind of data is generated (for example cards, photos, audio recordings, artefacts, tablecloth feedback). The section explains how the material kit – cubes, spheres and triangular prisms in different materials and sizes, plus connectors and labels – is introduced and organised, and how participants are invited to re-arrange components to learn their properties. It also describes adjustments made after the pilot, such as changing the layout of the materials, simplifying labels, and integrating a printed tablecloth that both protects the table and collects feedback. The structure is presented not as rigid but as a scaffold that supports both comparability across sessions and openness to what participants bring."
+            }
+          ]
+        },
+        {
+          "name": "3.3 Data collection and analysis",
+          "children": [
+            {
+              "name": "Data sources and materials",
+              "value": 471,
+              "sectionId": "sec-3-3-1-data-sources-and-materials",
+              "content": "This part describes the different types of data generated by the workshops and how they are collected. It identifies eight main categories: pre-workshop written stories; symptom definition cards; biographic introductions; symptom label arrangements; physical-variable label arrangements; symptom–variable associations; the 3D artefacts themselves; and verbal presentations of the artefacts. Additional data come from audio recordings of the sessions, photographs of layouts and artefacts, field notes, and completed tablecloths used for feedback. The section explains how each type of data is collected (for example via online forms, printed cards, photos, scans, transcripts), in which phase of the workshop it arises, and what analytical purpose it serves (e.g. clarifying vocabulary, mapping associations, documenting material configurations). Practical aspects of data management are also covered: secure storage on password-protected servers, anonymisation in transcripts, restricted access to raw data, and eventual deletion according to institutional policies. Ethical approvals from Brunel and local institutions are summarised, and the flexible role of the researcher as facilitator, listener and note-taker is acknowledged."
+            },
+            {
+              "name": "Coding and analytical strategy",
+              "value": 550,
+              "sectionId": "sec-3-3-2-coding-and-analytical-strategy",
+              "content": "This subsection outlines the analytical strategy, anchored in thematic analysis and compositional interpretation. It adopts Braun and Clarke’s framework for thematic analysis and adapts it to the workshop data. The process includes familiarisation with transcripts and notes, generation of initial inductive codes, grouping codes into candidate themes, reviewing and refining themes, and writing them up as analytic narratives. Both semantic and latent themes are considered, capturing surface content as well as underlying assumptions. Data from all three core workshops are treated as a corpus, with extracts referenced by participant and session. Compositional interpretation is used to analyse the artefacts themselves. Drawing on visual methods, each artefact is described in terms of form, material, spatial organisation and components before being related back to the participant’s narration. This ensures that artefacts are treated as independent data, not just illustrations of spoken accounts. The section explains how these methods are combined to examine symptom vocabularies, symptom–variable associations, and the role of materials in knowledge generation, while acknowledging the inherently interpretive nature of the analysis and the need for transparency about coding decisions."
+            },
+            {
+              "name": "Limitations and considerations",
+              "value": 441,
+              "sectionId": "sec-3-3-3-limitations-and-considerations",
+              "content": "This part discusses methodological limitations and considerations. It notes that thematic and compositional analyses rely on the researcher’s interpretive judgement, and that the absence of multiple coders or participant validation limits intersubjective reliability. The researcher’s dual role as facilitator and analyst further shapes what is said, what is made, and how it is later interpreted. The section also highlights constraints related to the sample: participants are mostly design-literate, recruited through academic networks, and concentrated in a limited set of geographical and cultural contexts. This supports depth but limits generalisability. Material constraints are another source of limitation: the finite palette of shapes and textures may have restricted certain forms of expression or favoured others, and participants’ differing levels of manual skill or material literacy could influence their artefacts. Finally, the text reflects on challenges in evaluating such an open, co-creative method: conventional criteria of replicability and quantitative impact are not well suited, so success is instead judged by the richness, relevance, and resonance of the insights generated and by the extent to which the method is legible and meaningful to those who took part."
+            }
+          ]
+        },
+        {
+          "name": "3.4 Summary",
+          "value": 382,
+          "sectionId": "sec-3-4-summary",
+          "content": "The summary synthesises Chapter 3 by revisiting the main components of the methodology. It reiterates that the research adopts a design-led, practice-based and participatory approach in which the 'Shape your symptoms' workshop, the physical variables, and the data-probes operate together as an apparatus for eliciting and interpreting embodied data. The chapter has shown how the workshop structure was iteratively developed and refined through a pilot and subsequent sessions, how participants with lived experience of UTIs were recruited and supported, and how a multi-layered dataset of narratives, conversations, artefacts and arrangements was collected. It has also detailed the analytical strategy, combining thematic analysis and compositional interpretation to link what participants say with what they build. Finally, the summary acknowledges key limitations related to researcher positioning, sampling, material constraints and evaluation, while arguing that these do not undermine the value of the method but rather situate its findings. This sets the stage for Chapter 4, which presents the empirical results of applying this methodology, and for later chapters that consolidate the physical variable apparatus as a methodological contribution."
+        }
+      ]
+    }
+  ]
+}

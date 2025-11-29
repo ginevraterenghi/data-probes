@@ -1,0 +1,610 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "1. Intro",
+      "children": [
+        {
+          "name": "Research aims",
+          "value": 143,
+          "sectionId": "sec-1-research-aims"
+        },
+        {
+          "name": "Context",
+          "value": 190,
+          "sectionId": "sec-1-context"
+        },
+        {
+          "name": "Topic",
+          "value": 216,
+          "sectionId": "sec-1-topic"
+        },
+        {
+          "name": "Research questions",
+          "children": [
+            {
+              "name": "RQ1. How can participatory design practices expand healthcare enquiry by enabling women to access, express, and reflect upon embodied experience and contribute to the co-creation of knowledge?",
+              "value": 163,
+              "sectionId": "sec-rq1-how-can-participatory-design-practices-expand-healthcare-enquiry-by-enabling-women-to-access-express-and-reflect-upon-embodied-experience-and-contribute-to-the-co-creation-of-knowledge"
+            },
+            {
+              "name": "RQ2. How can material engagement support the interpretation and articulation of embodied experiences within participatory data physicalization practices?",
+              "value": 161,
+              "sectionId": "sec-rq2-how-can-material-engagement-support-the-interpretation-and-articulation-of-embodied-experiences-within-participatory-data-physicalization-practices"
+            },
+            {
+              "name": "RQ3. How can physical variables transform individual bodily sensations into collective representations of health, making interpretations of embodied experience into collective knowledge?",
+              "value": 238,
+              "sectionId": "sec-rq3-how-can-physical-variables-transform-individual-bodily-sensations-into-collective-representations-of-health-making-interpretations-of-embodied-experience-into-collective-knowledge"
+            }
+          ]
+        },
+        {
+          "name": "1.5 Outputs and outcomes",
+          "children": [
+            {
+              "name": "1.5.1 Outputs. Practical and tangible deliverables",
+              "value": 250,
+              "sectionId": "sec-1-5-1-outputs-practical-and-tangible-deliverables"
+            },
+            {
+              "name": "1.5.2 Outcomes. Conceptual and methodological contributions",
+              "value": 267,
+              "sectionId": "sec-1-5-2-outcomes-conceptual-and-methodological-contributions"
+            }
+          ]
+        },
+        {
+          "name": "1.6 The structure of this thesis",
+          "value": 565,
+          "sectionId": "sec-1-6-the-structure-of-this-thesis"
+        }
+      ]
+    },
+    {
+      "name": "2. Literature review and theoretical framework co-creating knowledge from symptoms",
+      "children": [
+        {
+          "name": "2.1 Symptoms, UTIs and women’s health",
+          "children": [
+            {
+              "name": "2.1.1 Women’s involvement and causes of infection",
+              "value": 531,
+              "sectionId": "sec-2-1-1-women-s-involvement-and-causes-of-infection"
+            },
+            {
+              "name": "2.1.2 Symptoms in everyday experience",
+              "value": 191,
+              "sectionId": "sec-2-1-2-symptoms-in-everyday-experience"
+            },
+            {
+              "name": "2.1.3 Symptoms as indicators in clinical practice",
+              "value": 236,
+              "sectionId": "sec-2-1-3-symptoms-as-indicators-in-clinical-practice"
+            },
+            {
+              "name": "2.1.4 A silent epidemic",
+              "value": 107,
+              "sectionId": "sec-2-1-4-a-silent-epidemic"
+            }
+          ]
+        },
+        {
+          "name": "2.2 Theoretical framing: Symptoms as physical indicators",
+          "children": [
+            {
+              "name": "2.2.1 Symptoms as interpreted bodily signs",
+              "children": [
+                {
+                  "name": "Symptoms, interpretation and diagnosis",
+                  "value": 264,
+                  "sectionId": "sec-2-2-1-symptoms-interpretation-and-diagnosis"
+                },
+                {
+                  "name": "Biosemiotics perspectives",
+                  "value": 278,
+                  "sectionId": "sec-2-2-1-biosemiotics-perspectives"
+                },
+                {
+                  "name": "Material traces and autographic views",
+                  "value": 284,
+                  "sectionId": "sec-2-2-1-material-traces-and-autographic-views"
+                }
+              ]
+            },
+            {
+              "name": "2.2.2 Symptoms as temporal and situated indicators",
+              "children": [
+                {
+                  "name": "Symptoms as temporal indicators",
+                  "value": 378,
+                  "sectionId": "sec-2-2-2-symptoms-as-temporal-indicators"
+                },
+                {
+                  "name": "Situated knowledge and material-discursive views",
+                  "value": 109,
+                  "sectionId": "sec-2-2-2-situated-knowledge-and-material-discursive-views"
+                },
+                {
+                  "name": "Embodiment and lived experience",
+                  "value": 77,
+                  "sectionId": "sec-2-2-2-embodiment-and-lived-experience"
+                }
+              ]
+            },
+            {
+              "name": "2.2.3 Summary",
+              "value": 278,
+              "sectionId": "sec-2-2-3-summary"
+            }
+          ]
+        },
+        {
+          "name": "2.3 Data physicalization practices and participatory mapping",
+          "children": [
+            {
+              "name": "2.3.1 Data physicalization practices",
+              "children": [
+                {
+                  "name": "Data physicalization: an overview",
+                  "value": 510,
+                  "sectionId": "sec-2-3-1-data-physicalization-an-overview"
+                },
+                {
+                  "name": "Physicality, interactions and sense-making",
+                  "value": 449,
+                  "sectionId": "sec-2-3-1-physicality-interactions-and-sense-making"
+                },
+                {
+                  "name": "Individual data physicalization for everyday experiences",
+                  "value": 336,
+                  "sectionId": "sec-2-3-1-individual-data-physicalization-for-everyday-experiences"
+                },
+                {
+                  "name": "Co-designed physicalizations",
+                  "value": 405,
+                  "sectionId": "sec-2-3-1-co-designed-physicalizations"
+                },
+                {
+                  "name": "Autographic visualizations and material traces",
+                  "value": 415,
+                  "sectionId": "sec-2-3-1-autographic-visualizations-and-material-traces"
+                }
+              ]
+            },
+            {
+              "name": "2.3.2 Mapping together for collective knowledge",
+              "children": [
+                {
+                  "name": "Participatory mapping for shared understanding",
+                  "value": 483,
+                  "sectionId": "sec-2-3-2-participatory-mapping-for-shared-understanding"
+                },
+                {
+                  "name": "Collective knowledge and embodied perspectives",
+                  "value": 332,
+                  "sectionId": "sec-2-3-2-collective-knowledge-and-embodied-perspectives"
+                },
+                {
+                  "name": "Mapping experiences of health",
+                  "value": 356,
+                  "sectionId": "sec-2-3-2-mapping-experiences-of-health"
+                }
+              ]
+            },
+            {
+              "name": "2.3.3 Summary",
+              "value": 333,
+              "sectionId": "sec-2-3-3-summary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Methodology: Physical variables and data-probes within the “shape your symptoms” workshop",
+      "children": [
+        {
+          "name": "3.1 Methodological approach",
+          "children": [
+            {
+              "name": "Design research and practice-based inquiry",
+              "value": 538,
+              "sectionId": "sec-3-1-1-design-research-and-practice-based-inquiry"
+            },
+            {
+              "name": "Participatory design and co-creation",
+              "value": 496,
+              "sectionId": "sec-3-1-2-participatory-design-and-co-creation"
+            },
+            {
+              "name": "Material engagement and making as inquiry",
+              "value": 505,
+              "sectionId": "sec-3-1-3-material-engagement-and-making-as-inquiry"
+            },
+            {
+              "name": "Reflexivity and researcher positioning",
+              "value": 403,
+              "sectionId": "sec-3-1-4-reflexivity-and-researcher-positioning"
+            }
+          ]
+        },
+        {
+          "name": "3.2 The “shape your symptoms” workshop",
+          "children": [
+            {
+              "name": "Workshop aims and structure",
+              "value": 400,
+              "sectionId": "sec-3-2-1-workshop-aims-and-structure"
+            },
+            {
+              "name": "Participants recruitment and profiles",
+              "value": 392,
+              "sectionId": "sec-3-2-2-participants-recruitment-and-profiles"
+            },
+            {
+              "name": "Workshop activities and phases",
+              "value": 474,
+              "sectionId": "sec-3-2-3-workshop-activities-and-phases"
+            }
+          ]
+        },
+        {
+          "name": "3.3 Data collection and analysis",
+          "children": [
+            {
+              "name": "Data sources and materials",
+              "value": 471,
+              "sectionId": "sec-3-3-1-data-sources-and-materials"
+            },
+            {
+              "name": "Coding and analytical strategy",
+              "value": 550,
+              "sectionId": "sec-3-3-2-coding-and-analytical-strategy"
+            },
+            {
+              "name": "Limitations and considerations",
+              "value": 441,
+              "sectionId": "sec-3-3-3-limitations-and-considerations"
+            }
+          ]
+        },
+        {
+          "name": "3.4 Summary",
+          "value": 382,
+          "sectionId": "sec-3-4-summary"
+        }
+      ]
+    },
+    {
+      "name": "4. Analysis of results: “No acute pain is a sphere”",
+      "children": [
+        {
+          "name": "4.1 Translating symptoms into physical variables",
+          "children": [
+            {
+              "name": "Participants’ symptom vocabulary",
+              "value": 538,
+              "sectionId": "sec-4-1-1-participants-symptom-vocabulary"
+            },
+            {
+              "name": "From vocabulary to physical variables",
+              "value": 514,
+              "sectionId": "sec-4-1-2-from-vocabulary-to-physical-variables"
+            },
+            {
+              "name": "Physical variables as expressive tools",
+              "value": 563,
+              "sectionId": "sec-4-1-3-physical-variables-as-expressive-tools"
+            }
+          ]
+        },
+        {
+          "name": "4.2 Individual data-probes: “Symptoms as small worlds”",
+          "children": [
+            {
+              "name": "Materializing embodied experiences",
+              "value": 537,
+              "sectionId": "sec-4-2-1-materializing-embodied-experiences"
+            },
+            {
+              "name": "Narratives and reflections around data-probes",
+              "value": 632,
+              "sectionId": "sec-4-2-2-narratives-and-reflections-around-data-probes"
+            },
+            {
+              "name": "Relating individual experiences through probes",
+              "value": 585,
+              "sectionId": "sec-4-2-3-relating-individual-experiences-through-probes"
+            }
+          ]
+        },
+        {
+          "name": "4.3 Collective mapping: “No acute pain is a sphere”",
+          "children": [
+            {
+              "name": "Co-creating shared symptom maps",
+              "value": 677,
+              "sectionId": "sec-4-3-1-co-creating-shared-symptom-maps"
+            },
+            {
+              "name": "Negotiating meaning and ambiguity",
+              "value": 635,
+              "sectionId": "sec-4-3-2-negotiating-meaning-and-ambiguity"
+            },
+            {
+              "name": "From individual probes to collective representations",
+              "value": 629,
+              "sectionId": "sec-4-3-3-from-individual-probes-to-collective-representations"
+            }
+          ]
+        },
+        {
+          "name": "4.4 Reflections on method and practice",
+          "children": [
+            {
+              "name": "Methodological insights from “shape your symptoms”",
+              "value": 602,
+              "sectionId": "sec-4-4-1-methodological-insights-from-shape-your-symptoms"
+            },
+            {
+              "name": "Tensions and challenges in participatory data physicalization",
+              "value": 669,
+              "sectionId": "sec-4-4-2-tensions-and-challenges-in-participatory-data-physicalization"
+            },
+            {
+              "name": "Implications for future practice",
+              "value": 651,
+              "sectionId": "sec-4-4-3-implications-for-future-practice"
+            }
+          ]
+        },
+        {
+          "name": "4.5 Summary",
+          "value": 451,
+          "sectionId": "sec-4-5-summary"
+        },
+        {
+          "name": "Research aims",
+          "value": 139,
+          "sectionId": "sec-4-research-aims"
+        },
+        {
+          "name": "Context",
+          "value": 190,
+          "sectionId": "sec-4-context"
+        }
+      ]
+    },
+    {
+      "name": "5. Assessment: Medical experts’ feedback on results",
+      "children": [
+        {
+          "name": "5.1 Assessment design and process",
+          "children": [
+            {
+              "name": "Designing the expert assessment",
+              "value": 421,
+              "sectionId": "sec-5-1-1-designing-the-expert-assessment"
+            },
+            {
+              "name": "Experts’ profiles and expertise",
+              "value": 366,
+              "sectionId": "sec-5-1-2-experts-profiles-and-expertise"
+            },
+            {
+              "name": "Assessment sessions and materials",
+              "value": 399,
+              "sectionId": "sec-5-1-3-assessment-sessions-and-materials"
+            }
+          ]
+        },
+        {
+          "name": "5.2 Experts’ perspectives on the apparatus",
+          "children": [
+            {
+              "name": "Perceived value of data-probes and mappings",
+              "value": 566,
+              "sectionId": "sec-5-2-1-perceived-value-of-data-probes-and-mappings"
+            },
+            {
+              "name": "Opportunities and limitations for clinical use",
+              "value": 606,
+              "sectionId": "sec-5-2-2-opportunities-and-limitations-for-clinical-use"
+            },
+            {
+              "name": "Suggestions for refinement and implementation",
+              "value": 540,
+              "sectionId": "sec-5-2-3-suggestions-for-refinement-and-implementation"
+            }
+          ]
+        },
+        {
+          "name": "5.3 Summary",
+          "value": 390,
+          "sectionId": "sec-5-3-summary"
+        },
+        {
+          "name": "Topic",
+          "value": 216,
+          "sectionId": "sec-5-topic"
+        }
+      ]
+    },
+    {
+      "name": "6. Discussion",
+      "children": [
+        {
+          "name": "6.1 Participatory mapping for collective knowledge",
+          "children": [
+            {
+              "name": "Collective mapping as knowledge-making",
+              "value": 713,
+              "sectionId": "sec-6-1-1-collective-mapping-as-knowledge-making"
+            },
+            {
+              "name": "Ambiguity, negotiation and shared understanding",
+              "value": 655,
+              "sectionId": "sec-6-1-2-ambiguity-negotiation-and-shared-understanding"
+            }
+          ]
+        },
+        {
+          "name": "6.2 Symptoms as physical indicators in practice",
+          "children": [
+            {
+              "name": "Material traces and embodied indicators",
+              "value": 605,
+              "sectionId": "sec-6-2-1-material-traces-and-embodied-indicators"
+            },
+            {
+              "name": "Temporal and situated aspects of symptoms",
+              "value": 632,
+              "sectionId": "sec-6-2-2-temporal-and-situated-aspects-of-symptoms"
+            }
+          ]
+        },
+        {
+          "name": "6.3 Design implications for women’s health",
+          "children": [
+            {
+              "name": "Supporting articulation and communication of symptoms",
+              "value": 653,
+              "sectionId": "sec-6-3-1-supporting-articulation-and-communication-of-symptoms"
+            },
+            {
+              "name": "Designing for shared understanding in healthcare contexts",
+              "value": 607,
+              "sectionId": "sec-6-3-2-designing-for-shared-understanding-in-healthcare-contexts"
+            }
+          ]
+        },
+        {
+          "name": "6.4 Summary",
+          "value": 364,
+          "sectionId": "sec-6-4-summary"
+        },
+        {
+          "name": "Research questions",
+          "value": 117,
+          "sectionId": "sec-6-research-questions"
+        }
+      ]
+    },
+    {
+      "name": "7. Apparatus of physical variables",
+      "children": [
+        {
+          "name": "7.1 Conceptualizing the apparatus",
+          "children": [
+            {
+              "name": "From workshop tools to apparatus",
+              "value": 575,
+              "sectionId": "sec-7-1-1-from-workshop-tools-to-apparatus"
+            },
+            {
+              "name": "Components and relations within the apparatus",
+              "value": 609,
+              "sectionId": "sec-7-1-2-components-and-relations-within-the-apparatus"
+            }
+          ]
+        },
+        {
+          "name": "7.2 The apparatus in use",
+          "children": [
+            {
+              "name": "Applying the apparatus beyond the workshop",
+              "value": 584,
+              "sectionId": "sec-7-2-1-applying-the-apparatus-beyond-the-workshop"
+            },
+            {
+              "name": "Potential adaptations and extensions",
+              "value": 581,
+              "sectionId": "sec-7-2-2-potential-adaptations-and-extensions"
+            }
+          ]
+        },
+        {
+          "name": "7.3 Summary",
+          "value": 333,
+          "sectionId": "sec-7-3-summary"
+        },
+        {
+          "name": "Context",
+          "value": 190,
+          "sectionId": "sec-7-context"
+        },
+        {
+          "name": "Topic",
+          "value": 216,
+          "sectionId": "sec-7-topic"
+        },
+        {
+          "name": "Research questions",
+          "value": 117,
+          "sectionId": "sec-7-research-questions"
+        }
+      ]
+    },
+    {
+      "name": "8. Conclusion",
+      "children": [
+        {
+          "name": "8.1 Summary of findings",
+          "children": [
+            {
+              "name": "Key outcomes of the research",
+              "value": 541,
+              "sectionId": "sec-8-1-1-key-outcomes-of-the-research"
+            },
+            {
+              "name": "Contributions to design research and healthcare practice",
+              "value": 558,
+              "sectionId": "sec-8-1-2-contributions-to-design-research-and-healthcare-practice"
+            }
+          ]
+        },
+        {
+          "name": "8.2 Reflections on limitations and ethics",
+          "children": [
+            {
+              "name": "Methodological and practical limitations",
+              "value": 642,
+              "sectionId": "sec-8-2-1-methodological-and-practical-limitations"
+            },
+            {
+              "name": "Ethical considerations and future responsibilities",
+              "value": 640,
+              "sectionId": "sec-8-2-2-ethical-considerations-and-future-responsibilities"
+            }
+          ]
+        },
+        {
+          "name": "8.3 Future directions",
+          "children": [
+            {
+              "name": "Future research trajectories",
+              "value": 622,
+              "sectionId": "sec-8-3-1-future-research-trajectories"
+            },
+            {
+              "name": "Potential applications in practice",
+              "value": 619,
+              "sectionId": "sec-8-3-2-potential-applications-in-practice"
+            }
+          ]
+        },
+        {
+          "name": "8.4 Summary",
+          "value": 394,
+          "sectionId": "sec-8-4-summary"
+        },
+        {
+          "name": "Topic",
+          "value": 216,
+          "sectionId": "sec-8-topic"
+        }
+      ]
+    }
+  ]
+}

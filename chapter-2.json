@@ -1,0 +1,165 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "2. Literature review and theoretical framework co-creating knowledge from symptoms",
+      "children": [
+        {
+          "name": "2.1 Symptoms, UTIs and women’s health",
+          "children": [
+            {
+              "name": "2.1.1 Women’s involvement and causes of infection",
+              "value": 531,
+              "sectionId": "sec-2-1-1-women-s-involvement-and-causes-of-infection",
+              "content": "This section frames UTIs as both a clinical challenge and a gendered concern. It explains that UTIs are among the most frequent bacterial infections worldwide, causing significant discomfort and contributing substantially to antibiotic use. Women are disproportionately affected, mainly due to anatomical and physiological factors such as a shorter urethra, the proximity of the urethral opening to the anus, and hormonal changes that alter vaginal flora. Behavioural and life-course factors – including sexual activity, use of spermicides, pregnancy, menopause, diabetes and catheterisation – further increase susceptibility and recurrence. Escherichia coli is identified as the primary pathogen, with other bacteria such as Staphylococcus saprophyticus and Klebsiella pneumoniae also involved, especially in complicated or recurrent cases. The section also distinguishes between lower urinary tract infections (cystitis), characterised by dysuria, frequency and discomfort, and upper urinary tract infections (such as pyelonephritis), which manifest with fever, flank pain and systemic symptoms. Because laboratory confirmation is often delayed or unavailable at first consultation, physicians frequently decide on treatment based on patient descriptions and perceived risk, which introduces diagnostic uncertainty and tends to encourage broad-spectrum antibiotic use."
+            },
+            {
+              "name": "2.1.2 Symptoms in everyday experience",
+              "value": 191,
+              "sectionId": "sec-2-1-2-symptoms-in-everyday-experience",
+              "content": "Here the focus shifts from clinical description to how symptoms are lived and interpreted in everyday life. Symptoms such as burning, urgency, pain and discomfort are framed as subjective experiences that vary between individuals and across time. They are influenced by bodily awareness, prior episodes, cultural norms and the ability – or difficulty – of talking about intimate sensations. For some women, recurring UTIs become entangled with anxiety, stigma or shame, for instance when infections are morally associated with sexual behaviour. Others treat cystitis as a familiar but disruptive presence that interferes with work, sleep, intimacy and social participation. Because early sensations can be vague or ambiguous, they are often ignored or normalised until the episode escalates. The section highlights that people develop their own interpretive strategies and rules of thumb to recognise when ‘something is wrong’, but these lay diagnostic processes are seldom recognised within formal healthcare data practices."
+            },
+            {
+              "name": "2.1.3 Symptoms as indicators in clinical practice",
+              "value": 236,
+              "sectionId": "sec-2-1-3-symptoms-as-indicators-in-clinical-practice",
+              "content": "This part discusses the role of symptoms as indicators in medical decision-making. In principle, clinicians rely on a combination of symptom history, physical examination and laboratory tests such as urine culture. In practice, however, tests are not always available or timely, and many treatment decisions have to be made at the first consultation. This makes patient-reported symptoms crucial, even though they are subjective, variably expressed and context-dependent. The section describes the tension between objective laboratory signs and patients’ verbal accounts, showing how the uncertainty created by time pressure, incomplete data and ambiguous presentations encourages empirical treatment and frequent use of broad-spectrum antibiotics. It also points out that guidelines and clinical scoring systems tend to formalise a narrow subset of symptoms, leaving out experiential aspects that matter to patients but are hard to quantify. This gap between lived experience and standardised indicators underpins the research need for approaches that bring embodied accounts back into the diagnostic conversation."
+            },
+            {
+              "name": "2.1.4 A silent epidemic",
+              "value": 107,
+              "sectionId": "sec-2-1-4-a-silent-epidemic",
+              "content": "This subsection links the individual burden of UTIs to the wider problem of antimicrobial resistance (AMR). It describes how recurrent or mismanaged infections, together with routine empirical prescribing, sustain high levels of antibiotic consumption and contribute to the selection of resistant strains. When treatments are inappropriate or incomplete, infections may appear to resolve but re-emerge, leading to repeated courses of antibiotics and increased healthcare use. The section summarises recent estimates indicating that AMR already causes millions of deaths worldwide and is projected to become a leading cause of mortality if practices do not change. UTIs are presented as a critical but often under-recognised node in this larger crisis: the communication gap around symptoms and the difficulty of integrating patient experience into decision-making quietly fuel a global threat that remains largely invisible in everyday clinical encounters."
+            }
+          ]
+        },
+        {
+          "name": "2.2 Theoretical framing: Symptoms as physical indicators",
+          "children": [
+            {
+              "name": "2.2.1 Symptoms as interpreted bodily signs",
+              "children": [
+                {
+                  "name": "Symptoms, interpretation and diagnosis",
+                  "value": 264,
+                  "sectionId": "sec-2-2-1-symptoms-interpretation-and-diagnosis",
+                  "content": "This section revisits the classic distinction between signs – externally observable, measurable indicators – and symptoms, which are internal experiences communicated by the patient. Symptoms such as pain or burning are presented as mediated accounts rather than direct facts: they arise from bodily change but are filtered through perception, language and context. Drawing on clinical and qualitative literature, the text argues that diagnosis is always interpretive, involving negotiation between patient narratives and professional frameworks. Symptom meaning changes over time as new information becomes available and as bodily conditions evolve. Rather than treating symptoms as unreliable or secondary, the section positions them as essential starting points for understanding illness, especially in conditions like UTIs where objective markers may be absent or delayed. This lays the ground for viewing symptom expression as a site where patients and clinicians co-construct both the problem and potential responses."
+                },
+                {
+                  "name": "Biosemiotics perspectives",
+                  "value": 278,
+                  "sectionId": "sec-2-2-1-biosemiotics-perspectives",
+                  "content": "Here the thesis introduces biosemiotics to conceptualise symptoms as signs produced and interpreted within living systems. Drawing on Peirce and contemporary biosemiotic authors, symptoms are framed as indexical signs that maintain a causal relationship to underlying physiological processes, like smoke to fire or a footprint to a passing body. The body is seen as continuously engaged in semiosis: it generates, senses and responds to signals such as inflammation, temperature change or chemical mediators. A burning sensation during urination, for instance, indexes tissue irritation and immune activity. This perspective emphasises that symptoms are neither arbitrary nor purely subjective; they carry evidential weight but require interpretation – the interpretant in Peirce’s triadic model – to become meaningful. The section argues that recognising symptoms as indexical and interpretive opens space for design-led methods that support patients in reading, articulating and re-encoding these bodily signs."
+                },
+                {
+                  "name": "Material traces and autographic views",
+                  "value": 284,
+                  "sectionId": "sec-2-2-1-material-traces-and-autographic-views",
+                  "content": "Building on autographic design and Offenhuber’s work, this subsection extends the semiotic view by treating symptoms as material traces that register bodily processes over time. Autographic visualisation is described as the practice of revealing phenomena through the marks they leave on materials – tree rings, ice cores, litmus paper or thermometers that inscribe environmental or chemical change. By analogy, symptoms such as rash, swelling or burning are understood as autographic inscriptions of internal events. These traces are often latent until brought into focus through observation, documentation or designed apparatus. Autographic approaches highlight the conditions under which traces become legible and stress that interpretation is shaped by the set-up: what is made visible, how it is recorded and who reads it. In the context of this thesis, the argument is that design can create conditions where the ‘self-inscribing’ character of symptoms is extended into material artefacts, enabling participants to externalise and interpret bodily traces in collaboration with others."
+                }
+              ]
+            },
+            {
+              "name": "2.2.2 Symptoms as temporal and situated indicators",
+              "children": [
+                {
+                  "name": "Symptoms as temporal indicators",
+                  "value": 378,
+                  "sectionId": "sec-2-2-2-symptoms-as-temporal-indicators",
+                  "content": "This part foregrounds the temporal dimension of symptoms. It notes that symptoms emerge, intensify, recede and recur, and that their meaning is tightly bound to when and how they unfold. Drawing on clinical and qualitative studies, the section shows how early, faint sensations may be hard to classify, whereas later, more intense states retrospectively reframe what came before as prodromal signs. For recurrent UTIs, women often learn to recognise ‘pre-symptoms’ or subtle bodily cues that precede full-blown infection. The text argues that conventional records struggle to capture this temporal nuance, reducing experience to discrete events or snapshots. By contrast, viewing symptoms as temporal indicators invites methods that help people map when symptoms appear, how they evolve and how they relate to cycles such as menstruation, daily routines or treatment courses. This underpins the later emphasis on mapping, timelines and iterative physicalization as ways to make temporal patterns discussable."
+                },
+                {
+                  "name": "Situated knowledge and material-discursive views",
+                  "value": 109,
+                  "sectionId": "sec-2-2-2-situated-knowledge-and-material-discursive-views",
+                  "content": "This subsection draws on feminist epistemology and science and technology studies to argue that knowledge about symptoms is always situated. Referencing Haraway and others, it critiques notions of neutrality and universal objectivity, emphasising that what counts as evidence depends on who is looking, from where, with which tools and within which power relations. In healthcare, normative data, trial protocols and diagnostic criteria often privilege male bodies or standard populations, leaving women’s experiences of UTIs and intimate infections under-represented. Symptoms are therefore read through frameworks that may not fit those who live them. The text adopts a material-discursive perspective, recognising that bodies, instruments, concepts and narratives co-produce what becomes visible as a symptom. Situated knowledge is presented not as a weakness but as a condition for accountability: acknowledging positionality allows researchers and clinicians to take responsibility for how they frame and act upon embodied accounts."
+                },
+                {
+                  "name": "Embodiment and lived experience",
+                  "value": 77,
+                  "sectionId": "sec-2-2-2-embodiment-and-lived-experience",
+                  "content": "Here the focus is on embodiment as both a source of data and a mode of knowing. Drawing on work in phenomenology, HCI and critical data studies, the section argues that the body is not a passive object to be measured but an active interpreter that senses, evaluates and responds to internal states. Symptoms such as pain, urgency or fatigue are presented as interpretations already shaped by prior experience, emotion and context. Embodied knowledge is thus irreducible to numerical indicators yet fundamental for understanding illness and care practices. The section connects this to concepts such as data sense and data bodies, which describe how people experience and make sense of data through their own physicality. This provides a conceptual bridge to the later methodological choice to work with materials and physical variables as extensions of embodied interpretation rather than as neutral encodings."
+                }
+              ]
+            },
+            {
+              "name": "2.2.3 Summary",
+              "value": 278,
+              "sectionId": "sec-2-2-3-summary",
+              "content": "The summary brings together the theoretical strands introduced so far. It reiterates that symptoms are treated as physical indicators in a dual sense: they are materially grounded in bodily processes and at the same time interpretive and situated. Biosemiotics and autographic design support the view that symptoms are indexical, trace-like signs that require an interpretive apparatus to become meaningful. Feminist and situated knowledge perspectives foreground that this apparatus is not neutral but structured by power relations, data practices and historically gendered biases in healthcare. Embodiment is presented as the locus where these processes converge: the body produces, senses and interprets signs, while design can help extend and materialise this interpretive work. The section concludes that recognising symptoms as temporal, material and situated indicators opens the way for participatory methods – such as data physicalization – that treat making as a way of knowing, and that can reposition women’s embodied accounts as central rather than peripheral to health knowledge."
+            }
+          ]
+        },
+        {
+          "name": "2.3 Data physicalization practices and participatory mapping",
+          "children": [
+            {
+              "name": "2.3.1 Data physicalization practices",
+              "children": [
+                {
+                  "name": "Data physicalization: an overview",
+                  "value": 510,
+                  "sectionId": "sec-2-3-1-data-physicalization-an-overview",
+                  "content": "This subsection reviews the emergence of data physicalization as a field. It recalls the formal definition of data physicalization as artefacts whose geometry or material properties encode data, and traces its roots in physical visualisation, tangible interfaces, data sculptures and public installations. The section notes that early work often focused on analytical tasks, such as supporting comparison or numerical estimation through tangible bars or surfaces. Over time, artistic and critical practices expanded the field toward experiential and interpretive goals, using sculptural forms, spatial installations and multi-sensory strategies to evoke reflection and emotion. Historical examples such as clay tokens, Inca khipu and other pre-digital devices are introduced to show that encoding information in physical form has long been used to support administration, memory and communication. Contemporary projects translate personal and environmental data into 3D-printed artefacts, edible forms or sonic objects, illustrating a wide range of applications from health tracking to climate awareness. The overview positions this thesis within this landscape, emphasising a shift from conveying pre-given numbers to exploring data as a process of enquiry enacted through making."
+                },
+                {
+                  "name": "Physicality, interactions and sense-making",
+                  "value": 449,
+                  "sectionId": "sec-2-3-1-physicality-interactions-and-sense-making",
+                  "content": "Here the emphasis is on how physicality and interaction shape sense-making with data. The section synthesises work on constructive physicalization, tangible interaction and embodied cognition, arguing that understanding emerges through handling, arranging and transforming material artefacts rather than merely viewing them. Variables such as texture, weight, arrangement and movement are discussed as resources that engage multiple senses and support intermodal perception. The role of gesture – gripping, pressing, rotating, breaking – is highlighted as a way to think through the body and to externalise tacit knowledge. Rather than seeing physical objects as static encodings, the section stresses that meaning arises in the interplay between data, material affordances and the situated practices of participants. This perspective underpins the later use of physical variables and data-probes to support participants in exploring and expressing complex symptom experiences."
+                },
+                {
+                  "name": "Individual data physicalization for everyday experiences",
+                  "value": 336,
+                  "sectionId": "sec-2-3-1-individual-data-physicalization-for-everyday-experiences",
+                  "content": "This part looks at how individuals use data physicalization to work with everyday, personal data. It connects examples from personal informatics, the Quantified Self movement and autobiographical design where people craft objects to track mood, sleep, exercise or chronic symptoms. Such artefacts often blend functional aims – monitoring patterns, supporting recall – with expressive and affective dimensions, acting as diaries, prompts or companions. The section notes that these projects highlight both the potential and the limits of self-tracking: on one hand, they can raise awareness and support more deliberate self-care; on the other, they can oversimplify experience into metrics or reinforce normative ideals. It argues that physicalization offers an opportunity to keep personal data rich and situated, especially when individuals are involved in deciding what to track, how to encode it and how to interpret it. This is particularly relevant for UTIs and intimate health, where digital tracking alone may not capture the nuances and sensitivities of lived experience."
+                },
+                {
+                  "name": "Co-designed physicalizations",
+                  "value": 405,
+                  "sectionId": "sec-2-3-1-co-designed-physicalizations",
+                  "content": "This subsection reviews work where data physicalizations are co-designed with participants rather than produced for them. Examples include public installations where visitors contribute tokens or strings to build collective displays, workshops where stakeholders build shared models of issues, and research projects in which communities materialise their own datasets. Co-designed physicalizations are discussed as boundary objects that support negotiation, reveal tensions and foster collective sense-making. The section emphasises that participation can occur at different stages – data collection, encoding, interpretation – and that design choices about how open, constrained or curated the process is will shape who can contribute and how. It notes that while open-ended physicalizations can invite rich expression, they may produce knowledge that is hard to structure or compare. This tension motivates the thesis’s focus on physical variables as a gentle structuring device that preserves interpretive freedom while enabling systematic analysis."
+                },
+                {
+                  "name": "Autographic visualizations and material traces",
+                  "value": 415,
+                  "sectionId": "sec-2-3-1-autographic-visualizations-and-material-traces",
+                  "content": "Returning to autographic visualisation, this part explores projects where phenomena inscribe themselves into materials – from environmental pollution corroding metals to chemical reactions colouring paper. Autographic approaches differ from conventional visualisation in that they expose the conditions of data generation rather than just displaying processed values. The section argues that when such techniques are combined with participatory design, they enable people to witness and question how data come to be. It proposes that symptoms and illness experiences can be treated in a similar way: as processes that leave traces in bodies and materials, which can be made tangible through design. Autographic visualisation thus provides both inspiration and a critical lens for the thesis, pointing toward practices where physical variables are not merely codes but part of the same material processes that produce the data they represent."
+                }
+              ]
+            },
+            {
+              "name": "2.3.2 Mapping together for collective knowledge",
+              "children": [
+                {
+                  "name": "Participatory mapping for shared understanding",
+                  "value": 483,
+                  "sectionId": "sec-2-3-2-participatory-mapping-for-shared-understanding",
+                  "content": "This subsection discusses participatory mapping as a way to build shared understanding around complex issues. It draws on examples where groups collaboratively map experiences, resources or relationships onto visual or spatial canvases. In these practices, mapping is understood as both cognitive and social: people externalise what they know, see how it relates to others’ contributions and negotiate the meaning of categories and boundaries. The text highlights that participatory mapping often reveals differences in perception and vocabulary, yet these differences can be productive, making visible the plurality of ways a situation is experienced. In the context of UTIs, the thesis proposes that mapping symptoms, triggers and care pathways collectively can help participants recognise patterns, articulate what is usually left unsaid and situate their personal stories within broader health and social structures."
+                },
+                {
+                  "name": "Collective knowledge and embodied perspectives",
+                  "value": 332,
+                  "sectionId": "sec-2-3-2-collective-knowledge-and-embodied-perspectives",
+                  "content": "Here the focus is on how collective knowledge emerges when embodied perspectives are brought together. Drawing on feminist and participatory research traditions, the section argues that knowledge is not simply aggregated from individual accounts but co-produced through dialogue, comparison and mutual recognition. Embodied accounts of UTIs – how they feel, how they affect daily life, how they intersect with gendered expectations – become resources for understanding that no single actor, including clinicians, can generate alone. The text introduces the idea that negotiating differences in how symptoms are named and valued can itself be informative, exposing where biomedical language fails to capture what matters to patients. It sets the scene for the workshops described later, where participants collectively define vocabularies, map physical variables and assemble artefacts that crystallise shared and divergent experiences."
+                },
+                {
+                  "name": "Mapping experiences of health",
+                  "value": 356,
+                  "sectionId": "sec-2-3-2-mapping-experiences-of-health",
+                  "content": "This subsection links participatory mapping explicitly to health contexts. It reviews case studies where communities map environmental health risks, chronic pain, care networks or emotional landscapes, often using hybrid visual and material formats. These projects show how mapping can surface structural issues such as access to care, stigma or environmental injustice, as well as subtle experiential patterns. The section argues that mapping experiences of UTIs can similarly reveal how symptoms intersect with work, intimacy, cultural scripts and health systems. In doing so, mapping is positioned not just as a way of organising data but as an intervention that helps participants reframe their situation, identify leverage points and imagine alternative practices. This provides a conceptual foundation for the thesis’s later use of collective mapping in the analysis of data-probes and workshop outcomes."
+                }
+              ]
+            },
+            {
+              "name": "2.3.3 Summary",
+              "value": 333,
+              "sectionId": "sec-2-3-3-summary",
+              "content": "The summary draws together the discussion of data physicalization and participatory mapping. It reiterates that physicalization is understood here as a process rather than a static artefact: data, materials and participants co-evolve through making and interpretation. Co-designed and participatory physicalizations show how tangible forms can act as boundary objects that support dialogue and reflection, but they also reveal the challenge of capturing and structuring the knowledge that emerges. Participatory mapping contributes methods for organising collective enquiry, emphasising relations, trajectories and context. Combined with autographic and feminist perspectives, these strands support the thesis’s central move: to use physical variables and data-probes as a flexible apparatus for mapping symptoms and embodied experiences in ways that remain grounded in lived realities while still enabling systematic analysis and knowledge generation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

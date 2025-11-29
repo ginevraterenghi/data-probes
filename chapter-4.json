@@ -1,0 +1,161 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "4. Analysis of results: “No acute pain is a sphere”",
+      "children": [
+        {
+          "name": "4.1 Workshop sessions and participants",
+          "children": [
+            {
+              "name": "4.1.1 Geographical and linguistic distribution",
+              "value": 538,
+              "sectionId": "sec-4-1-1-geographical-and-linguistic-distribution",
+              "content": "This section describes where the workshops took place and in which languages they were conducted. Three core sessions were held in Switzerland (two in Mendrisio, one in Bern), one in London and one in Monterrey. The Mendrisio sessions took place in the Italian-speaking region and alternated between Italian and English depending on participants’ preferences. The London and Monterrey workshops were facilitated in English. This geographical and linguistic variety allowed the method to be tested in different institutional, cultural and language contexts, highlighting how local practices and language choices shape how participants talk about and represent their symptoms."
+            },
+            {
+              "name": "4.1.2 Participant recruitment and background",
+              "value": 514,
+              "sectionId": "sec-4-1-2-participant-recruitment-and-background",
+              "content": "Here the chapter explains how participants were recruited and profiles who took part. Recruitment focused on women with lived experience of UTIs and other intimate infections, together with design students, colleagues and medical professionals in some sessions. Participants joined through course invitations, personal networks or institutional calls. Many had backgrounds in design or interaction design, which supported engagement with representational tasks but limited demographic diversity. The section details how many participants in each session had recurrent UTIs, single episodes, other intimate conditions or professional expertise in healthcare, and summarises how these profiles informed the conversations that followed."
+            },
+            {
+              "name": "4.1.3 Thematic focus and evolution",
+              "value": 563,
+              "sectionId": "sec-4-1-3-thematic-focus-and-evolution",
+              "content": "This part traces how the thematic focus of the workshops evolved over time. Initially, the activity concentrated exclusively on UTIs as part of the SPEARHEAD project context. Later sessions broadened to include other intimate infections and bodily conditions to test the transferability of the approach. The section explains how this widening of scope enriched the range of experiences and symptoms discussed, but also made it more difficult to isolate UTI-specific insights. It reflects on the trade-offs between depth on one condition and breadth across related experiences and shows how the emerging themes informed shifts in subsequent workshop design and analysis."
+            },
+            {
+              "name": "4.1.4 Methodological development through iteration",
+              "value": 537,
+              "sectionId": "sec-4-1-4-methodological-development-through-iteration",
+              "content": "This subsection emphasises that the workshops were not simple replications of a fixed protocol but iterative tests that progressively refined the methodology. Early sessions were used to explore materials, timing, task order and facilitation strategies. Feedback from participants and a medical expert in the pilot informed changes such as reorganising the material kit, simplifying labels, adjusting instructions and reordering phases to allow more personal expression before group influence. Later workshops served to validate and stress-test these changes in new settings. Overall, the section describes methodological development as a cyclic process in which each session generated insights that shaped the next."
+            }
+          ]
+        },
+        {
+          "name": "4.2 Conversation coding and analysis setting",
+          "children": [
+            {
+              "name": "4.2.1 Research questions to answer",
+              "value": 632,
+              "sectionId": "sec-4-2-1-research-questions-to-answer",
+              "content": "This section restates the analytical aims guiding the coding of workshop conversations. It explains that the thematic analysis is structured around a dual framework introduced earlier: (A) exploring experiential knowledge of UTIs—how participants make sense of the disease and its symptoms; and (B) assessing the methodological role of physicalization—how materials and variables shape expression, reflection and communication. From these aims derive a set of questions, including how participants describe symptoms, what challenges they encounter in diagnosis and consultation, how they manage or prevent infections, and how physical materials affect their ability to articulate, represent and share experiences. These questions define the scope of the coding and the subsequent themes."
+            },
+            {
+              "name": "4.2.2 Thematic analysis process",
+              "value": 585,
+              "sectionId": "sec-4-2-2-thematic-analysis-process",
+              "content": "This subsection describes how the thematic analysis was carried out. Audio recordings from the workshops were transcribed (in Italian and English), translated where needed, and annotated with markers indicating the workshop phase. The analysis followed Braun and Clarke’s framework: familiarisation with the data, generation of initial inductive codes, collation of codes into candidate themes, review and refinement of themes, and writing. Both semantic and latent themes were identified to capture explicit statements as well as underlying assumptions. A coding table documented links between extracts, codes, subthemes and overarching themes. This systematic process was used to derive the five themes on UTIs and the five themes on the method reported in sections 4.4 and 4.5."
+            }
+          ]
+        },
+        {
+          "name": "4.3 Data-probes artefacts: Physical results",
+          "value": 677,
+          "sectionId": "sec-4-3-data-probes-artefacts-physical-results",
+          "content": "This section introduces the collection of data-probes—artefacts created by participants to materialise their symptom experiences. It presents visual overviews of all artefacts from the three core workshops and briefly describes their diversity in shape, size, material composition and complexity. The text explains that these artefacts are treated as independent data items, not just as illustrations of spoken accounts. Each artefact is documented through photographs and a structured description, including its components, arrangement and key physical variables. This documentation provides the basis for later analysis of how symptoms are expressed materially and how patterns emerge across participants’ constructions."
+        },
+        {
+          "name": "4.4 Findings on the topic: UTIs",
+          "children": [
+            {
+              "name": "Theme 1: Prevention",
+              "value": 635,
+              "sectionId": "sec-4-4-1-theme-1-prevention",
+              "content": "Theme 1 summarises participants’ accounts of preventive strategies against UTIs and related intimate infections. Women described hygiene routines such as wiping from front to back, using water or a bidet after defecation, and urinating and washing after sexual intercourse. These practices are shared as advice within peer networks and reinforced by clinicians, but can also generate anxiety and a sense of constant vigilance. Participants also emphasised the role of hydration and diet: increasing water intake, drinking herbal teas, using cranberry products, or adopting anti-inflammatory diets when early signs appear. Some carried medicines or antibiotics while travelling as a form of preparedness, blurring prevention and self-treatment. The theme highlights that prevention is experienced as a mix of evidence-based advice, personal experimentation and culturally transmitted beliefs, and that these practices shape how women relate to their bodies and to risk."
+            },
+            {
+              "name": "Theme 2: Symptoms",
+              "value": 629,
+              "sectionId": "sec-4-4-2-theme-2-symptoms",
+              "content": "Theme 2 explores how participants perceive and define symptoms. They describe symptoms as early signals, consequences and communicative tools at the same time—as 'ring bells', 'clues', or 'effects' that indicate something is wrong and invite action. The theme captures the variety of sensations (pain, burning, itching, pressure, swelling, nausea, fatigue) and underlines the difficulty of distinguishing between discomfort and pain, or between physical and psychological manifestations. Participants stress the importance of vocabulary: they struggle to find precise words and often use broad terms such as 'something', while at the same time intuitively distinguishing gradients of intensity and quality. They also highlight invisible or internal aspects of symptoms, such as bloating or anxiety, which are hard to show to others yet strongly affect experience. The theme shows that symptoms are not purely clinical entities but complex, situated experiences that combine bodily sensation, awareness, language and social meaning."
+            },
+            {
+              "name": "Theme 3: Diagnosis",
+              "value": 602,
+              "sectionId": "sec-4-4-3-theme-3-diagnosis",
+              "content": "Theme 3 addresses how participants navigate diagnosis. Many describe uncertainty in recognising early symptoms and in deciding when to seek care, especially in first episodes. Recurrent infections, however, teach them to identify 'pre-symptoms'—subtle signals such as lower abdominal heaviness or changes in urine—before acute pain arises. Participants reflect on how quickly mild discomfort can escalate into severe infection, making timing critical. They also note that diagnostic processes often rely on their own descriptions without immediate lab tests, which creates doubt and encourages self-monitoring and self-diagnosis. Confusion arises when symptoms overlap with other conditions, such as candidiasis or menstrual-related sensations, and when they try to distinguish symptoms from medication side effects. Overall, the theme highlights diagnosis as an embodied and interpretive process shared between patients and clinicians, but often shouldered by patients who must read their own bodies and anticipate disease progression."
+            },
+            {
+              "name": "Theme 4: Consultation",
+              "value": 669,
+              "sectionId": "sec-4-4-4-theme-4-consultation",
+              "content": "Theme 4 focuses on interactions with healthcare professionals and other sources of advice. Participants report that they typically consult doctors when symptoms have intensified or when home strategies fail, which means care is often sought at advanced stages. They describe difficulties accessing timely appointments, leading to delays and periods of uncertainty. Some recount experiences of dismissal or minimisation by clinicians, especially when symptoms are not visible or when test results are inconclusive, which reduces trust and discourages future consultations. Pharmacists and online information are frequently used as alternative or initial resources, though internet searches can also amplify fear. The theme also documents reluctance to discuss UTIs with family members, particularly parents, due to stigma around sexuality. These dynamics show how consultation is shaped by availability, social norms, prior experiences and structural barriers, and how these factors feed back into self-management and preventive practices."
+            },
+            {
+              "name": "Theme 5: Treatments",
+              "value": 651,
+              "sectionId": "sec-4-4-5-theme-5-treatments",
+              "content": "Theme 5 examines treatments and related strategies. Antibiotics are described as central yet problematic: for some participants they resolve episodes quickly, whereas others experience recurrence, side effects or perceived loss of efficacy. Women recount cycles of repeated antibiotic use and express concern about long-term impact and resistance. Alongside antibiotics, they use complementary approaches such as probiotics, herbal remedies, dietary changes, rest and heat or cold applications for relief. Some carry 'emergency' antibiotics or painkillers, practicing self-managed standby therapy. The theme highlights tension between the desire for rapid relief and concerns about overuse, as well as confusion about whether ongoing discomfort reflects persistent infection, side effects, or a different condition. It shows that treatment is experienced not as a single intervention but as a complex mix of prescribed and self-initiated actions, situated within broader narratives of control, responsibility and trust in healthcare."
+            }
+          ]
+        },
+        {
+          "name": "4.5 Findings on the method: Physicalization and variables",
+          "children": [
+            {
+              "name": "Theme 1: Physical variables",
+              "value": 451,
+              "sectionId": "sec-4-5-1-theme-1-physical-variables",
+              "content": "This theme synthesises how physical variables functioned within the workshops. Participants used properties such as shape, size, texture, weight, orientation, density and stability to articulate symptom qualities. Through discussions and experimentation, new variables emerged—like elasticity, permeability, sharpness, or durability—expanding the original list derived from literature. Participants refined existing variables as well, proposing alternative descriptions and examples that linked abstract concepts to tangible experiences. The analysis shows that physical variables acted as a flexible and evolving vocabulary that participants appropriated and extended. Rather than forming a closed taxonomy, they became generative tools for thinking with and through materials, helping participants to clarify, compare and communicate embodied sensations."
+            },
+            {
+              "name": "Theme 2: Materials",
+              "value": 139,
+              "sectionId": "sec-4-5-2-theme-2-materials",
+              "content": "Theme 2 explores how participants engaged with the material kit and what this reveals about material agency. Participants selected or rejected materials based on personal associations, embodiment and affect. Foam, wood and polyester were used to express softness, rigidity, roughness, heaviness or fragility, while connectors, pins and cords linked components and articulated tension or continuity. Participants also identified missing materials and features—such as glass, plasticine, textiles, sharper edges or more fluid textures—revealing the expressive limits of the kit and suggesting directions for refinement. Gestures performed with materials—pressing, tearing, rubbing, stacking—acted as meaning-making actions in their own right. The theme argues that materials were not passive tools but co-constructors of understanding, prompting participants to notice and name aspects of their symptoms they had not articulated before."
+            },
+            {
+              "name": "Theme 3: Symptom–physical variable associations",
+              "value": 190,
+              "sectionId": "sec-4-5-3-theme-3-symptom-physical-variable-associations",
+              "content": "This theme analyses systematic associations between symptoms and physical variables identified across workshops. It documents how participants repeatedly linked particular sensations to specific material properties—for example, acute pain to sharp edges and rough textures, burning to combinations of red colour, pointed forms and penetrating gestures, incontinence to absorbent and permeable materials, or heaviness and fatigue to dense, heavy blocks. A consolidated table summarises these correspondences. While not prescribing universal mappings, the patterns reveal shared intuitions about how physical properties can stand in for bodily experiences. The theme discusses how these associations can inform future design of tools and visualisations, as well as contribute to a more embodied understanding of symptom categories in healthcare contexts."
+            },
+            {
+              "name": "Theme 4: Data-probes representation",
+              "value": 538,
+              "sectionId": "sec-4-5-4-theme-4-data-probes-representation",
+              "content": "Theme 4 focuses on representational strategies evident in the data-probes. It distinguishes between more figurative artefacts, which resemble houses, bodies or landscapes, and more abstract constructions that encode relationships through geometry and spatial arrangement. Some artefacts follow linear or circular trajectories to express the course of illness or recurrence; others cluster components to show accumulation, complexity or entanglement. The theme examines how participants used composition, balance, emptiness and repetition to communicate key aspects such as escalation, remission, instability or the coexistence of contradictory feelings. It argues that representation operates at multiple levels: local components embody specific sensations, while global structures narrate broader experiential arcs. This layered representation supports both analytical reading and empathetic engagement."
+            },
+            {
+              "name": "Theme 5: Workshop structure",
+              "value": 514,
+              "sectionId": "sec-4-5-5-theme-5-workshop-structure",
+              "content": "Theme 5 reflects on how the design and facilitation of the workshop shaped participant engagement and outcomes. Participants reported appreciating the opportunity to share experiences with others facing similar issues and described the collective environment as supportive and validating. At the same time, some found certain phases challenging—for example, understanding variable labels, deciding where to place symptoms on the map, or dealing with limited materials. Language barriers occasionally required ad hoc translation and explanation, which in turn prompted richer reflection on terminology. The theme also discusses the role of medical experts in sessions—sometimes as participants, sometimes as observers—and how their presence influenced discussions. Overall, the workshop structure is shown to foster both individual reflection and collective sense-making, while its limitations highlight the importance of clear instructions, sensitive facilitation and flexible timing."
+            }
+          ]
+        },
+        {
+          "name": "4.6 Conclusion from the methodology",
+          "children": [
+            {
+              "name": "4.6.1 Opening and building the conversation",
+              "value": 563,
+              "sectionId": "sec-4-6-1-opening-and-building-the-conversation",
+              "content": "This subsection concludes that the workshop successfully opened space for conversations about UTIs that are rarely held in everyday life or clinical settings. The combination of small-group discussion and material engagement made it possible to surface experiences that participants often considered too intimate, trivial or difficult to explain. The section emphasises that conversation did not simply accompany the method but was constitutive of it: meanings were built collectively as participants responded to one another’s artefacts and stories."
+            },
+            {
+              "name": "4.6.2 Beyond material for body expression",
+              "value": 537,
+              "sectionId": "sec-4-6-2-beyond-material-for-body-expression",
+              "content": "Here the text argues that materials were not just tools for expressing pre-existing experiences but instruments that shaped how those experiences were perceived. Working with physical variables led participants to reinterpret their own symptoms and to discover connections between bodily sensations, emotions and contextual factors. The section suggests that material engagement can extend bodily interpretation, turning symptoms into shared objects of enquiry rather than private struggles."
+            },
+            {
+              "name": "4.6.3 Presentation of the representation",
+              "value": 632,
+              "sectionId": "sec-4-6-3-presentation-of-the-representation",
+              "content": "This part reflects on the act of presenting artefacts to the group. It notes that presentations were moments where meanings were stabilised, questioned and sometimes transformed. Participants often refined their explanations while speaking, and peers’ reactions influenced how they framed their experiences. Presentations also made visible the tension between aesthetic concerns and experiential fidelity: some participants worried whether their artefact looked 'right', while others prioritised whether it felt accurate. The section observes that these tensions are integral to working with representational media and can themselves be analytically revealing."
+            },
+            {
+              "name": "4.6.4 Generative physical variables to map symptoms",
+              "value": 585,
+              "sectionId": "sec-4-6-4-generative-physical-variables-to-map-symptoms",
+              "content": "The final subsection argues that physical variables have proven to be generative mechanisms for mapping symptoms, connecting individual experiences with collective structures. Rather than acting as static encodings, variables emerged through use as relational and interpretive tools. They allowed participants to build an embodied and flexible 'grammar' of symptom representation that preserved ambiguity and nuance while still supporting comparison. This provides the conceptual bridge to the next chapter, where the physical variable apparatus is formalised as a methodological contribution for participatory healthcare research."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

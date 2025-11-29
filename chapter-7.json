@@ -1,0 +1,148 @@
+{
+  "name": "Thesis",
+  "children": [
+    {
+      "name": "7. Apparatus of physical variables",
+      "children": [
+        {
+          "name": "7.1 Applications and relevance of the apparatus",
+          "children": [
+            {
+              "name": "7.1.1 Functions of the apparatus within participatory enquiry",
+              "value": 575,
+              "sectionId": "sec-7-1-1-functions-of-the-apparatus-within-participatory-enquiry",
+              "content": "This section introduces the purposes and functions of the apparatus of physical variables within participatory inquiry. The apparatus is presented as a structured yet flexible system designed to support the elicitation, interpretation and communication of embodied data. It is aimed at researchers and practitioners in design, healthcare and social inquiry who work with complex, subjective experiences. The section highlights how the apparatus helps articulate experiential aspects of illness often overlooked by clinical frameworks, enabling participants to materialise sensations, externalise tacit knowledge and collectively interpret embodied experiences. It underscores the apparatus’ potential to bridge the gap between personal and clinical knowledge by providing tools that make intimate, ambiguous or nuanced bodily experiences more shareable and discussable."
+            },
+            {
+              "name": "7.1.2 Components and relations within the apparatus",
+              "value": 609,
+              "sectionId": "sec-7-1-2-components-and-relations-within-the-apparatus",
+              "content": "This subsection describes the four interconnected components of the apparatus: symptom and physical-variable labels, the workshop protocol, the data-probes material kit and the cross-format analysis interface. Each component is defined through its role in enabling embodied data to be elicited, organised and interpreted. Labels provide a shared vocabulary; the protocol structures phases of engagement; the material kit supports tactile and expressive exploration; and the analysis interface links written, oral and material data into a unified interpretive environment. The section explains how these elements work relationally rather than independently—meaning that the apparatus operates not as a toolkit but as a material–discursive arrangement through which phenomena become knowable. This positioning draws on Barad’s concept of the apparatus as an active system that shapes what can be observed and understood."
+            }
+          ]
+        },
+        {
+          "name": "7.2 The apparatus in use",
+          "children": [
+            {
+              "name": "7.2.1 Applying the apparatus beyond the workshop",
+              "value": 584,
+              "sectionId": "sec-7-2-1-applying-the-apparatus-beyond-the-workshop",
+              "content": "This section discusses how the apparatus can be applied beyond the original workshop environment. It demonstrates how the system can be adapted for healthcare consultations, community-based research and educational contexts, serving as a scaffold for discussions of embodied experience. Examples include its use in chronic conditions, mental health contexts or patient education environments where subjective experiences need to be articulated and interpreted. The apparatus' adaptability lies in its modularity—the labels, materials and phases can be selected, modified or reconfigured according to the needs of different settings, while preserving the core principle of material–discursive engagement. The section also highlights that the apparatus is relevant for researchers seeking to elicit rich data in studies where standard measurement tools are insufficient."
+            },
+            {
+              "name": "7.2.2 Potential adaptations and extensions",
+              "value": 581,
+              "sectionId": "sec-7-2-2-potential-adaptations-and-extensions",
+              "content": "This subsection explores how the apparatus can be extended, inviting future adaptations in relation to emerging research questions and contexts. It mentions opportunities such as expanding the material kit with textures, temperatures or sound-producing elements; refining labels to include emotional, social or environmental variables; and adapting the analysis interface for digital interaction. The apparatus is described as intentionally open-ended: its strength lies not in prescriptive structure but in its capacity to evolve with the interpretive practices it supports. Future directions also include using the apparatus to investigate links between gesture, movement and interpretation, as well as adapting it for interdisciplinary collaboration between design researchers, clinicians, artists and patients."
+            }
+          ]
+        },
+        {
+          "name": "7.3 The sets of labels",
+          "children": [
+            {
+              "name": "7.3.1 Labels of symptoms",
+              "value": 333,
+              "sectionId": "sec-7-3-1-labels-of-symptoms",
+              "content": "This section presents the set of symptom labels developed throughout the research. These labels organise the wide range of sensations described by participants—burning, pressure, urgency, swelling, irritation, stabbing pain, and others—into a structured yet flexible vocabulary. The section explains how the final list of symptom labels emerged through iterative refinement, informed by workshop activities, thematic coding and expert feedback. It emphasises that the labels are not diagnostic categories but expressive tools that help participants articulate nuanced dimensions of their subjective experiences in a shared format."
+            },
+            {
+              "name": "7.3.2 Labels of physical variables",
+              "value": 190,
+              "sectionId": "sec-7-3-2-labels-of-physical-variables",
+              "content": "This subsection describes the list of physical-variable labels used to support material interpretation. Variables include properties such as elasticity, density, permeability, sharpness and movement. The section explains their conceptual origin in earlier chapters and how they were adapted through use in the workshops. It also reflects on how variables act as interpretive devices rather than encodings—participants appropriate them differently depending on their perceptions, cultural backgrounds and material preferences, making them central to the apparatus’ generative capacity."
+            },
+            {
+              "name": "7.3.3 Labels as Figma components",
+              "value": 216,
+              "sectionId": "sec-7-3-3-labels-as-figma-components",
+              "content": "This part explains how labels were translated into Figma components to support teaching, dissemination and replication. Using Figma allowed the researcher to create a modular interface where symptom and variable labels can be arranged, compared and modified. The section notes how digital versions of the labels support remote collaboration and facilitate the creation of new workshop materials, diagrams and maps. It highlights how the translation from material to digital form reinforces the apparatus' principle of being adaptable across formats while retaining conceptual coherence."
+            },
+            {
+              "name": "7.3.4 Summary of the sets of labels",
+              "value": 117,
+              "sectionId": "sec-7-3-4-summary-of-the-sets-of-labels",
+              "content": "This brief subsection summarises the role of symptom and physical-variable labels within the apparatus. It reiterates that labels provide a shared yet flexible structure that enables comparison, negotiation and collective articulation of embodied experiences. They support the transition from individual sensations to shared representations by offering participants a language—both verbal and material—through which meaning can be co-constructed."
+            }
+          ]
+        },
+        {
+          "name": "7.4 Data-probes: Principles of material selection",
+          "children": [
+            {
+              "name": "7.4.1 Principles for material selection and organisation",
+              "value": 575,
+              "sectionId": "sec-7-4-1-principles-for-material-selection-and-organisation",
+              "content": "This section outlines the principles guiding the selection and organisation of materials used in the data-probe kit. The material palette—composed of shapes, textures, weights and connectors—was curated to offer expressive diversity while avoiding overly literal or distracting forms. Principles included balancing softness and rigidity, offering contrasting densities, enabling both stability and instability, and providing components that invite manipulation through gestures like pressing, stacking or twisting. The section argues that material choice directly shapes interpretation: what participants can express is conditioned by what they can touch, combine and transform. These principles therefore ensure that materials support interpretive openness while maintaining analytic usefulness."
+            },
+            {
+              "name": "7.4.2 Summary",
+              "value": 609,
+              "sectionId": "sec-7-4-2-summary",
+              "content": "This short summary reiterates the key ideas behind material selection. It emphasises that the material kit is not fixed but a set of principles: offering contrasts, encouraging exploration, and enabling participants to ‘think through materials’. The section highlights that while the specific objects used in the workshops can be reproduced, the more important contribution lies in understanding *why* and *how* certain material properties support embodied interpretation. This principle-driven approach ensures that the apparatus can be adapted to different research or clinical contexts."
+            }
+          ]
+        },
+        {
+          "name": "7.5 The cross-format analysis interface",
+          "children": [
+            {
+              "name": "7.5.1 Integrating multimodal data",
+              "value": 584,
+              "sectionId": "sec-7-5-1-integrating-multimodal-data",
+              "content": "This subsection explains how the analysis interface integrates multiple formats of data—written stories, transcripts, audio recordings, photographs of artefacts, maps and material configurations—into a coherent interpretive environment. It shows how the interface makes it possible to view relations across formats, identify patterns and combine narrative, spatial and material insights. The aim is to expand interpretation by leveraging the richness of multimodal data, rather than reducing findings to a single representational layer. The section highlights how the interface supports cross-referencing between symptoms, variables and participants’ artefacts."
+            },
+            {
+              "name": "7.5.2 Deconstructing for re-constructing",
+              "value": 581,
+              "sectionId": "sec-7-5-2-deconstructing-for-re-constructing",
+              "content": "This section describes how the interface enables the deconstruction of artefacts and configurations into their component variables to facilitate systematic comparison. By isolating shapes, textures, axes of movement or spatial relations, the interface allows the researcher to reconstruct new analytical views. This supports both bottom-up (data-driven) and top-down (theory-driven) interpretation. The section highlights how deconstruction and reconstruction reveal implicit structures within participants’ reasoning and material choices."
+            },
+            {
+              "name": "7.5.3 The legend for comparison",
+              "value": 333,
+              "sectionId": "sec-7-5-3-the-legend-for-comparison",
+              "content": "This short subsection introduces the legend used within the cross-format interface to support comparison across artefacts and variables. The legend standardises symbols and colour coding for variables, symptoms and relationships, enabling consistent reading of maps and representations. It acts as a bridging device linking material and digital formats and helping maintain analytic coherence across multimodal data sources."
+            },
+            {
+              "name": "7.5.4 Future potentialities",
+              "value": 190,
+              "sectionId": "sec-7-5-4-future-potentialities",
+              "content": "This part reflects on future expansions of the interface, such as incorporating AI-assisted pattern recognition, temporal layering, gesture recording or integration with electronic medical records. It suggests that the interface could evolve into a participatory platform where participants themselves navigate and contribute to multimodal representations of symptoms."
+            },
+            {
+              "name": "7.5.5 Conclusion",
+              "value": 216,
+              "sectionId": "sec-7-5-5-conclusion",
+              "content": "This concluding subsection reiterates the role of the cross-format interface as both an analytical and communicative device. It bridges material, visual and textual modalities, enabling deeper interpretation of embodied data and supporting the consolidation of the apparatus as a methodological system."
+            }
+          ]
+        },
+        {
+          "name": "7.6 The application of the apparatus beyond this thesis",
+          "children": [
+            {
+              "name": "7.6.1 Adaptation of the apparatus",
+              "value": 117,
+              "sectionId": "sec-7-6-1-adaptation-of-the-apparatus",
+              "content": "This subsection describes how the apparatus was adapted and applied beyond the immediate UTI context, specifically during a workshop at the EKSIG 2025 conference. It discusses how the apparatus was reconfigured to explore autographic sonification, demonstrating its transferability to new sensory and analytical domains. The adaptation showed that physical variables can mediate not only tactile and visual experiences but also sound-based interpretations."
+            },
+            {
+              "name": "7.6.2 Exploring material–sound relations through the apparatus",
+              "value": 575,
+              "sectionId": "sec-7-6-2-exploring-material-sound-relations",
+              "content": "This section expands on the sonic experiment conducted at EKSIG 2025. Participants used materials and gestures to produce sounds that corresponded to experiential qualities—roughness, instability, density or tension—and linked them to physical variables. The experiment extends the apparatus by demonstrating that its principles can accommodate multimodal representations, where sound and gesture become additional interpretive layers for embodied experience."
+            },
+            {
+              "name": "7.6.3 Rethinking materials and gestures in the apparatus",
+              "value": 609,
+              "sectionId": "sec-7-6-3-rethinking-materials-and-gestures",
+              "content": "This subsection reflects on how the apparatus could evolve by expanding its material palette and recognising gesture as a core interpretive action. It suggests integrating materials that respond dynamically (e.g., deformable gels, heated elements, elastic membranes) and gestures that express temporal or emotional nuance. These additions would push the apparatus further toward a multisensory platform for investigating embodied phenomena."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
