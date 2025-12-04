@@ -65,20 +65,35 @@ let treemapData = null;
 // ==========================================
 
 function initUI() {
-  // Data probes: title colour
-  var textElement = document.getElementById('textlocation-desktop');
+  // Determine which page is active based on current URL
+  const currentPath = window.location.pathname;
+  let activeElementId = null;
+
+  if (currentPath.includes('index.html') || currentPath.endsWith('/')) {
+    activeElementId = 'textlocation-desktop';
+  } else if (currentPath.includes('physical-variable-apparatus.html')) {
+    // For physical variables page, we need to target that menu item
+    activeElementId = 'physical-variables-menu';
+  } else if (currentPath.includes('phd-thesis.html')) {
+    activeElementId = 'phd-thesis-menu';
+  }
+
+  // Apply random colors only to the active page's menu item
+  var textElement = document.getElementById(activeElementId || 'textlocation-desktop');
   if (textElement) {
     var text = textElement.innerText;
-    var html = text.split('').map(function(letter) {
+    var html = text.split('').map(function (letter) {
       var randomColor = COLORS[Math.floor(Math.random() * COLORS.length)];
       return '<font color="' + randomColor + '">' + letter + '</font>';
     }).join('');
     textElement.innerHTML = html;
   }
+
+  // Mobile version
   var textElementMobile = document.getElementById('textlocation-mobile');
   if (textElementMobile) {
     var textMobile = textElementMobile.innerText;
-    var htmlMobile = textMobile.split('').map(function(letter) {
+    var htmlMobile = textMobile.split('').map(function (letter) {
       var randomColor = COLORS[Math.floor(Math.random() * COLORS.length)];
       return '<font color="' + randomColor + '">' + letter + '</font>';
     }).join('');
@@ -257,96 +272,212 @@ function renderTreemap() {
 
   const root = d3.hierarchy(treemapData)
     .sum(d => d.value || 0)
-    .sort((a, b) => b.value - a.value);
+    .sort((a, b) => {
+      // Sort by chapter/section number if available
+      // Extract leading numbers: "1. Intro" -> 1, "1.1 Research" -> 1.1
+      const getNum = (str) => {
+        const match = str.match(/^(\d+(\.\d+)*)/);
+        return match ? match[0].split('.').map(Number) : [Infinity];
+      };
+
+      const numA = getNum(a.data.name);
+      const numB = getNum(b.data.name);
+
+      // Compare arrays of numbers
+      for (let i = 0; i < Math.max(numA.length, numB.length); i++) {
+        const valA = numA[i] !== undefined ? numA[i] : -1; // shorter array comes first? usually parent comes before child, but here we are sorting siblings.
+        // Actually, siblings will have same depth. "1" vs "2". "1.1" vs "1.2".
+        const valB = numB[i] !== undefined ? numB[i] : -1;
+        if (valA !== valB) return valA - valB;
+      }
+      return 0;
+    });
 
   const treemapLayout = d3.treemap()
     .size([width, height])
-    .paddingInner(4)
-    .paddingOuter(6)
+    .paddingInner(2) // Reduced padding
+    .paddingOuter(2)
+    .paddingTop(15) // Space for labels
     .round(true);
 
-  treemapLayout(root);
+  // Configure treemap layout - increased padding to match reference
+  d3.treemap()
+    .size([width, height])
+    .paddingTop(50) // More space for chapter/subchapter labels
+    .paddingInner(5) // Larger gaps between siblings for visible white space
+    .paddingOuter(8) // Larger gap between parent and children
+    .round(true)
+    (root);
 
-  const chapters = root.children || [];
+  // Render ALL descendants to show nesting (excluding root)
+  const allNodes = root.descendants().filter(d => d.depth > 0);
 
-  // Chapter frame colors – align these with your Illustrator design
+  // Chapter frame colors (User specified)
   const chapterColors = [
-    "#00C6D4", // Chapter 1
-    "#AE00FF", // Chapter 2
-    "#00FF99", // Chapter 3
-    "#000000", // Chapter 4
-    "#0040FF", // Chapter 5
-    "#67673C", // Chapter 6
-    "#9B84FF", // Chapter 7
-    "#FF7800"  // Chapter 8
+    "#0040ff", // Chapter 1
+    "#ae00ff", // Chapter 2
+    "#00ff99", // Chapter 3
+    "#f67375", // Chapter 4
+    "#c5c500", // Chapter 5
+    "#f6dbff", // Chapter 6
+    "#00c6d4", // Chapter 7
+    "#763267"  // Chapter 8
   ];
+
+  // Helper to determine text color
+  const textColors = [
+    "#ffffff", // Ch 1
+    "#ffffff", // Ch 2
+    "#000000", // Ch 3
+    "#000000", // Ch 4
+    "#000000", // Ch 5
+    "#000000", // Ch 6
+    "#000000", // Ch 7
+    "#ffffff"  // Ch 8
+  ];
+
+  // Assign colors to nodes based on their chapter
+  allNodes.forEach(d => {
+    // Rename RQs if needed
+    if (d.data.name.startsWith("RQ1")) d.data.name = "RQ1";
+    if (d.data.name.startsWith("RQ2")) d.data.name = "RQ2";
+    if (d.data.name.startsWith("RQ3")) d.data.name = "RQ3";
+
+    // Find the ancestor at depth 1 (the chapter)
+    let chapterNode = d;
+    while (chapterNode.depth > 1) chapterNode = chapterNode.parent;
+
+    // Determine color index
+    const match = chapterNode.data.name.match(/^(\d+)/);
+    const idx = match ? parseInt(match[1]) - 1 : 0;
+    d.color = chapterColors[idx % chapterColors.length];
+    d.textColor = textColors[idx % textColors.length];
+
+    // Store chapter ID for scrolling
+    if (d.depth === 1) {
+      d.chapterId = `chapter-${idx + 1}`;
+    }
+  });
 
   const tooltipSelection = d3.select('#treemap-tooltip');
 
-  // Chapter frames (big coloured rectangles, pointer-events: none in CSS)
-  const chapterFrames = containerSelection.selectAll('div.chapter-frame')
-    .data(chapters)
+  const nodeSelection = containerSelection.selectAll('div.treemap-node')
+    .data(allNodes)
     .enter()
     .append('div')
-    .attr('class', 'chapter-frame')
+    .attr('class', d => {
+      // Add classes for depth and type
+      let cls = 'treemap-node';
+      if (d.depth === 1) cls += ' chapter-node';
+      else if (!d.children) cls += ' leaf-node';
+      else cls += ' intermediate-node';
+      return cls;
+    })
     .style('left', d => d.x0 + 'px')
     .style('top', d => d.y0 + 'px')
-    .style('width', d => (d.x1 - d.x0) + 'px')
-    .style('height', d => (d.y1 - d.y0) + 'px')
-    .style('border-color', (d, i) => chapterColors[i % chapterColors.length]);
-
-  chapterFrames.append('div')
-    .attr('class', 'chapter-label')
-    .text(d => d.data.name);
-
-  // Leaf nodes (sections/subsections)
-  const leaves = root.leaves();
-
-  const nodes = containerSelection.selectAll('div.node')
-    .data(leaves)
-    .enter()
-    .append('div')
-    .attr('class', 'node')
-    .style('left', d => d.x0 + 'px')
-    .style('top', d => d.y0 + 'px')
-    .style('width', d => (d.x1 - d.x0) + 'px')
-    .style('height', d => (d.y1 - d.y0) + 'px')
+    .style('width', d => Math.max(0, d.x1 - d.x0) + 'px')
+    .style('height', d => Math.max(0, d.y1 - d.y0) + 'px')
+    .style('border-color', d => d.color) // Apply chapter color to border of ALL nodes
+    .style('border-style', d => {
+      // "only strokes of the last sections, the one without the number in the title must be dotted. others are continuative"
+      // Check if name starts with a number (e.g., "1.", "1.1", "5.1.2")
+      const hasNumber = /^\d+(\.\d+)*\b/.test(d.data.name);
+      if (!hasNumber) return 'dotted'; // Dotted for sections without numbers
+      return 'solid'; // Solid for all numbered sections
+    })
+    .style('border-width', d => {
+      // Thicker borders like in reference image
+      if (d.depth === 1) return '6px'; // Main chapters - very thick
+      if (d.depth === 2) return '3px'; // Subchapters - medium
+      return '2px'; // Sections - thinner but still visible
+    })
     .on('click', (event, d) => {
-      const id = d.data.sectionId;
-      if (!id) return;
-      const el = document.getElementById(id);
+      event.stopPropagation();
+
+      let targetId = d.data.sectionId;
+
+      // If it's a chapter node, use the chapter ID
+      if (d.depth === 1 && d.chapterId) {
+        targetId = d.chapterId;
+      }
+
+      if (!targetId) return;
+
+      const el = document.getElementById(targetId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const originalBg = el.style.backgroundColor;
+        el.style.backgroundColor = "#ffffcc";
+        setTimeout(() => (el.style.backgroundColor = originalBg), 2000);
       }
     })
-    .on('mouseenter', function(event, d) {
+    .on('mouseenter', function (event, d) {
+      // Hover effect: set background to the node's assigned color
+      d3.select(this).style('background-color', d.color);
+
+      // Change text color on hover to ensure readability against the fill
+      d3.select(this).select('.node-label').style('color', d.textColor);
+
       if (!tooltipSelection.empty()) {
-        const path = d.ancestors().reverse().map(n => n.data.name).join(' → ');
+        // Start the root from chapter n., not "thesis"
+        // d.ancestors() returns [node, parent, ..., root]
+        // reverse() -> [root, ..., parent, node]
+        // slice(1) -> remove root
+        const path = d.ancestors().reverse().slice(1).map(n => n.data.name).join(' → ');
         tooltipSelection
           .style('opacity', 1)
           .html(path);
       }
     })
-    .on('mousemove', function(event) {
+    .on('mousemove', function (event) {
       if (!tooltipSelection.empty()) {
         tooltipSelection
           .style('left', (event.clientX + 8) + 'px')
           .style('top', (event.clientY + 8) + 'px');
       }
     })
-    .on('mouseleave', function() {
+    .on('mouseleave', function (event, d) {
+      // Reset background color
+      d3.select(this).style('background-color', null);
+
+      // Reset text color (to black as per default CSS, or whatever it was)
+      d3.select(this).select('.node-label').style('color', null);
+
       if (!tooltipSelection.empty()) {
         tooltipSelection.style('opacity', 0);
       }
     });
 
-  nodes.append('div')
+  // Add labels
+  nodeSelection.append('div')
     .attr('class', 'node-label')
+    .style('display', d => {
+      // "make sure to read all the titles. if the space is not enought, leave empty the rectanlge of subsections, not the other which must have tht title."
+      // Prioritize numbered sections (chapters, subchapters).
+      // If it's a numbered section, try to show it even if small? Or just prioritize them in logic.
+      // Let's say: if it has a number, show it unless extremely small.
+      // If it has NO number (subsection/leaf), hide it if small.
+
+      const hasNumber = /^\d+(\.\d+)*\b/.test(d.data.name);
+      const width = d.x1 - d.x0;
+      const height = d.y1 - d.y0;
+
+      if (hasNumber) {
+        // Show numbered sections even if somewhat small, but maybe not microscopic
+        return (width > 20 && height > 10) ? 'block' : 'none';
+      } else {
+        // Hide non-numbered sections if they are small
+        return (width > 40 && height > 20) ? 'block' : 'none';
+      }
+    })
     .text(d => d.data.name);
 }
 
 /**
  * Initialize the treemap: load JSON and render once.
+ */
+/**
+ * Initialize the treemap: load all chapter JSONs, merge them, and render.
  */
 function initTreemap() {
   const treemapElement = document.getElementById('treemap');
@@ -357,10 +488,24 @@ function initTreemap() {
     return;
   }
 
-  fetch(TREEMAP_DATA_URL)
-    .then(res => res.json())
-    .then(data => {
-      treemapData = data;
+  // Fetch all chapter JSONs
+  Promise.all(CHAPTER_JSON_URLS.map(url => fetch(url).then(res => res.json())))
+    .then(dataArray => {
+      // Merge into a single master object
+      const masterData = {
+        name: "Thesis",
+        children: []
+      };
+
+      dataArray.forEach(chapterData => {
+        // Each chapter JSON is { name: "Thesis", children: [ { name: "X. Chapter", ... } ] }
+        // We want to extract the "X. Chapter" node
+        if (chapterData.children && chapterData.children.length > 0) {
+          masterData.children.push(chapterData.children[0]);
+        }
+      });
+
+      treemapData = masterData;
       renderTreemap();
     })
     .catch(err => console.error('Error loading treemap data:', err));
@@ -458,7 +603,7 @@ function renderNodeIntoChapter(node, container, depth) {
 // MAIN LOGIC
 // ==========================================
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const nav = document.getElementById('navigation-header');
   if (nav) {
     if (window.scrollY > 10) {
@@ -471,12 +616,12 @@ window.addEventListener('scroll', function() {
 
 // Button hover colors
 const buttons = document.querySelectorAll('.read-more-button');
-buttons.forEach(function(button) {
-  button.addEventListener('mouseenter', function() {
+buttons.forEach(function (button) {
+  button.addEventListener('mouseenter', function () {
     button.style.backgroundColor = getRandomButtonColor();
   });
 
-  button.addEventListener('mouseleave', function() {
+  button.addEventListener('mouseleave', function () {
     button.style.backgroundColor = '';
   });
 });
@@ -502,11 +647,29 @@ INITIAL_CLASSES.forEach(cls => {
 
 // Images & treemap resize
 resizeImageContainer();
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   resizeImageContainer();
-  renderTreemap();
+  // Only re-render if treemap exists
+  if (document.getElementById('treemap')) {
+    renderTreemap();
+  }
 });
 
-// Initialise treemap & thesis content once JS loads (HTML uses `defer`, so DOM is ready)
-initTreemap();
-initThesisContent();
+// Initialise treemap & thesis content once DOM is fully loaded
+// Use a small delay to ensure all dynamic content is loaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializePage);
+} else {
+  // DOM is already ready
+  initializePage();
+}
+
+function initializePage() {
+  // Small delay to ensure any dynamically loaded content is ready
+  setTimeout(() => {
+    initTreemap();
+    // D3 treemap is initialized in d3-treemap.js
+    initThesisContent();
+  }, 100);
+}
+

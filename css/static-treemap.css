@@ -1,0 +1,77 @@
+/* Static Treemap Styles */
+
+#static-treemap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#treemap-svg {
+    width: 100%;
+    height: 100%;
+    font-family: 'SuisseIntl-Light', 'Suisse Light', sans-serif;
+}
+
+/* Treemap rectangles */
+.chapter-rect,
+.section-rect,
+.subsection-rect {
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+
+/* Text styling - all always visible */
+.chapter-title {
+    font-size: 18px;
+    font-weight: 300;
+    fill: #000;
+    pointer-events: none;
+    transition: fill 0.2s ease;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 300;
+    fill: #000;
+    pointer-events: none;
+    transition: fill 0.2s ease;
+}
+
+.subsection-label {
+    font-size: 10px;
+    font-weight: 300;
+    fill: #000;
+    pointer-events: none;
+    transition: fill 0.2s ease;
+}
+
+/* Dotted borders for non-numbered sections */
+.dotted-border {
+    stroke-dasharray: 3, 3;
+}
+
+/* Tooltip */
+#treemap-tooltip {
+    position: fixed;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.08s ease-out;
+    z-index: 9999;
+    max-width: 800px;
+    box-sizing: border-box;
+    white-space: normal;
+    line-height: 1.1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'SuisseIntl-Light', 'Suisse Light', sans-serif;
+    font-weight: 300;
+}

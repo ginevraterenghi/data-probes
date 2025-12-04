@@ -21,13 +21,13 @@ header.navigation-header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 2rem; 
-    box-sizing: border-box; 
+    padding: 2rem;
+    box-sizing: border-box;
     /* Mobile Active State Logic is complex with classes, handled below */
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 /* Mobile Active State */
@@ -37,7 +37,7 @@ header.navigation-header.active {
     left: 0;
     width: 100%;
     height: 100vh;
-    height: 100svh; 
+    height: 100svh;
     height: 100dvh;
     overflow-y: auto;
     background-color: white;
@@ -52,10 +52,10 @@ header.navigation-header.active .mobile-menu-title {
 }
 
 h1.page-title {
-    margin: 0; 
+    margin: 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-weight: 200; 
-    display: flex; 
+    font-weight: 200;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 }
@@ -73,21 +73,21 @@ h1.page-title .subtitle {
 /* Navigation List - Mobile */
 ul.navigation-list {
     list-style: none;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     display: grid;
     /* Mobile Grid */
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     row-gap: 2rem;
     column-gap: 2rem;
-    margin-top: 0; 
+    margin-top: 0;
     width: 100%;
     box-sizing: border-box;
 }
 
 header.navigation-header.active ul.navigation-list {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 2rem;
     width: 100%;
@@ -106,6 +106,7 @@ li.navigation-item a.text-menu-special {
     font-size: 4rem;
     font-weight: 200;
     color: #000;
+    /* Black by default - random colors applied by JS only for active page */
     text-decoration: none;
 }
 
@@ -121,7 +122,8 @@ li.navigation-item .expand-button {
     cursor: pointer;
     padding: 0;
     margin: 0;
-    display: flex; /* Mobile default */
+    display: flex;
+    /* Mobile default */
     align-items: center;
     justify-content: center;
 }
@@ -200,7 +202,7 @@ header.navigation-header.active .impressum .supervisors {
 nav {
     display: flex;
     flex-wrap: wrap;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
     backdrop-filter: blur(0);
@@ -233,7 +235,8 @@ nav a:hover {
 /* Active Header logic for hiding items on mobile */
 header.navigation-header #thesis,
 header.navigation-header #physical-variables {
-    display: none; /* Hidden by default on mobile unless active? Line 230 in menu.css says they are hidden */
+    display: none;
+    /* Hidden by default on mobile unless active? Line 230 in menu.css says they are hidden */
 }
 
 header.navigation-header.active #thesis,
@@ -244,38 +247,39 @@ header.navigation-header.active #physical-variables {
 
 /* DESKTOP STYLES */
 @media (min-width: 769px) {
-    
-    
+
+
     /* Navigation List - Desktop */
     ul.navigation-list {
-        grid-template-columns: repeat(5, 1fr); 
-        grid-template-rows: auto; /* Reset rows */
-        margin-top: 0; 
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        /* Reset rows */
+        margin-top: 0;
     }
-    
+
     /* Reset Active state header styles if any leaked? 
        Actually active state is toggled by JS, typically on mobile.
        We should ensure desktop look is correct even if class is there? 
        Or assume JS handles it.
     */
-    
+
     header.navigation-header {
-       position: sticky;
-       /* Reset other mobile fixed props if needed */
-       height: auto;
-       overflow-y: visible;
-       background-color: transparent;
+        position: sticky;
+        /* Reset other mobile fixed props if needed */
+        height: auto;
+        overflow-y: visible;
+        background-color: transparent;
     }
-    
+
     header.navigation-header.active {
-       position: sticky;
-       height: auto;
-       overflow-y: visible;
-       background-color: transparent;
+        position: sticky;
+        height: auto;
+        overflow-y: visible;
+        background-color: transparent;
     }
 
     .mobile-menu-title {
-        display: none; 
+        display: none;
     }
 
     li.navigation-item .expand-button {
@@ -290,14 +294,22 @@ header.navigation-header.active #physical-variables {
     #physical-variables {
         grid-column: 3 / span 2;
         grid-row: auto;
-        display: block !important; /* Override mobile display:none */
+        display: block !important;
+        /* Override mobile display:none */
     }
 
     #thesis {
         grid-column: 5;
         grid-row: auto;
         justify-content: flex-end;
-        display: block !important; /* Override mobile display:none */
+        display: block !important;
+        /* Override mobile display:none */
+    }
+
+    #thesis a {
+        text-align: right;
+        display: block;
+        width: 100%;
     }
 
     .impressum {
@@ -305,7 +317,7 @@ header.navigation-header.active #physical-variables {
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
     }
-    
+
     .impressum .author {
         grid-column: 1;
     }
@@ -325,9 +337,10 @@ header.navigation-header.active #physical-variables {
     .impressum .year {
         grid-column: 5;
     }
-    
+
     header.navigation-header .impressum {
-        display: none !important; /* Keep hidden in header on desktop */
+        display: none !important;
+        /* Keep hidden in header on desktop */
     }
 
     .text-menu-special.mobile {
@@ -337,7 +350,7 @@ header.navigation-header.active #physical-variables {
     .text-menu-special.desktop {
         display: contents;
     }
-    
+
     .blur-text li.navigation-item:not(#home) a.text-menu-special {
         filter: blur(0.25rem);
     }

@@ -3,72 +3,73 @@
   "children": [
     {
       "name": "1. Intro",
-      "children": [
-        {
-          "name": "Research aims",
-          "value": 143,
-          "sectionId": "sec-1-research-aims",
-          "content": "The overarching aim of this doctoral research is to address the systemic challenges in how women’s embodied experiences are recognised and integrated within healthcare, focusing on UTIs as a widespread condition with significant clinical and personal impact. Symptoms are often underreported, misinterpreted, or insufficiently addressed, revealing a structural discrepancy between patients’ lived experiences and the standardised clinical data used for diagnosis. The primary objective is to explore and develop alternative design methodologies for symptom definition, communication, and data collection practices that prioritise the patient’s perspective. The research seeks to create approaches that enable women to enhance their self-awareness, articulate their lived experiences as meaningful data, and communicate these insights more effectively in clinical encounters. By empowering women to participate in the representation of their symptoms, the study pursues improved doctor–patient dialogue, richer contextual information for diagnosis, and more inclusive and responsive healthcare practices."
-        },
-        {
-          "name": "Context",
-          "value": 190,
-          "sectionId": "sec-1-context",
-          "content": "This PhD research originated within the SPEARHEAD (SwissPandemic AMR Health Economy Awareness Detect), a four-year project (2022–2025) funded by the Swiss Innovation Agency (Innosuisse). SPEARHEAD brings together a consortium of eight public and four private Swiss institutions with the aim of developing multidisciplinary responses to antimicrobial resistance (AMR). The project adopts a cross-sectoral perspective that combines scientific, technological, and social expertise to promote responsible antibiotic use through prevention, stewardship, and public engagement. Within this consortium, my role was as a collaborator at the Institute of Design (IDe) of the University of Applied Sciences and Arts of Southern Switzerland (SUPSI), where Serena Cangiano led Subproject 3, which seeks to involve citizens and raise public awareness of AMR. MAKEAWARE!, the initiative developed for this purpose, employs design approaches to make complex health issues tangible and understandable, developing interactive and data-based activities that support reflection, dialogue, and participation. My contribution focused on the development of the engagement strategy and the design of participatory activities. This work provided the initial context for the doctoral research and introduced the interdisciplinary environment from which the research topic progressively evolved."
-        },
-        {
-          "name": "Topic",
-          "value": 216,
-          "sectionId": "sec-1-topic",
-          "content": "This doctoral research narrows the broader challenge of AMR to the specific issue of human consumption of antibiotics. UTIs are one of the conditions that most frequently lead to antibiotic prescriptions and therefore constitute a critical area for examining how symptom interpretation, treatment decisions, and lived experience influence antibiotic use. Microbial resistance arises from natural adaptive mechanisms, and extensive antimicrobial consumption intensifies its acceleration. Human-driven factors such as inadequate infection control in healthcare, poor hygiene, and the misuse of antibiotics in agriculture and food production have amplified the problem across systems and environments. In severe cases, resistant infections can lead to permanent disability or death, and projections indicate that, without substantial change, AMR could cause up to ten million deaths annually by 2050. The initial literature review and early work within AMR engagement initiatives supported the decision to frame the research around UTIs. The prevalence of this disease, its recurrent nature, and its direct link to antibiotic consumption make it an appropriate context in which to introduce design practices that support alternative forms of symptom articulation and communication. Through participatory methods, material engagement, and data physicalization, the study investigates how embodied experiences can become visible and how they may inform more contextual, equitable, and situated forms of healthcare knowledge."
-        },
-        {
-          "name": "Research questions",
-          "children": [
-            {
-              "name": "RQ1. How can participatory design practices expand healthcare enquiry by enabling women to access, express, and reflect upon embodied experience and contribute to the co-creation of knowledge?",
-              "value": 163,
-              "sectionId": "sec-rq1-how-can-participatory-design-practices-expand-healthcare-enquiry-by-enabling-women-to-access-express-and-reflect-upon-embodied-experience-and-contribute-to-the-co-creation-of-knowledge",
-              "content": "RQ1 asks how participatory design practices can expand healthcare enquiry by enabling women to articulate embodied experience and contribute to the co-creation of knowledge. The first question positions design within healthcare and investigates how participatory practices can create new forms of engagement between women affected by UTIs, clinicians, and researchers. The objective is to explore how women can take an active role in describing their symptoms and contribute to more contextual and meaningful data that can complement biomedical information. This question is addressed through a review of literature across design, feminist theory, and healthcare studies, supported by expert interviews with clinicians. The insights gained inform the design of the 'Shape your symptoms' workshop format, where participants collectively explore and describe their experiences through co-creation and reflection. Healthcare systems have traditionally privileged standardised knowledge, often marginalising lived and gendered experiences. Participatory design provides a way to redress these imbalances by involving women as co-investigators in the process of understanding illness. Through collaborative and reflective activities, design practices make it possible to surface embodied experiences that are difficult to communicate, thereby strengthening awareness, agency, and understanding."
-            },
-            {
-              "name": "RQ2. How can material engagement support the interpretation and articulation of embodied experiences within participatory data physicalization practices?",
-              "value": 161,
-              "sectionId": "sec-rq2-how-can-material-engagement-support-the-interpretation-and-articulation-of-embodied-experiences-within-participatory-data-physicalization-practices",
-              "content": "RQ2 focuses on the role of material engagement in supporting the interpretation and communication of intimate and embodied experiences within participatory data physicalization practices. It asks how tactile and visual exploration enables participants to translate personal experiences into shared and interpretable forms. To address this question, the study introduces data-probes, which are material components with different textures, weights, and qualities. Through hands-on interaction with these components during participatory workshops, women affected by UTIs construct artefacts that embody their sensations. These artefacts are documented, analysed, and discussed to understand how material engagement supports reflection and communication. Material engagement transforms symptom description into a reflective and collective process. Through direct interaction with materials, participants externalise personal sensations and develop new approaches to perceive and communicate their experiences. The process supports introspection and dialogue, allowing sensitive or stigmatised aspects of health to be discussed through external and tangible elements. In this way, materiality becomes an active agent in the creation of meaning and the sharing of embodied knowledge."
-            },
-            {
-              "name": "RQ3. How can physical variables transform individual bodily sensations into collective representations of health, making interpretations of embodied experience into collective knowledge?",
-              "value": 238,
-              "sectionId": "sec-rq3-how-can-physical-variables-transform-individual-bodily-sensations-into-collective-representations-of-health-making-interpretations-of-embodied-experience-into-collective-knowledge",
-              "content": "RQ3 asks how physical variables can transform individual interpretations of embodied experience into collective knowledge. The third question introduces physical variables as the main contribution through which embodied data are structured and interpreted. Variables are conceived to formalise how material properties such as texture, weight, and shape can support the transition from individual experiences into expressions that can be compared, discussed, and understood collectively. The research analyses the artefacts and narratives produced during the workshops to identify recurring links between symptoms and material properties. These links form the basis for defining physical variables as shared structures that connect individual experiences. This process leads to the development of the physical variable apparatus, which organises the relationship between participation, material engagement, and interpretation. Physical variables provide a conceptual and methodological connection between personal experiences and shared understanding. Variables enable participants to reflect upon their expressions and align their subjective sensations so that they can be described in comparable ways while preserving their specificity. In this way, the variables position data physicalization not as a technique for representation but as a process through which knowledge is generated collaboratively. Together, the three questions set a coherent trajectory through which the thesis has developed its contribution. The first introduces participatory design as a mode of enquiry that expands healthcare investigation. The second examines material engagement as a form of mediation that supports awareness and interpretation of embodied experiences. The third consolidates these insights by defining physical variables as instruments through which individual expressions evolve into collective knowledge."
-            }
-          ]
-        },
-        {
-          "name": "1.5 Outputs and outcomes",
-          "children": [
-            {
-              "name": "1.5.1 Outputs. Practical and tangible deliverables",
-              "value": 250,
-              "sectionId": "sec-1-5-1-outputs-practical-and-tangible-deliverables",
-              "content": "The study produces a range of practical outputs that support both the development and examination of the research. These include the workshop protocol and its iterative sessions, the data-probe artefacts generated by participants, and the supporting photographic and analytical documentation. The research also results in a digital interface that organises and presents the material collected, together with visualisations that map relations between symptoms and material properties. Additional outputs arise through dissemination activities, including publications, teaching, and collaborations that extend the approach into new contexts. Workshop protocol and sessions: a 'Shape your symptoms' workshop protocol applying participatory data physicalization to healthcare, and a series of participatory workshops with women affected by UTIs, developed and refined across sessions. Data-probe artefacts: a collection of physical artefacts created by participants to represent symptom experiences, together with photographic documentation and analytical decomposition of artefacts used as primary research material. Digital and visual tools: an online repository integrating data-probes, workshop transcripts, and analytical materials; an interactive interface enabling cross-format exploration of symptoms, materials, and variables; and visual maps and diagrams showing associations between symptoms and material properties. Dissemination and academic activities include publications and conference papers presenting the literature review and workshop framework, the organisation and teaching of workshops on data physicalization, ongoing collaborations exploring extensions of the method (including sound-based physicalization), and a journal paper presenting the methodological framework and results."
-            },
-            {
-              "name": "1.5.2 Outcomes. Conceptual and methodological contributions",
-              "value": 267,
-              "sectionId": "sec-1-5-2-outcomes-conceptual-and-methodological-contributions",
-              "content": "The outcomes of the study consist of conceptual and methodological contributions that extend the role of the research within design and healthcare contexts. They articulate how participatory practices, material engagement, and data physicalization support the interpretation of embodied experience and the co-creation of knowledge. These outcomes clarify how the approach strengthens women’s agency, advances methods for working with intimate data, and introduces analytical structures that connect individual perceptions with collective understanding. In relation to design for healthcare, the research expands the role of participatory design by engaging women as active contributors in symptom communication, supports women’s self-awareness and agency regarding embodied and intimate data, and contributes to addressing gender gaps in the interpretation of women’s health data. With regard to data-probes as a methodological tool, the study introduces data-probes as participatory artefacts that capture and externalise embodied experiences and demonstrates how material engagement enables subjective sensations to become communicable and comparable. As materiality as a mediator, the research establishes the role of material properties such as texture, shape, and density in supporting perception and dialogue around embodied data and shows how tactile exploration enables tacit and emotional dimensions of experience to surface. Considering data physicalization as a process, the study defines participatory data physicalization as a method through which embodied experiences become shared and collectively interpreted, and positions data physicalization as a generative process that produces knowledge through engagement and reflection. Finally, the physical variables framework develops the concept of physical variables as an apparatus for structuring and analysing embodied data and positions physical variables as interpretive mechanisms that connect individual expressions with collective understanding."
-            }
-          ]
-        },
-        {
-          "name": "1.6 The structure of this thesis",
-          "value": 565,
-          "sectionId": "sec-1-6-the-structure-of-this-thesis",
-          "content": "The thesis is organised into eight chapters. Following this introduction in Chapter 1, each subsequent chapter develops the theoretical, methodological, and empirical dimensions of the research in a progressive sequence. Chapter 2 introduces UTIs as both a clinical condition and a gendered health concern. It examines how women are disproportionately affected and how systemic biases in medical research have limited the recognition of women’s embodied experiences. Drawing on feminist theories, biosemiotics, and autographic design, the chapter positions symptoms as interpretative and material phenomena that acquire meaning through perception and interaction, establishing the conceptual grounding for a participatory design approach that recognises the body as both source and interpreter of its own evidence. Chapter 3 describes the methodological approach developed to investigate how material engagement supports the communication of embodied experiences. Building on the theoretical foundations of the previous chapter, it introduces physical variables as mediators between perception and interpretation and presents data-probes as participatory artefacts that enable participants to externalise sensations. The 'Shape your symptoms' workshop protocol is detailed as the practical application of this approach, combining reflection, co-creation, and discussion to foster awareness and patient agency in healthcare. Chapter 4 reports on the empirical work conducted through five participatory workshops in Switzerland and the United Kingdom. Three core sessions involving women with lived experience of UTIs form the basis of the analysis. The chapter examines multimodal data (artefacts, transcripts, and written reflections) using thematic and compositional interpretation to identify how participants expressed and compared their symptoms and experiences through material engagement. Findings are presented along two directions: the experiential insights produced about UTIs and the methodological observations regarding the use of materiality for symptom interpretation. Chapter 5 presents the validation phase conducted with medical experts. Healthcare professionals reviewed workshop outcomes to assess the clarity and clinical relevance of participants’ expressions. Their feedback confirmed the value of the insights generated and highlighted the potential of participatory and material methods to complement medical understanding and foster patient-centred communication. Chapter 6 discusses the findings, focusing on how physical variables support the perception and communication of symptoms within participatory data physicalization. The chapter examines how material engagement bridges the gap between biomedical data and lived experience, showing how participants developed shared vocabularies for describing complex sensations. The discussion concludes that physical variables act as generative elements of interpretation and knowledge creation. Chapter 7 consolidates the physical variable apparatus as the central methodological outcome of the research. Physical variables operate as a system for knowledge generation, integrating participation, material engagement, and interpretation into a single process. The chapter describes the apparatus and its four components, which are the labels, the workshop protocol, the data-probes, and the cross-format analysis interface. Taken together, the apparatus components enable embodied experiences to be interpreted and collectively expressed so as to generate shared knowledge. Chapter 8 concludes the thesis by synthesising the overall research process and outcomes. It revisits how the study addressed the communication of symptoms in women affected by UTIs and how participatory data physicalization provided an alternative to biomedical models by valuing embodied knowledge. The main contributions are summarised, together with reflections on limitations and directions for future work, including applications of the approach in other health and social contexts. The thesis concludes with the bibliography and appendix, which include ethics approval documents, workshop transcripts, interview records, and supplementary visual materials to ensure transparency and replicability of the work."
-        }
-      ]
-    }
-  ]
+      "content": "This doctoral research examines how design can contribute to the understanding and communication of embodied experiences in healthcare. Through a design method, the study explores how material, participatory, and data informed approaches support the articulation of these experiences and enable forms of knowledge and dialogue within clinical contexts.
+Working within a broader research environment focused on antimicrobial resistance (AMR) shaped the early direction of this PhD topic. The AMR context highlighted issues such as patient agency, treatment practices, and the circulation of health-related information, which revealed how personal experience and clinical procedures intersect in everyday care. Exposure to these themes, together with exchanges across disciplines, supported a gradual understanding of how embodied experiences, communication practices, and interactions with healthcare providers influence health outcomes. This process guided the development of the specific focus and aims presented in the following sections.","children": [{
+        "name": "1.1 Research aims",
+        "value": 143,
+        "sectionId": "sec-research-aims",
+        "content": "The overarching aim of this doctoral research is to address the systemic challenges in how women’s embodied experiences are recognised and integrated within healthcare, focusing on UTIs as a widespread condition with significant clinical and personal impact. Symptoms are often underreported, misinterpreted, or insufficiently addressed, revealing a structural discrepancy between patients’ lived experiences and the standardised clinical data used for diagnosis.
+The primary objective is to explore and develop alternative design methodologies for symptom definition, communication, and data collection practices that prioritise the patient’s perspective. The research seeks to create approaches that enable women to enhance their self-awareness, articulate their lived experiences as meaningful data, and communicate these insights more effectively in clinical encounters. By empowering women to participate in the representation of their symptoms, the study pursues improved doctor-patient dialogue, richer contextual information for diagnosis, and more inclusive and responsive healthcare practices."
+      },
+      {
+        "name": "1.2 Context",
+        "value": 190,
+        "sectionId": "sec-context",
+        "content": "This PhD research originated within the SPEARHEAD (SwissPandemic AMR Health Economy Awareness Detect)..."
+      },
+      {
+        "name": "1.3 Topic",
+        "value": 216,
+        "sectionId": "sec-topic",
+        "content": "This doctoral research narrows the broader challenge of AMR to the specific issue of human consumption of antibiotics..."
+      },
+      {
+        "name": "1.4 Research questions",
+        "children": [
+          {
+            "name": "RQ1",
+            "value": 163,
+            "sectionId": "sec-rq1",
+            "content": "**Objective**  \nThe first question positions design within healthcare..."
+          },
+          {
+            "name": "RQ2",
+            "value": 161,
+            "sectionId": "sec-rq2",
+            "content": "**Objective**  \nThe second question focuses on the role of materiality..."
+          },
+          {
+            "name": "RQ3",
+            "value": 238,
+            "sectionId": "sec-rq3",
+            "content": "**Objective**  \nThe third question introduces physical variables..."
+          }
+        ]
+      },
+      {
+        "name": "1.5 O&O",
+        "children": [
+          {
+            "name": "1.5.1 Outputs",
+            "value": 250,
+            "sectionId": "sec-151-outputs",
+            "content": "The study produces a range of practical outputs..."
+          },
+          {
+            "name": "1.5.2 Outcomes",
+            "value": 267,
+            "sectionId": "sec-152-outcomes",
+            "content": "The outcomes of the study consist of conceptual and methodological contributions..."
+          }
+        ]
+      },
+      {
+        "name": "1.6 The structure of this thesis",
+        "value": 565,
+        "sectionId": "sec-16-structure",
+        "content": "The thesis is organised into eight chapters..."
+      }
+    ]
+  }
+]
 }

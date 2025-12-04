@@ -1,131 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>PhD thesis</title>
 
-    <meta
-      name="description"
-      content="PhD research to promote women's agency in healthcare through data physicalization"
-    />
-    <meta name="image" content="thumbnail image of your work" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>PhD thesis</title>
 
-    <meta itemprop="name" content="PhD thesis" />
-    <meta
-      itemprop="description"
-      content="PhD research to promote women’s agency in healthcare through data physicalization"
-    />
-    <meta itemprop="image" content="img-here" />
+  <meta name="description"
+    content="PhD research to promote women's agency in healthcare through data physicalization" />
 
-    <meta name="og:title" content="PhD thesis" />
-    <meta
-      name="og:description"
-      content="PhD research to promote women’s agency in healthcare through data physicalization"
-    />
-    <meta
-      name="og:image"
-      content="thumbnail image of your work. Recommended dimension: 1200px x 630px; minimum dimension: 600px x 315px"
-    />
-    <meta name="og:url" content="url to this page" />
-    <meta name="og:site_name" content="PhD thesis" />
-    <meta name="og:locale" content="en_US" />
-    <meta name="og:type" content="website" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/dp.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/phd-thesis.css" />
+  <link rel="stylesheet" href="css/static-treemap.css" />
+  <link rel="stylesheet" type="text/css" href="css/home.css" />
 
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/dp.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/phd-thesis.css" />
-    <link rel="stylesheet" type="text/css" href="css/home.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="d3-treemap.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
 
-    <!-- D3 must be loaded before main.js -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="main.js" defer></script>
-  </head>
+<body>
+  <main>
+    <!-- Static Treemap section -->
+    <section id="treemap-section">
+      <!-- Static treemap container -->
+      <div id="static-treemap">
+        <!-- This will contain the static HTML/CSS treemap -->
+      </div>
 
-  <body>
-    <main>
-      <!-- Treemap section -->
-      <section id="treemap-section">
-        <header>
-          <h1>Thesis structure treemap</h1>
-          <p>
-            Visual overview of the thesis chapters and sections. Click a rectangle
-            to scroll to the corresponding section below.
-          </p>
-        </header>
+      <!-- Tooltip element -->
+      <div id="treemap-tooltip"></div>
+    </section>
 
-        <!-- This is where the D3 treemap will be rendered -->
-        <div id="treemap-container">
-          <div id="treemap"></div>
-        </div>
+    <!-- Thesis content -->
+    <section id="thesis-content">
+      <article class="chapter" id="chapter-1">
+        <h2 class="chapter-title">Chapter 1 – Intro</h2>
+        <div class="chapter-body" data-chapter="1"></div>
+      </article>
 
-        <!-- Tooltip element (styled and used via JS/CSS) -->
-        <div id="treemap-tooltip"></div>
-      </section>
+      <article class="chapter" id="chapter-2">
+        <h2 class="chapter-title">
+          Chapter 2 – Literature review and theoretical framework
+        </h2>
+        <div class="chapter-body" data-chapter="2"></div>
+      </article>
 
-      <!-- Thesis content: populated from chapter-1.json ... chapter-8.json -->
-      <section id="thesis-content">
-        <!--
-          JavaScript will:
-          - load each chapter-X.json
-          - create headings + sections with ids matching `sectionId`
-          - insert the corresponding `content` HTML
-        -->
+      <article class="chapter" id="chapter-3">
+        <h2 class="chapter-title">
+          Chapter 3 – Methodology: Physical variables and data-probes
+        </h2>
+        <div class="chapter-body" data-chapter="3"></div>
+      </article>
 
-        <article class="chapter" id="chapter-1">
-          <h2 class="chapter-title">Chapter 1 – Intro</h2>
-          <div class="chapter-body" data-chapter="1"></div>
-        </article>
+      <article class="chapter" id="chapter-4">
+        <h2 class="chapter-title">
+          Chapter 4 – Analysis of results: "No acute pain is a sphere"
+        </h2>
+        <div class="chapter-body" data-chapter="4"></div>
+      </article>
 
-        <article class="chapter" id="chapter-2">
-          <h2 class="chapter-title">
-            Chapter 2 – Literature review and theoretical framework
-          </h2>
-          <div class="chapter-body" data-chapter="2"></div>
-        </article>
+      <article class="chapter" id="chapter-5">
+        <h2 class="chapter-title">
+          Chapter 5 – Assessment: Medical experts' feedback on results
+        </h2>
+        <div class="chapter-body" data-chapter="5"></div>
+      </article>
 
-        <article class="chapter" id="chapter-3">
-          <h2 class="chapter-title">
-            Chapter 3 – Methodology: Physical variables and data-probes
-          </h2>
-          <div class="chapter-body" data-chapter="3"></div>
-        </article>
+      <article class="chapter" id="chapter-6">
+        <h2 class="chapter-title">Chapter 6 – Discussion</h2>
+        <div class="chapter-body" data-chapter="6"></div>
+      </article>
 
-        <article class="chapter" id="chapter-4">
-          <h2 class="chapter-title">
-            Chapter 4 – Analysis of results: “No acute pain is a sphere”
-          </h2>
-          <div class="chapter-body" data-chapter="4"></div>
-        </article>
+      <article class="chapter" id="chapter-7">
+        <h2 class="chapter-title">Chapter 7 – Apparatus of physical variables</h2>
+        <div class="chapter-body" data-chapter="7"></div>
+      </article>
 
-        <article class="chapter" id="chapter-5">
-          <h2 class="chapter-title">
-            Chapter 5 – Assessment: Medical experts’ feedback on results
-          </h2>
-          <div class="chapter-body" data-chapter="5"></div>
-        </article>
+      <article class="chapter" id="chapter-8">
+        <h2 class="chapter-title">Chapter 8 – Conclusion</h2>
+        <div class="chapter-body" data-chapter="8"></div>
+      </article>
+    </section>
+  </main>
 
-        <article class="chapter" id="chapter-6">
-          <h2 class="chapter-title">Chapter 6 – Discussion</h2>
-          <div class="chapter-body" data-chapter="6"></div>
-        </article>
+  <footer></footer>
+</body>
 
-        <article class="chapter" id="chapter-7">
-          <h2 class="chapter-title">Chapter 7 – Apparatus of physical variables</h2>
-          <div class="chapter-body" data-chapter="7"></div>
-        </article>
-
-        <article class="chapter" id="chapter-8">
-          <h2 class="chapter-title">Chapter 8 – Conclusion</h2>
-          <div class="chapter-body" data-chapter="8"></div>
-        </article>
-      </section>
-    </main>
-
-    <footer></footer>
-  </body>
 </html>
