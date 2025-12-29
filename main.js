@@ -615,7 +615,7 @@ window.addEventListener('scroll', function () {
 });
 
 // Button hover colors
-const buttons = document.querySelectorAll('.read-more-button');
+const buttons = document.querySelectorAll('.read-more-button, .pill-download');
 buttons.forEach(function (button) {
   button.addEventListener('mouseenter', function () {
     button.style.backgroundColor = getRandomButtonColor();
@@ -670,6 +670,56 @@ function initializePage() {
     initTreemap();
     // D3 treemap is initialized in d3-treemap.js
     initThesisContent();
+    createBackToTopButton();
   }, 100);
+}
+
+function createBackToTopButton() {
+  const button = document.createElement('div');
+  button.id = 'back-to-top';
+  Object.assign(button.style, {
+    position: 'fixed',
+    bottom: '24px',
+    right: '24px',
+    width: '40px',
+    height: '40px',
+    borderRadius: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    backdropFilter: 'blur(5px)',
+    webkitBackdropFilter: 'blur(5px)',
+    border: '1px solid black',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    zIndex: '1000',
+    opacity: '0',
+    transition: 'opacity 0.3s ease',
+    pointerEvents: 'none'
+  });
+
+  // Arrow SVG
+  button.innerHTML = `
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  `;
+
+  button.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  document.body.appendChild(button);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      button.style.opacity = '1';
+      button.style.pointerEvents = 'auto';
+    } else {
+      button.style.opacity = '0';
+      button.style.pointerEvents = 'none';
+    }
+  });
 }
 

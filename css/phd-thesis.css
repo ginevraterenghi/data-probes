@@ -172,38 +172,354 @@
 }
 
 /* ---------------------------------
+   Text content section below treemap
+   --------------------------------- */
+
+#text-content {
+  max-width: 100%;
+  margin: 4rem 0;
+  padding: 0 2rem;
+  /* Match menu padding */
+  box-sizing: border-box;
+}
+
+#text-content h1 {
+  font-family: 'PP Editorial New', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.two-column-text {
+  flex: 1;
+  /* Equal width - takes up 1/2 of the space */
+  column-count: 2;
+  column-gap: 3rem;
+  column-fill: auto;
+  /* Prioritizes first column */
+  text-align: justify;
+}
+
+.two-column-text p {
+  font-family: 'Suisse Intl Light', 'SuisseIntl-Light', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  break-inside: auto;
+  /* Allows paragraphs to break for equal line distribution */
+}
+
+.right-column-text {
+  flex: 1;
+  /* Equal width - takes up 1/2 of the space */
+  text-align: justify;
+}
+
+.right-column-text p {
+  font-family: 'Suisse Intl Light', 'SuisseIntl-Light', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------------------------------
+   Descriptive text section
+   --------------------------------- */
+
+.descriptive-text-container {
+  padding: 0 2rem;
+  /* Match menu padding */
+  box-sizing: border-box;
+}
+
+.descriptive-text-container h2 {
+  font-family: 'PP Editorial New', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.chapter-1-title {
+  color: #0040ff !important;
+}
+
+.descriptive-text {
+  display: flex;
+  gap: 2vh;
+  align-items: flex-start;
+}
+
+.descriptive-text p {
+  flex: 1;
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.875rem;
+  /* Increased by 1/4: 1.5 * 1.25 = 1.875rem */
+  font-weight: 200;
+  line-height: 1.5;
+  /* Reduced for better readability */
+}
+
+/* .descriptive-text p:first-child {
+  background: red;
+}
+
+.descriptive-text p:nth-child(2) {
+  background: blue;
+} */
+
+.rq-heading {
+  display: block;
+  break-inside: avoid;
+  font-family: 'PP Editorial New', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0040ff;
+  line-height: 1.3;
+}
+
+.rq-heading-no-margin-top {
+  display: block;
+  break-inside: avoid;
+  font-family: 'PP Editorial New', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #0040ff;
+  line-height: 1.3;
+}
+
+/* Headings within descriptive text columns */
+.descriptive-text h1 {
+  font-family: 'PP Editorial New', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  break-after: avoid;
+}
+
+.descriptive-text h2 {
+  font-family: 'PP Editorial New', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  break-after: avoid;
+}
+
+.descriptive-text h3 {
+  font-family: 'PP Editorial New', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  break-after: avoid;
+}
+
+/* ---------------------------------
    Thesis content headings below
    --------------------------------- */
 
+#thesis-content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 6rem;
+  /* Increased left/right padding from 1rem to 6rem */
+  box-sizing: border-box;
+}
+
+/* Chapter 2: Double left margin */
+.chapter[data-chapter="2"] {
+  padding-left: 6rem;
+}
+
+/* Two-column layout for entire chapter body */
+.chapter-body {
+  margin-top: 2rem;
+}
+
+/* Chapter 2 specific: Remove chapter-level columns */
+.chapter[data-chapter="2"] .chapter-body {
+  column-count: initial !important;
+}
+
+/* Chapter 2: Apply two-column layout to each depth-1 section (2.1, 2.2, etc.) */
+.chapter[data-chapter="2"] .thesis-section.depth-1 {
+  column-count: 2 !important;
+  column-gap: 3rem !important;
+  margin-bottom: 3rem;
+}
+
+/* Chapter 2: depth-1 section titles (h3) span across columns and start new section */
+.chapter[data-chapter="2"] .thesis-section.depth-1>h3 {
+  column-span: all !important;
+  break-after: avoid;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Chapter 2: All other headings stay within column flow */
+.chapter[data-chapter="2"] h4,
+.chapter[data-chapter="2"] h5 {
+  column-span: none !important;
+  break-after: avoid;
+  break-inside: avoid;
+}
+
+/* Chapter 2: Increased paragraph text size */
+.chapter[data-chapter="2"] p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+/* Main chapter title and numbered section titles break columns */
 #thesis-content h2,
 #thesis-content h3,
-#thesis-content h4,
-#thesis-content h5 {
-  margin-top: 2rem;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-}
-
-#thesis-content h2 {
-  font-size: 1.1rem;
-}
-
-#thesis-content h3 {
-  font-size: 0.95rem;
-}
-
 #thesis-content h4 {
-  font-size: 0.9rem;
+  break-before: column;
+  break-after: avoid;
+  column-span: all;
+  /* Span across both columns */
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'PP Editorial New', serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
+/* Unnumbered subsection titles (h5) stay within column flow */
 #thesis-content h5 {
-  font-size: 0.85rem;
+  break-inside: avoid;
+  break-after: avoid;
+  column-span: none;
+  /* Stay within columns */
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: 'PP Editorial New', serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
+/* Chapter title (h2) - largest */
+#thesis-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Chapter 2 title spans across columns */
+.chapter[data-chapter="2"] h2 {
+  column-span: all;
+}
+
+/* Depth 1 headings (h3 - like 2.1) - second largest */
+#thesis-content h3 {
+  font-size: 2.2rem;
+}
+
+/* Depth 2 headings (h4 - like 2.1.1) - medium */
+#thesis-content h4 {
+  font-size: 1.6rem;
+}
+
+/* Depth 3+ headings (h5 - unnumbered subsections) - smaller, inline */
+#thesis-content h5 {
+  font-size: 1.2rem;
+}
+
+/* Body text - larger with Suisse Intl Light */
 #thesis-content p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-top: 0.4rem;
+  font-family: 'Suisse Intl Light', 'SuisseIntl-Light', sans-serif;
+  font-size: 1.2rem;
+  /* Increased paragraph size */
+  line-height: 1.7;
+  margin-top: 1rem;
+  /* Increased margin */
+  margin-bottom: 1.5rem;
+  /* Increased margin */
+  text-align: justify;
+  hyphens: auto;
+  break-inside: avoid;
+}
+
+/* ---------------------------------
+   Chapter-specific title colors
+   --------------------------------- */
+
+/* Chapter 1 - #0040ff */
+.chapter[data-chapter="1"] h2,
+.chapter[data-chapter="1"] h3,
+.chapter[data-chapter="1"] h4,
+.chapter[data-chapter="1"] h5 {
+  color: #0040ff;
+}
+
+/* Chapter 2 - #ae00ff */
+.chapter[data-chapter="2"] h2,
+.chapter[data-chapter="2"] h3,
+.chapter[data-chapter="2"] h4,
+.chapter[data-chapter="2"] h5 {
+  color: #ae00ff;
+}
+
+/* Chapter 3 - #00ff99 */
+.chapter[data-chapter="3"] h2,
+.chapter[data-chapter="3"] h3,
+.chapter[data-chapter="3"] h4,
+.chapter[data-chapter="3"] h5 {
+  color: #00ff99;
+}
+
+/* Chapter 4 - #f67375 */
+.chapter[data-chapter="4"] h2,
+.chapter[data-chapter="4"] h3,
+.chapter[data-chapter="4"] h4,
+.chapter[data-chapter="4"] h5 {
+  color: #f67375;
+}
+
+/* Chapter 5 - #c5c500 */
+.chapter[data-chapter="5"] h2,
+.chapter[data-chapter="5"] h3,
+.chapter[data-chapter="5"] h4,
+.chapter[data-chapter="5"] h5 {
+  color: #c5c500;
+}
+
+/* Chapter 6 - #f6dbff */
+.chapter[data-chapter="6"] h2,
+.chapter[data-chapter="6"] h3,
+.chapter[data-chapter="6"] h4,
+.chapter[data-chapter="6"] h5 {
+  color: #f6dbff;
+}
+
+/* Chapter 7 - #00c6d4 */
+.chapter[data-chapter="7"] h2,
+.chapter[data-chapter="7"] h3,
+.chapter[data-chapter="7"] h4,
+.chapter[data-chapter="7"] h5 {
+  color: #00c6d4;
+}
+
+/* Chapter 8 - #763267 */
+.chapter[data-chapter="8"] h2,
+.chapter[data-chapter="8"] h3,
+.chapter[data-chapter="8"] h4,
+.chapter[data-chapter="8"] h5 {
+  color: #763267;
 }
 
 /* ---------------------------------
@@ -211,54 +527,66 @@
    --------------------------------- */
 
 .chapter {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid #ddd;
 }
 
 .chapter:first-of-type {
   margin-top: 2rem;
+  border-top: none;
 }
 
 .chapter-title {
-  font-size: 1.2rem;
+  font-family: 'PP Editorial New', serif;
+  font-size: 3.5rem;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
-  margin: 0 0 0.75rem;
-}
-
-.chapter-body {
-  margin-top: 0.5rem;
+  margin: 0 0 1.5rem;
+  font-weight: 400;
 }
 
 /* Individual thesis sections (auto-generated) */
 .thesis-section {
-  margin-top: 1.5rem;
-}
-
-/* Slight visual hierarchy by depth */
-.thesis-section.depth-1>h3 {
-  font-size: 1rem;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.25rem;
-}
-
-.thesis-section.depth-2>h4 {
-  font-size: 0.95rem;
-}
-
-.thesis-section.depth-3>h5 {
-  font-size: 0.9rem;
+  margin-top: 0;
+  break-inside: avoid;
 }
 
 /* Small top padding to make scroll-into-view nicer */
 .thesis-section [id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 
 /* -----------------
    Responsive tweaks
    ----------------- */
+
+@media (max-width: 1200px) {
+  .thesis-section {
+    /* Changed from .chapter-body */
+    column-gap: 2rem;
+  }
+
+  #thesis-content h2 {
+    font-size: 2.5rem;
+  }
+
+  #thesis-content h3 {
+    font-size: 1.8rem;
+  }
+
+  #thesis-content h4 {
+    font-size: 1.4rem;
+  }
+
+  #thesis-content h5 {
+    font-size: 1.1rem;
+  }
+
+  #thesis-content p {
+    font-size: 1.1rem;
+    /* Adjusted for consistency with base size increase */
+  }
+}
 
 @media (max-width: 768px) {
   #treemap-section {
@@ -282,8 +610,72 @@
     padding: 0 1rem 2rem;
   }
 
+  /* Single column on mobile */
+  .thesis-section {
+    /* Changed from .chapter-body */
+    column-count: 1;
+  }
+
+  /* Text content section: single column on mobile */
+  .content-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .two-column-text {
+    column-count: 1;
+  }
+
+  #text-content {
+    padding: 0 1.5rem;
+  }
+
+  #text-content h1 {
+    font-size: 2rem;
+  }
+
+  /* Descriptive text section: single column on mobile */
+  .descriptive-text {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .descriptive-text-container {
+    padding: 0 1.5rem;
+  }
+
+  .descriptive-text-container h2 {
+    font-size: 2rem;
+  }
+
+  .descriptive-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
   .chapter-title {
-    font-size: 1.05rem;
+    font-size: 2rem;
+  }
+
+  #thesis-content h2 {
+    font-size: 2rem;
+  }
+
+  #thesis-content h3 {
+    font-size: 1.5rem;
+  }
+
+  #thesis-content h4 {
+    font-size: 1.2rem;
+  }
+
+  #thesis-content h5 {
+    font-size: 1rem;
+  }
+
+  #thesis-content p {
+    font-size: 1rem;
+    /* Adjusted for consistency with base size increase */
   }
 }
 
@@ -302,6 +694,42 @@
   }
 
   .chapter-title {
+    font-size: 1.5rem;
+  }
+
+  #thesis-content h2 {
+    font-size: 1.5rem;
+  }
+
+  #thesis-content h3 {
+    font-size: 1.2rem;
+  }
+
+  #thesis-content h4 {
     font-size: 1rem;
   }
+
+  #thesis-content h5 {
+    font-size: 0.9rem;
+  }
+
+  #thesis-content p {
+    font-size: 0.95rem;
+  }
+}
+
+.chapter-2-title {
+  color: #ae00ff !important;
+}
+
+.chapter-2-inline-heading {
+  display: block;
+  break-inside: avoid;
+  font-family: 'PP Editorial New', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ae00ff;
+  line-height: 1.3;
 }

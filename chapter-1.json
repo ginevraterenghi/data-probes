@@ -3,73 +3,75 @@
   "children": [
     {
       "name": "1. Intro",
-      "content": "This doctoral research examines how design can contribute to the understanding and communication of embodied experiences in healthcare. Through a design method, the study explores how material, participatory, and data informed approaches support the articulation of these experiences and enable forms of knowledge and dialogue within clinical contexts.
-Working within a broader research environment focused on antimicrobial resistance (AMR) shaped the early direction of this PhD topic. The AMR context highlighted issues such as patient agency, treatment practices, and the circulation of health-related information, which revealed how personal experience and clinical procedures intersect in everyday care. Exposure to these themes, together with exchanges across disciplines, supported a gradual understanding of how embodied experiences, communication practices, and interactions with healthcare providers influence health outcomes. This process guided the development of the specific focus and aims presented in the following sections.","children": [{
-        "name": "1.1 Research aims",
-        "value": 143,
-        "sectionId": "sec-research-aims",
-        "content": "The overarching aim of this doctoral research is to address the systemic challenges in how women’s embodied experiences are recognised and integrated within healthcare, focusing on UTIs as a widespread condition with significant clinical and personal impact. Symptoms are often underreported, misinterpreted, or insufficiently addressed, revealing a structural discrepancy between patients’ lived experiences and the standardised clinical data used for diagnosis.
-The primary objective is to explore and develop alternative design methodologies for symptom definition, communication, and data collection practices that prioritise the patient’s perspective. The research seeks to create approaches that enable women to enhance their self-awareness, articulate their lived experiences as meaningful data, and communicate these insights more effectively in clinical encounters. By empowering women to participate in the representation of their symptoms, the study pursues improved doctor-patient dialogue, richer contextual information for diagnosis, and more inclusive and responsive healthcare practices."
-      },
-      {
-        "name": "1.2 Context",
-        "value": 190,
-        "sectionId": "sec-context",
-        "content": "This PhD research originated within the SPEARHEAD (SwissPandemic AMR Health Economy Awareness Detect)..."
-      },
-      {
-        "name": "1.3 Topic",
-        "value": 216,
-        "sectionId": "sec-topic",
-        "content": "This doctoral research narrows the broader challenge of AMR to the specific issue of human consumption of antibiotics..."
-      },
-      {
-        "name": "1.4 Research questions",
-        "children": [
-          {
-            "name": "RQ1",
-            "value": 163,
-            "sectionId": "sec-rq1",
-            "content": "**Objective**  \nThe first question positions design within healthcare..."
-          },
-          {
-            "name": "RQ2",
-            "value": 161,
-            "sectionId": "sec-rq2",
-            "content": "**Objective**  \nThe second question focuses on the role of materiality..."
-          },
-          {
-            "name": "RQ3",
-            "value": 238,
-            "sectionId": "sec-rq3",
-            "content": "**Objective**  \nThe third question introduces physical variables..."
-          }
-        ]
-      },
-      {
-        "name": "1.5 O&O",
-        "children": [
-          {
-            "name": "1.5.1 Outputs",
-            "value": 250,
-            "sectionId": "sec-151-outputs",
-            "content": "The study produces a range of practical outputs..."
-          },
-          {
-            "name": "1.5.2 Outcomes",
-            "value": 267,
-            "sectionId": "sec-152-outcomes",
-            "content": "The outcomes of the study consist of conceptual and methodological contributions..."
-          }
-        ]
-      },
-      {
-        "name": "1.6 The structure of this thesis",
-        "value": 565,
-        "sectionId": "sec-16-structure",
-        "content": "The thesis is organised into eight chapters..."
-      }
-    ]
-  }
-]
+      "content": "This doctoral research examines how design can contribute to the understanding and communication of embodied experiences in healthcare. Through a design method, the study explores how material, participatory, and data informed approaches support the articulation of these experiences and enable forms of knowledge and dialogue within clinical contexts.\nWorking within a broader research environment focused on antimicrobial resistance (AMR) shaped the early direction of this PhD topic. The AMR context highlighted issues such as patient agency, treatment practices, and the circulation of health-related information, which revealed how personal experience and clinical procedures intersect in everyday care. Exposure to these themes, together with exchanges across disciplines, supported a gradual understanding of how embodied experiences, communication practices, and interactions with healthcare providers influence health outcomes. This process guided the development of the specific focus and aims presented in the following sections.",
+      "children": [
+        {
+          "name": "1.1 Research aims",
+          "value": 143,
+          "sectionId": "sec-research-aims",
+          "content": "The overarching aim of this doctoral research is to address the systemic challenges in how women’s embodied experiences are recognised and integrated within healthcare, focusing on UTIs as a widespread condition with significant clinical and personal impact. Symptoms are often underreported, misinterpreted, or insufficiently addressed, revealing a structural discrepancy between patients’ lived experiences and the standardised clinical data used for diagnosis.\nThe primary objective is to explore and develop alternative design methodologies for symptom definition, communication, and data collection practices that prioritise the patient’s perspective. The research seeks to create approaches that enable women to enhance their self-awareness, articulate their lived experiences as meaningful data, and communicate these insights more effectively in clinical encounters. By empowering women to participate in the representation of their symptoms, the study pursues improved doctor-patient dialogue, richer contextual information for diagnosis, and more inclusive and responsive healthcare practices."
+        },
+        {
+          "name": "1.2 Context",
+          "value": 190,
+          "sectionId": "sec-context",
+          "content": "This PhD research originated within the SPEARHEAD (SwissPandemic AMR Health Economy Awareness Detect)..."
+        },
+        {
+          "name": "1.3 Topic",
+          "value": 216,
+          "sectionId": "sec-topic",
+          "content": "This doctoral research narrows the broader challenge of AMR to the specific issue of human consumption of antibiotics..."
+        },
+        {
+          "name": "1.4 Research questions",
+          "sectionId": "sec-research-questions",
+          "children": [
+            {
+              "name": "RQ1",
+              "value": 163,
+              "sectionId": "sec-rq1",
+              "content": "**Objective**  \nThe first question positions design within healthcare..."
+            },
+            {
+              "name": "RQ2",
+              "value": 161,
+              "sectionId": "sec-rq2",
+              "content": "**Objective**  \nThe second question focuses on the role of materiality..."
+            },
+            {
+              "name": "RQ3",
+              "value": 238,
+              "sectionId": "sec-rq3",
+              "content": "**Objective**  \nThe third question introduces physical variables..."
+            }
+          ]
+        },
+        {
+          "name": "1.5 O&O",
+          "sectionId": "sec-outputs-outcomes",
+          "children": [
+            {
+              "name": "1.5.1 Outputs",
+              "value": 250,
+              "sectionId": "sec-151-outputs",
+              "content": "The study produces a range of practical outputs..."
+            },
+            {
+              "name": "1.5.2 Outcomes",
+              "value": 267,
+              "sectionId": "sec-152-outcomes",
+              "content": "The outcomes of the study consist of conceptual and methodological contributions..."
+            }
+          ]
+        },
+        {
+          "name": "1.6 The structure of this thesis",
+          "value": 565,
+          "sectionId": "sec-16-structure",
+          "content": "The thesis is organised into eight chapters..."
+        }
+      ]
+    }
+  ]
 }

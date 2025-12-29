@@ -1,0 +1,345 @@
+/* Physical Variables Page Styles */
+
+.physical-variables-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    /* Match menu/footer padding */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.variables-text {
+    grid-column: 2 / 5;
+    padding: 0;
+}
+
+
+/* Typography matching phd-thesis.html */
+.variables-text h2 {
+    font-family: 'PP Editorial New', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #00C6D4;
+    margin-top: 0;
+}
+
+.variables-text h3 {
+    font-family: 'PP Editorial New', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #00C6D4;
+}
+
+.variables-text h4 {
+    font-family: 'PP Editorial New', serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: #00C6D4;
+}
+
+.chapter-2-title {
+    color: #ae00ff !important;
+}
+
+.variables-text,
+.variables-text p,
+.variables-text ul {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+
+
+.variables-text p {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-indent: 25px;
+}
+
+
+/* Remove indent for paragraphs after headings */
+.variables-text h1+p,
+.variables-text h2+p,
+.variables-text h3+p,
+.variables-text h4+p {
+    text-indent: 0;
+}
+
+.variables-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-position: outside;
+    /* padding-left: 1.5em; */
+}
+
+.variables-text li {
+    text-indent: 0;
+    padding-left: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding-left: 0.5em;
+    text-indent: -0.5em;
+}
+
+.list-not-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-position: outside;
+    padding-left: 0em;
+}
+
+.list-not-list li {
+    text-indent: 0;
+    padding-left: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding-left: 0em;
+    text-indent: 0em;
+}
+
+/* .variables-text li::before {
+    content: "~ ";
+} */
+
+.list-title {
+    margin-bottom: 0 !important;
+}
+
+.three-column-list {
+    column-count: 3;
+    column-gap: 2rem;
+}
+
+.three-column-list li {
+    break-inside: avoid-column;
+
+}
+
+
+
+.pill-download {
+    /* layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 1.2rem 2.6rem;
+
+    /* sizing / shape */
+    border-radius: 9999px;
+
+    /* typography */
+    font-family: 'PP Editorial New', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+
+    /* colours (matches screenshot vibe) */
+    background: #ffffff;
+    color: black;
+    border: 0.5px solid black;
+
+    /* remove default link styling */
+    text-decoration: none;
+
+    /* subtle crisp look */
+    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
+    cursor: pointer;
+    /* user-select: none;
+    -webkit-tap-highlight-color: transparent; */
+}
+
+.pill-download .arrow {
+    font-weight: 600;
+}
+
+.pill-download:hover {
+    background: #fbf7fb;
+    /* very light purple tint */
+    box-shadow: 0 2px 0 rgba(90, 11, 99, 0.18);
+}
+
+.pill-download:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(90, 11, 99, 0.18);
+}
+
+.pill-download:focus-visible {
+    outline: 3px solid rgba(90, 11, 99, 0.35);
+    outline-offset: 4px;
+}
+
+/* Scoped styles for second-layer drawers */
+/* .nested-drawer-content p,
+.nested-drawer-content ul {
+    margin-bottom: 1.5rem;
+    text-indent: 0;
+} */
+
+.nested-drawer-content li {
+    text-indent: 0;
+    padding-left: 0;
+}
+
+main>.drawer-labels-details {
+    margin: 2rem;
+    width: calc(100% - 4rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main>.drawer-labels-details img {
+    border: none;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+details {
+    border: 0.5px solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    margin-left: -2rem;
+    margin-right: 0rem;
+    grid-column: 2 / 5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+details.drawer-labels-details .drawer-labels-details {
+    border: 0.5px solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+details.drawer-labels-details .drawer-labels-details .variables-text {
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
+
+details[open] {
+    grid-column: 2 / 5;
+    padding-bottom: 2rem;
+}
+
+details[open] summary {
+    display: list-item;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    font-family: 'PP Editorial New', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    color: #00C6D4;
+}
+
+summary.drawer-labels-summary {
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    font-family: 'PP Editorial New', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0rem;
+    line-height: 1.2;
+    color: #00C6D4;
+}
+
+summary::marker {
+    display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .physical-variables-container {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .variables-text {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    /* Mobile Typography Adjustments */
+    .variables-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .variables-text h3 {
+        font-size: 2.2rem;
+    }
+
+    .variables-text h4 {
+        font-size: 1.8rem;
+    }
+
+    .variables-text,
+    .variables-text p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    summary {
+        font-size: 2.8rem;
+    }
+
+    summary.drawer-labels-summary {
+        font-size: 2.2rem;
+    }
+
+    /* Mobile Drawer Alignment */
+    details {
+        grid-column: 1;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    details.drawer-labels-details .drawer-labels-details {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    details[open] {
+        grid-column: 1;
+    }
+
+    .three-column-list {
+        column-count: 1;
+    }
+}

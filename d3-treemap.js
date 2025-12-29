@@ -120,164 +120,189 @@ const CHAPTER_DATA = {
         },
         {
             name: "2. Literature review",
+            sectionId: "sec-2-literature-review-and-theoretical-framework-co-creating-knowledge-from-symptoms-intro",
             color: "#ae00ff",
             chapterId: "chapter-2",
             order: 2,
             children: [
                 {
                     name: "2.1 The problem of UTIs",
+                    sectionId: "sec-21-the-problem-of-utis-within-womens-health-intro",
                     value: 108,
                     children: [
                         {
                             name: "2.1.1 Disease concerns",
+                            sectionId: "sec-211-uti-disease-concerns-intro",
                             value: 224,
                             children: [
-                                { name: "Women's involvement", value: 531 },
-                                { name: "Recurrence", value: 191 },
-                                { name: "Resistance", value: 236 }
+                                { name: "Women's involvement", value: 531, sectionId: "sec-womens-involvement-and-causes-of-infection" },
+                                { name: "Recurrence", value: 191, sectionId: "sec-recurrence-and-chronic-burden" },
+                                { name: "Resistance", value: 236, sectionId: "sec-resistance-development" }
                             ]
                         },
                         {
                             name: "2.1.2 Feminist perspectives",
+                            sectionId: "sec-212-feminist-perspectives-on-utis-as-a-gender-issue-intro",
                             value: 107,
                             children: [
-                                { name: "Gender bias", value: 264 },
-                                { name: "Situated knowledge", value: 284 }
+                                { name: "Gender bias", value: 264, sectionId: "sec-gender-bias-in-data-and-practice" },
+                                { name: "Situated knowledge", value: 284, sectionId: "sec-situated-knowledge-and-feminist-critique" }
                             ]
                         },
                         {
                             name: "2.1.3 Positioning",
+                            sectionId: "sec-213-positioning-this-research",
                             value: 378
                         }
                     ]
                 },
                 {
                     name: "2.2 Theoretical framing",
+                    sectionId: "sec-22-theoretical-framing-symptoms-as-physical-indicators-intro",
                     value: 109,
                     children: [
                         {
                             name: "2.2.1 Symptoms as signs",
+                            sectionId: "sec-221-symptoms-as-interpreted-bodily-signs-intro",
                             value: 77,
                             children: [
-                                { name: "Biosemiotics", value: 278 },
-                                { name: "Indexes", value: 311 }
+                                { name: "Biosemiotics", value: 278, sectionId: "sec-biosemiotics-perspectives" },
+                                { name: "Indexes", value: 311, sectionId: "sec-understanding-indexes" }
                             ]
                         },
                         {
                             name: "2.2.2 Material traces",
+                            sectionId: "sec-222-material-traces-within-autographic-design-intro",
                             value: 259,
                             children: [
-                                { name: "Recognising traces", value: 108 },
-                                { name: "Enabling interpretation", value: 321 },
-                                { name: "Autographic", value: 226 }
+                                { name: "Recognising traces", value: 108, sectionId: "sec-recognising-traces" },
+                                { name: "Enabling interpretation", value: 321, sectionId: "sec-enabling-interpretation" },
+                                { name: "Autographic", value: 226, sectionId: "sec-autographic-to-externalise-embodied-perceptions" }
                             ]
                         },
                         {
                             name: "2.2.3 Material approach",
+                            sectionId: "sec-223-towards-a-material-approach-to-symptom-interpretation",
                             value: 442
                         },
                         {
                             name: "2.2.4 Autographic inscriptions",
+                            sectionId: "sec-224-autographic-inscriptions-as-data-physicalization-intro",
                             value: 259,
                             children: [
-                                { name: "Analytical/artistic", value: 333 },
-                                { name: "Historical/contemporary", value: 563 }
+                                { name: "Analytical/artistic", value: 333, sectionId: "sec-analytical-and-artistic-meaning" },
+                                { name: "Historical/contemporary", value: 563, sectionId: "sec-historical-and-contemporary-interests" }
                             ]
                         },
                         {
                             name: "2.2.5 Physical artefacts",
+                            sectionId: "sec-225-physical-artefacts-in-healthcare",
                             value: 255
                         },
                         {
                             name: "2.2.6 Material agency",
+                            sectionId: "sec-226-material-agency-in-meaning-making",
                             value: 467
                         },
                         {
                             name: "2.2.7 Materiality as mediator",
+                            sectionId: "sec-227-materiality-as-mediator-for-knowledge-creation-intro",
                             value: 225,
                             children: [
-                                { name: "Boundary objects", value: 369 }
+                                { name: "Boundary objects", value: 369, sectionId: "sec-in-between-boundary-and-epistemic-objects" }
                             ]
                         },
                         {
                             name: "2.2.8 Situated to tangible",
+                            sectionId: "sec-228-advancing-from-situated-bodies-to-tangible-data",
                             value: 292
                         }
                     ]
                 },
                 {
                     name: "2.3 Methodological stance",
+                    sectionId: "sec-23-the-methodological-stance-challenging-neutrality-in-healthcare-intro",
                     value: 230,
                     children: [
                         {
                             name: "2.3.1 Data in healthcare",
+                            sectionId: "sec-231-considering-data-within-and-by-healthcare",
                             value: 591
                         },
                         {
                             name: "2.3.2 Situatedness",
+                            sectionId: "sec-232-situatedness-and-accountability-to-add-value-intro",
                             value: 156,
                             children: [
-                                { name: "Shared subjectivity", value: 191 },
-                                { name: "Data as capta", value: 264 }
+                                { name: "Shared subjectivity", value: 191, sectionId: "sec-shared-subjectivity" },
+                                { name: "Data as capta", value: 264, sectionId: "sec-data-as-capta" }
                             ]
                         },
                         {
                             name: "2.3.3 Embodiment",
+                            sectionId: "sec-233-embodiment-to-generate-healthcare-data-intro",
                             value: 284,
                             children: [
-                                { name: "Data-bodies", value: 295 },
-                                { name: "Undefined", value: 114 }
+                                { name: "Data-bodies", value: 295, sectionId: "sec-data-sense-data-bodies-and-tacit-data" },
+                                { name: "Undefined", value: 114, sectionId: "sec-cradling-the-undefined" }
                             ]
                         },
                         {
                             name: "2.3.4 Self-tracking",
+                            sectionId: "sec-234-self-tracking-and-patient-generated-data-intro",
                             value: 111,
                             children: [
-                                { name: "QS practices", value: 234 },
-                                { name: "Limitations", value: 436 }
+                                { name: "QS practices", value: 234, sectionId: "sec-quantified-self-and-persona-informatics-practices" },
+                                { name: "Limitations", value: 436, sectionId: "sec-self-tracking-limitations" }
                             ]
                         },
                         {
                             name: "2.3.5 Data literacy",
+                            sectionId: "sec-235-data-literacy-through-design-in-healthcare-intro",
                             value: 154,
                             children: [
-                                { name: "Competences", value: 320 },
-                                { name: "Persona data", value: 173 },
-                                { name: "Creative approaches", value: 393 }
+                                { name: "Competences", value: 320, sectionId: "sec-from-technical-competences-to-awareness" },
+                                { name: "Persona data", value: 173, sectionId: "sec-making-sense-of-persona-data" },
+                                { name: "Creative approaches", value: 393, sectionId: "sec-creative-and-participatory-approaches-to-literacy" }
                             ]
                         }
                     ]
                 },
                 {
                     name: "2.4 The approach",
+                    sectionId: "sec-24-the-approach-participation-and-co-creation-intro",
                     value: 178,
                     children: [
                         {
                             name: "2.4.1 Participatory practices",
+                            sectionId: "sec-241-participation-in-healthcare-intro",
                             value: 233,
                             children: [
-                                { name: "Challenges", value: 189 }
+                                { name: "Challenges", value: 189, sectionId: "sec-challenges-in-participation" }
                             ]
                         },
                         {
                             name: "2.4.2 Collaboration",
+                            sectionId: "sec-242-collaboration-strategies-and-levels-intro",
                             value: 369,
                             children: [
-                                { name: "PAR", value: 181 }
+                                { name: "PAR", value: 181, sectionId: "sec-participatory-action-research-par" }
                             ]
                         },
                         {
                             name: "2.4.3 Patient role",
+                            sectionId: "sec-243-patient-definition-and-role",
                             value: 278
                         },
                         {
                             name: "2.4.4 Participation in DP",
+                            sectionId: "sec-244-participation-within-the-process-of-data-physicalization-intro",
                             value: 243,
                             children: [
-                                { name: "Participatory DP", value: 313 },
-                                { name: "Data collection", value: 340 },
-                                { name: "Representation", value: 121 },
-                                { name: "Interpretation", value: 303 }
+                                { name: "Participatory DP", value: 313, sectionId: "sec-participatory-data-physicalization" },
+                                { name: "Data collection", value: 340, sectionId: "sec-participation-for-data-collection" },
+                                { name: "Representation", value: 121, sectionId: "sec-participation-for-representation" },
+                                { name: "Interpretation", value: 303, sectionId: "sec-participation-for-interpretation" }
                             ]
                         }
                     ]
@@ -288,14 +313,17 @@ const CHAPTER_DATA = {
                     children: [
                         {
                             name: "2.5.1 Lack of structure",
+                            sectionId: "sec-251-lack-of-structure-in-collecting-process-based-data-physicalizations",
                             value: 100 // Reduced to reveal 2.5 title
                         },
                         {
                             name: "2.5.2 Physical variables",
+                            sectionId: "sec-252-contribution-introducing-the-physical-variables",
                             value: 100 // Reduced to reveal 2.5 title
                         },
                         {
                             name: "2.5.3 Methodology",
+                            sectionId: "sec-253-moving-to-the-methodology-definition",
                             value: 100 // Reduced to reveal 2.5 title
                         }
                     ]
