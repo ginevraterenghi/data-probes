@@ -4,9 +4,17 @@
   font-style: normal;
   font-size: 2rem;
   line-height: 3rem;
-  padding-left: 0rem;
+  padding-left: 0;
   padding-right: 2rem;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
+  margin-top:0rem;
+}
+
+/* mobile only */
+@media (max-width: 768px) {
+  .written-description {
+    margin-top: 0;
+  }
 }
 
 .oral-description {
@@ -17,15 +25,170 @@
   line-height: 3rem;
   padding-left: 0rem;
   padding-right: 0rem;
+  margin-top:0rem;
+}
+
+.oral-description-horizontal {
+  font-family: "GT-Maru-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-left: 0;        /* mobile default */
+  padding-right: 0;
+  margin-top: 0;
+}
+
+/* desktop only */
+@media (min-width: 769px) {
+  .oral-description-horizontal {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 /* Main container */
 #probes-main {
   padding: 2rem;
-  padding-top: 9rem;
+  padding-top: 1rem;
   padding-bottom: 0rem;
   border-top: 0 solid #000;
 }
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between; /* left + right */
+  align-items: center;
+  padding-top:2rem;
+  width: 100%;
+  margin-top: 4rem; /* optional spacing */
+}
+
+/* remove margin-left:auto if you added it earlier */
+.probes-button-right {
+  margin-left: 0;
+}
+
+.probes-button-magic {
+    /* layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.35rem; */
+    padding: 1.6rem;
+    width: fit-content;
+    min-width: 15rem;
+    aspect-ratio: 5 / 1;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: 'PP Editorial New', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    font-size: 0;
+    background: #ffffff;
+    color: black;
+    border: 0px solid black;
+    text-decoration: none;
+    cursor: none;
+
+}
+.probes-button-left {
+    /* layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.35rem; */
+    padding: 1.6rem;
+    width: fit-content;
+    min-width: 15rem;
+    aspect-ratio: 5 / 1;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-family: 'PP Editorial New', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    background: #ffffff;
+    color: black;
+    border: 0.5px solid black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.probes-button-left .arrow {
+    font-weight: 600;
+}
+
+.probes-button-left:hover {
+    background: #fbf7fb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.probes-button-left:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(90, 11, 99, 0.18);
+}
+
+.probes-button-left:focus-visible {
+    outline: 3px solid rgba(90, 11, 99, 0.35);
+    outline-offset: 4px;
+}
+
+.probes-button-right {
+  /* same styles as left */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1.6rem;
+  width: fit-content;
+  min-width: 15rem;
+  aspect-ratio: 5 / 1;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-family: 'PP Editorial New', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  background: #ffffff;
+  color: black;
+  border: 0.5px solid black;
+  text-decoration: none;
+  cursor: pointer;
+
+  /* key difference */
+  margin-left: auto;
+}
+
+
+.probes-button-right .arrow {
+    font-weight: 600;
+}
+
+.probes-button-right:hover {
+    background: #fbf7fb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.probes-button-right:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgba(90, 11, 99, 0.18);
+}
+
+.probes-button-right:focus-visible {
+    outline: 3px solid rgba(90, 11, 99, 0.35);
+    outline-offset: 4px;
+}
+
+
 
 /* Fixed Header */
 #header-fixed-top {
@@ -40,7 +203,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  gap: 2rem;
+  gap: 0srem;
   padding-bottom: 0;
 }
 
@@ -48,7 +211,7 @@
   padding-top: 2rem;
 }
 
-.probes-sub-section > div:last-child {
+.probes-sub-section>div:last-child {
   padding-bottom: 0;
 }
 
@@ -60,18 +223,19 @@
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
-  border-top: 1px solid rgba(43, 43, 43, 1);
+  border-top: 0.5px solid rgba(43, 43, 43, 1);
   width: 100%;
 }
 
-.workshop-card + .workshop-card {
-  margin-top: 5rem; /* 2.5rem * 2 */
+.workshop-card+.workshop-card {
+  margin-top: 5rem;
+  /* 2.5rem * 2 */
 }
 
 .workshop-card::after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid rgba(43, 43, 43, 1);
+  border-bottom: 0.5px solid rgba(43, 43, 43, 1);
   width: 100%;
   left: 0;
 }
@@ -80,25 +244,66 @@
   border-bottom: 0;
 }
 
-/* Content Styles */
-.probes-text,
-.probes-button {
+.probes-text {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  /* padding-bottom: 2rem; */
+  border-bottom: 0; /* reset by default */
 }
 
-.probes-button {
-  padding-bottom: 2rem;
+/* mobile only */
+@media (max-width: 768px) {
+  .probes-text {
+    border-bottom: 0.5px solid black;
+    /* padding-bottom:2rem; */
+  }
+
 }
 
-.probes-button {
-  padding-bottom: 2rem;
-  position: relative;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 1000;
-} 
+
+/* desktop: explicitly remove */
+@media (min-width: 769px) {
+  .probes-text {
+    border-bottom: 0;
+  }
+}
+
+.probes-text-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  /* padding-bottom: 2rem; */
+  border-bottom: 0; /* reset by default */
+}
+
+/* mobile only */
+@media (max-width: 768px) {
+  .probes-text-horizontal {
+    border-bottom: 0.5px solid black;
+    /* padding-bottom:2rem; */
+  }
+
+}
+
+
+/* desktop: explicitly remove */
+@media (min-width: 769px) {
+  .probes-text-horizontal {
+    border-bottom: 0;
+  }
+}
+
+.probes-button-left,
+.probes-button-right {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+
 
 .probes-tag,
 .probes-tag-title,
@@ -170,7 +375,7 @@
 /* Media Content */
 .probes-pic,
 .final-event-pic {
-  padding-top:2rem;
+  padding-top: 2rem;
   width: 100%;
 }
 
@@ -180,7 +385,7 @@
 }
 
 /* Buttons */
-.read-more-button {
+/* .read-more-button {
   border: 1px solid #000;
   border-radius: 4rem;
   padding: 1rem 2rem;
@@ -202,10 +407,14 @@
 
 .read-more-button:hover a {
   color: #000;
-}
+} */
 
-.probes-card-1-left, .probes-card-1-central, .probes-card-1-right, .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
-    border-bottom: 1px solid rgba(43, 43, 43, 1);
+.probes-card-1-left,
+.probes-card-1-central,
+.probes-card-1-right,
+.probes-card-1-central-2x-horizontal,
+.probes-card-1-left-2x-horizontal {
+  border-bottom: 0.5px solid rgba(43, 43, 43, 1);
 }
 
 /* Mobile Specifics */
@@ -221,7 +430,7 @@
   width: 100%;
 }
 
-.card > img {
+.card>img {
   width: 100%;
   height: auto;
 }
@@ -231,8 +440,7 @@
 .head-central-long {
   width: 100%;
   padding: 0;
-  border-bottom: 1px solid rgba(43, 43, 43, 1);
-  padding-bottom: 2rem;
+  border-bottom: 0.5px solid rgba(43, 43, 43, 1);
 }
 
 .tag-left {
@@ -240,21 +448,63 @@
 }
 
 .tag-text {
-  font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
+  padding:0rem;
   color: #000;
-  font-size: 2rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.tag-text-horizontal {
+  text-decoration: none;
+  padding: 0;           /* mobile default */
+  color: #000;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+/* desktop only */
+@media (min-width: 769px) {
+  .tag-text-horizontal {
+    padding-left: 1em;
+  }
 }
 
 .component-list {
-  top: 0; /* Adjust as needed */
-  left: 0; /* Adjust as needed */
+  top: 0;
+  /* Adjust as needed */
+  left: 0;
+  /* Adjust as needed */
   z-index: 1;
-  pointer-events: none; /* Prevent clicks from affecting this layer */
-  border-top: 1px solid rgba(43, 43, 43, 1);
-  padding-top: 2rem;
+  pointer-events: none;
+  /* Prevent clicks from affecting this layer */
+  padding-top: 0rem;
   margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  box-sizing: border-box;
   font-family: "SuisseIntl-Regular";
+}
+
+.component-list-horizontal {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  padding-top: 0;
+  padding-left: 0;       /* mobile default */
+  box-sizing: border-box;
+  font-family: "SuisseIntl-Regular";
+}
+
+/* desktop only */
+@media (min-width: 769px) {
+  .component-list-horizontal {
+    padding-left: 2em;
+  }
 }
 
 .full-width-image-container {
@@ -262,46 +512,57 @@
   height: auto;
 }
 
-.full-width-image-container > img {
+.full-width-image-container>img {
   position: absolute;
   height: auto;
 }
 
 .tag-text-long {
-  font-family: "SuisseIntl-Regular", sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
 .component-description {
- font-family: "SuisseIntl-Light", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
   line-height: 3rem;
   padding-left: 0rem;
   padding-right: 0rem;
+  padding-bottom:2rem;
 }
 
 .image-container {
-  position: relative; /* Enables stacking */
+  position: relative;
+  padding-left:1rem;
+  /* Enables stacking */
   height: auto;
   z-index: 2;
 }
 
-.image-container > img {
+.image-container>img {
   /* position: absolute; */
   height: auto;
 }
 
 .base-image {
-  display: block; /* Ensures the image behaves as a block-level element */
-  width: 100%;   /* Makes the image take the full width of its container */
-  height: auto;  /* Maintains the image's aspect ratio */
-  position: relative; /* Ensures the image is part of the layout flow and gives height to parent */
-  left: 0; /* Set left to 0, assuming previous 0.2 was an anomaly or not critical for layout */
+  display: block;
+  /* Ensures the image behaves as a block-level element */
+  width: 100%;
+  /* Makes the image take the full width of its container */
+  height: auto;
+  /* Maintains the image's aspect ratio */
+  position: relative;
+  /* Ensures the image is part of the layout flow and gives height to parent */
+  left: 0;
+  /* Set left to 0, assuming previous 0.2 was an anomaly or not critical for layout */
 }
 
 .full-width-image {
@@ -324,6 +585,7 @@
 .overlay-image.hidden {
   display: none;
 }
+
 .image-container-wrapper {
   position: relative;
   height: auto;
@@ -337,10 +599,12 @@
 }
 
 .button-to-select-text {
-  font-family: SuisseIntl-Regular, sans-serif;
   text-decoration: none;
   color: #000;
-  font-size: 2rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.5;
   line-height: 0;
   padding: 0;
   align-items: flex-end;
@@ -352,6 +616,13 @@
   align-items: flex-end;
 }
 
+/* mobile only */
+@media (max-width: 768px) {
+  .interactive-legend-section {
+    border-bottom: 0.5px solid black;
+  }
+}
+
 .tag {
   display: flex;
   flex-wrap: wrap;
@@ -361,7 +632,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding:2rem;
+  padding: 2rem;
 }
 
 .legend-item-first {
@@ -369,22 +640,24 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  padding-left:0rem;
+  padding-left: 0rem;
 }
 
 @media(max-width: 769px) {
   .legend-item {
     padding: 1rem;
+    padding-left:0rem;
   }
 
   .legend-item-first {
     padding: 1rem;
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
 }
 
 .page-wrapper {
-  min-height: calc(100vh - 8rem); /* Adjust based on footer height */
+  min-height: calc(100vh - 8rem);
+  /* Adjust based on footer height */
   display: flex;
   flex-direction: column;
 }
@@ -400,8 +673,8 @@
   padding-bottom: 2rem;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(43, 43, 43, 1);
-  margin: 0 2rem;
+  border-top: 0.5px solid rgba(43, 43, 43, 1);
+  margin: 0;
 }
 
 .bottom-left,
@@ -435,7 +708,8 @@
 .vertical-section-group {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* spacing between vertical subsections */
+  gap: 1rem;
+  /* spacing between vertical subsections */
 }
 
 .vertical-subsection {
@@ -452,12 +726,14 @@
   background-color: #0040ff;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .treatments.active {
@@ -475,8 +751,8 @@
   width: 3rem;
   height: 3rem;
   margin-right: 2rem;
-  padding: 0;
-  margin: 0.5rem;
+  /* padding: 0.5rem;
+  margin: 0.5rem; */
   cursor: pointer;
   border: 1px solid #0040ff;
   background-color: white;
@@ -498,12 +774,14 @@
   background-color: #239857;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .complexity.active {
@@ -543,12 +821,14 @@
 .recurrences {
   background-color: #ff7800;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .recurrences.active {
@@ -587,12 +867,14 @@
 .urine {
   background-color: #c5c500;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .urine.active {
@@ -629,15 +911,17 @@
 }
 
 .lower-abdomen {
- background-color: #ae00ff;
+  background-color: #ae00ff;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .lower-abdomen.active {
@@ -676,12 +960,14 @@
 .fever {
   background-color: #00c6d4;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */ 
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .fever.active {
@@ -720,12 +1006,14 @@
 .discomfort {
   background-color: #9cf7ff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .discomfort.active {
@@ -764,12 +1052,14 @@
 .pain {
   background-color: #ffce9c;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .pain.active {
@@ -807,14 +1097,16 @@
 
 .infection {
   background-color: #7b7b7b;
-  color:white;
+  color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .infection.active {
@@ -853,12 +1145,14 @@
 .back-pain {
   background-color: #ff00e5;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .back-pain.active {
@@ -897,12 +1191,14 @@
 .bloated-stomach {
   background-color: #007bff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .bloated-stomach.active {
@@ -941,12 +1237,14 @@
 .anxiety {
   background-color: #00ff99;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .anxiety.active {
@@ -985,12 +1283,14 @@
 .vomiting {
   background-color: #ffcc00;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .vomiting.active {
@@ -1029,12 +1329,14 @@
 .nausea {
   background-color: #f6dbff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .nausea.active {
@@ -1074,12 +1376,14 @@
   background-color: #9a5f28;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .leaks.active {
@@ -1119,12 +1423,14 @@
   background-color: #763267;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .cramps.active {
@@ -1164,12 +1470,14 @@
   background-color: #ff0066;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .causes.active {
@@ -1210,12 +1518,14 @@
   background-color: #8052eb;
   color: white;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .doctor.active {
@@ -1255,12 +1565,14 @@
 .nose {
   background-color: #f78dff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .nose.active {
@@ -1299,12 +1611,14 @@
 .throat {
   background-color: #5aeee0;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .throat.active {
@@ -1343,12 +1657,14 @@
 .joint-pain {
   background-color: #b6b622;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .joint-pain.active {
@@ -1387,12 +1703,14 @@
 .neck-pain {
   background-color: #9b84ff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .neck-pain.active {
@@ -1431,12 +1749,14 @@
 .shoulder-pain {
   background-color: #ffa6d6;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .shoulder-pain.active {
@@ -1475,12 +1795,14 @@
 .headache {
   background-color: #6c7196;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .headache.active {
@@ -1519,12 +1841,14 @@
 .bellyache {
   background-color: #55c131;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .bellyache.active {
@@ -1563,12 +1887,14 @@
 .constipation {
   background-color: #67673c;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .constipation.active {
@@ -1605,14 +1931,16 @@
 }
 
 .fatigue {
- background-color: #00d0ff;
+  background-color: #00d0ff;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .fatigue.active {
@@ -1651,12 +1979,14 @@
 .isolation {
   background-color: #1f77b4;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .isolation.active {
@@ -1695,12 +2025,14 @@
 .insomnia {
   background-color: #f67375;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .insomnia.active {
@@ -1739,12 +2071,14 @@
 .normality {
   background-color: #acac84;
   display: inline;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem; /* no top/bottom padding */
+  /* margin: 0 0.5rem;
+  padding: 0 0.5rem; */
+  /* no top/bottom padding */
   line-height: 1;
   border-radius: 6rem;
   box-decoration-break: clone;
-  -webkit-box-decoration-break: clone; /* for Safari */
+  -webkit-box-decoration-break: clone;
+  /* for Safari */
 }
 
 .normality.active {
@@ -1794,12 +2128,12 @@
   }
 
   .probes-sub-section,
-.probes-sub-section-second-line {
+  .probes-sub-section-second-line {
     display: flex;
-    border-top: 1px solid rgba(43, 43, 43, 1);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
+    /* border-top: 0.5px solid rgba(43, 43, 43, 1); */
+    border-bottom: 0.5px solid rgba(43, 43, 43, 1);
+    gap: 0;
+  }
 
   .probes-card-3 {
     width: 33%;
@@ -1814,7 +2148,8 @@
     border-bottom: 0;
   }
 
-  .probes-card-1-central-2x-horizontal, .probes-card-1-left-2x-horizontal {
+  .probes-card-1-central-2x-horizontal,
+  .probes-card-1-left-2x-horizontal {
     border-bottom: 0 solid rgba(43, 43, 43, 1);
   }
 
@@ -1842,7 +2177,7 @@
     width: 30%;
   }
 
-  .workshop-card + .workshop-card {
+  .workshop-card+.workshop-card {
     margin-top: 0;
   }
 
@@ -1861,47 +2196,71 @@
   .probes-tag-little-2 {
     font-size: 2rem;
   }
-  
+
   /* 3 vertical sections data-probe single pages */
   .single-probe-written {
     width: 33%;
     padding: 0;
     border-bottom: 0;
-    border-right: 1px solid rgba(43, 43, 43, 1);
+    border-right: 0.5px solid rgba(43, 43, 43, 1);
   }
 
+ .single-probe-pic {
+  width: 31%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 0;
+}
+
+/* mobile only */
+@media (max-width: 768px) {
   .single-probe-pic {
-    width: 31%;
-    border-bottom: 0;
-    padding-left:2rem;
-    padding-right:2rem;
-    border-right: 1px solid rgba(43, 43, 43, 1);
+    border-bottom: 0.5px solid rgba(43, 43, 43, 1);
   }
+}
 
   .single-probe-pic-horizontal {
     width: 64%;
     border-bottom: 0;
-    padding-left:1rem;
-    padding-right:1rem;
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
   }
 
+.single-probe-oral {
+  width: 35%;
+  padding: 0;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  border: 0; /* reset everything */
+}
+
+/* desktop: left border only */
+@media (min-width: 769px) {
   .single-probe-oral {
-    width: 33%;
-    padding: 0;
-    border-bottom: 0;
-    padding-left:2rem;
-    box-sizing: border-box;
+    border-left: 0.5px solid rgba(43, 43, 43, 1);
+    border-bottom: 0; /* <-- THIS is the key line */
   }
+
+/* mobile: bottom border only */
+@media (max-width: 768px) {
+  .single-probe-oral {
+    border-bottom: 0.5px solid rgba(43, 43, 43, 1);
+    border-left: 0;
+  }
+}
+
+
+}
 
   .single-probe-oral-horizontal {
     padding: 0;
     border-bottom: 0;
     box-sizing: border-box;
-    border-top: 1px solid rgba(43, 43, 43, 1);
+    border-top: 0.5px solid rgba(43, 43, 43, 1);
     padding-top: 2rem;
     margin-top: 2rem;
   }
-  
+
   .bottom {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1920,14 +2279,16 @@
 
   .head-left,
   .head-central {
-    width: 19%;
-    padding: 0;
+    width: 20%;
     border-bottom: 0;
+
+    box-sizing: border-box;
   }
 
   .head-central-long {
     width: 60%;
-    padding: 0;
+    padding: 0rem;
     border-bottom: 0;
+    box-sizing: border-box;
   }
 }

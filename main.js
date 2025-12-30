@@ -160,7 +160,7 @@ function loadMenu() {
     .then(response => response.text())
     .then(data => {
       if (isSubdirectory) {
-        data = data.replace(/href="index\.html"/g, 'href="../index.html"');
+        data = data.replace(/href="([^"]+\.html)"/g, 'href="../$1"');
       }
       const header = document.getElementById('navigation-header');
       if (header) {
@@ -615,7 +615,7 @@ window.addEventListener('scroll', function () {
 });
 
 // Button hover colors
-const buttons = document.querySelectorAll('.read-more-button, .pill-download');
+const buttons = document.querySelectorAll('.dp-button, .pill-download, .probes-button-left, .probes-button-right');
 buttons.forEach(function (button) {
   button.addEventListener('mouseenter', function () {
     button.style.backgroundColor = getRandomButtonColor();

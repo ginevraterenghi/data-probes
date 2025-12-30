@@ -55,9 +55,9 @@
 .variables-text p,
 .variables-text ul {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 200;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 
@@ -139,30 +139,24 @@
     align-items: center;
     justify-content: center;
     gap: 0.35rem;
-    padding: 1.2rem 2.6rem;
-
-    /* sizing / shape */
-    border-radius: 9999px;
-
-    /* typography */
+    padding: 1.6rem;
+    width: fit-content;
+    min-width: 15rem;
+    aspect-ratio: 5 / 1;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 50%;
     font-family: 'PP Editorial New', serif;
     font-size: 2rem;
     font-weight: 300;
     line-height: 1;
-
-    /* colours (matches screenshot vibe) */
     background: #ffffff;
     color: black;
     border: 0.5px solid black;
-
-    /* remove default link styling */
     text-decoration: none;
-
-    /* subtle crisp look */
-    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
     cursor: pointer;
-    /* user-select: none;
-    -webkit-tap-highlight-color: transparent; */
+
 }
 
 .pill-download .arrow {
@@ -171,8 +165,7 @@
 
 .pill-download:hover {
     background: #fbf7fb;
-    /* very light purple tint */
-    box-shadow: 0 2px 0 rgba(90, 11, 99, 0.18);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .pill-download:active {
