@@ -60,7 +60,13 @@
     line-height: 1.5;
 }
 
-
+/* Mobile override */
+@media (max-width: 768px) {
+    .variables-text ul {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+}
 
 .variables-text p {
     margin-bottom: 0;
@@ -68,6 +74,17 @@
     text-indent: 25px;
 }
 
+.inline-link {
+  font-family: "PP Editorial New", serif;
+  color: #b5b5b5;        /* light grey */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #7a7a7a;        /* slightly darker on hover */
+  text-decoration: underline;
+}
 
 /* Remove indent for paragraphs after headings */
 .variables-text h1+p,
