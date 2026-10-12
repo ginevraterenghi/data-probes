@@ -32,6 +32,7 @@
   <link rel="stylesheet" type="text/css" href="css/home.css" />
 
   <script src="main.js" defer></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
 </head>
 
@@ -40,12 +41,18 @@
   <main>
     <div id="grid-container">
       <div class="card probe-1">
-        <img class="probes-pic" src="assets/img/dp1/dp1.png" />
+        <model-viewer class="probe-model" src="assets/img/dp1/dp1-3d.glb" poster="assets/img/dp1/dp1.png"
+          alt="A 3D model of Data-Probe 1" auto-rotate auto-rotate-delay="500" camera-controls interaction-prompt="none"
+          disable-zoom>
+        </model-viewer>
         <a href="pages/dp-1.html" class="dp-button">Data-Probe artefact 1</a>
       </div>
 
       <div class="card probe-2">
-        <img class="probes-pic" src="assets/img/dp2/dp2.png" />
+        <model-viewer class="probe-model" src="assets/img/dp2/dp2-3d.glb" poster="assets/img/dp2/dp2.png"
+          alt="A 3D model of Data-Probe 2" auto-rotate auto-rotate-delay="500" camera-controls interaction-prompt="none"
+          disable-zoom min-camera-orbit="-60deg auto auto" max-camera-orbit="60deg auto auto" field-of-view="20deg">
+        </model-viewer>
         <a href="pages/dp-2.html" class="dp-button">Data-Probe artefact 2</a>
       </div>
 
@@ -70,12 +77,18 @@
       </div>
 
       <div class="card probe-7">
-        <img class="probes-pic" src="assets/img/dp7/dp7.png" />
+        <model-viewer class="probe-model" src="assets/img/dp7/dp7-3d.glb" poster="assets/img/dp7/dp7.png"
+          alt="A 3D model of Data-Probe 7" auto-rotate auto-rotate-delay="500" camera-controls interaction-prompt="none"
+          disable-zoom>
+        </model-viewer>
         <a href="pages/dp-7.html" class="dp-button">Data-Probe artefact 7</a>
       </div>
 
       <div class="card probe-8">
-        <img class="probes-pic" src="assets/img/dp8/dp8.png" />
+        <model-viewer class="probe-model" src="assets/img/dp8/dp8-3d.glb" poster="assets/img/dp8/dp8.png"
+          alt="A 3D model of Data-Probe 8" auto-rotate auto-rotate-delay="500" camera-controls interaction-prompt="none"
+          disable-zoom>
+        </model-viewer>
         <a href="pages/dp-8.html" class="dp-button">Data-Probe artefact 8</a>
       </div>
 
@@ -100,7 +113,10 @@
       </div>
 
       <div class="card probe-15">
-        <img class="probes-pic" src="assets/img/dp15/dp15.png" />
+        <model-viewer class="probe-model" src="assets/img/dp15/dp15-3d.glb" poster="assets/img/dp15/dp15.png"
+          alt="A 3D model of Data-Probe 15" auto-rotate auto-rotate-delay="500" camera-controls
+          interaction-prompt="none" disable-zoom>
+        </model-viewer>
         <a href="pages/dp-15.html" class="dp-button">Data-Probe artefact 15</a>
       </div>
 
@@ -140,7 +156,10 @@
       </div>
 
       <div class="card probe-19">
-        <img class="probes-pic" src="assets/img/dp19/dp19.png" />
+        <model-viewer class="probe-model" src="assets/img/dp19/dp19-3d.glb" poster="assets/img/dp19/dp19.png"
+          alt="A 3D model of Data-Probe 19" auto-rotate auto-rotate-delay="500" camera-controls
+          interaction-prompt="none" disable-zoom>
+        </model-viewer>
         <a href="pages/dp-19.html" class="dp-button">Data-Probe artefact 19</a>
       </div>
 
